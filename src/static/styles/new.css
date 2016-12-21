@@ -697,14 +697,9 @@ button {
 
 .toggle-contact {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-    margin: -28px;
-    position: absolute;
-    bottom: 12%;
-    left: 50%;
 }
 
 .fb-btn {
-    left: 45%;
     background-color: #3b5998;
     color: white;
 }
@@ -715,7 +710,6 @@ button {
 }
 
 .youtube-btn {
-    left: 50%;
     background-color: #d92400;
     color: white;
 }
@@ -727,7 +721,6 @@ button {
 
 .instagram-btn {
     background-color: black;
-    left: 55%;
     color: white;
 }
 
@@ -735,6 +728,13 @@ button {
     background-color: #fff;
     color: #555;
 }
+
+.btn-box {
+    position: absolute;
+    bottom: 12%;
+    width: 100%;
+}
+
 
 .toggle.i .cross {
     transform: rotateZ(0deg);
