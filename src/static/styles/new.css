@@ -408,8 +408,13 @@ margin: 0px 0px;
         transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
     }
 }
-
+@media screen {
+    
+}
 .cloud {
+    @media (max-width: 800px) {
+        visibility:hidden;
+    }
     background-image: url(../images/cloud-1.png);
     background-size: cover;
     position: absolute;
@@ -816,6 +821,9 @@ button:hover {
     margin: auto;
     background: transparent;
     width: 22vw;
+    @media (max-width: 800px) {
+        width: 80vw;
+    }
     height: auto;
     min-width: 150px;
     position: absolute;
