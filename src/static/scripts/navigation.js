@@ -15,6 +15,8 @@ function showDetails() {
     $toggle.removeClass('i');
     $('.toggle-contact').css('display', 'none');
     $about.css('display', 'table');
+    slideout.close();
+
 }
 
 function hideDetails() {
@@ -33,6 +35,11 @@ function hideDetails() {
 function toggleDetails(type) {
     showPage(type);
     $toggle.hasClass('i') ? showDetails() : hideDetails();
+}
+
+function openPage(type) {
+    showPage(type);
+    showDetails();
 }
 
 var urlHelper = {
@@ -58,4 +65,5 @@ function showPage(type) {
     var newUrl = urlHelper.getPageUrl(type);
     loadContent(newUrl, $(".content-holder"));
     history.pushState(newUrl, null, newUrl);
+    slideout.close();
 }

@@ -8,13 +8,27 @@
     src: url(../fonts/GeosansLight.ttf);
 }
 
+body #container{
+    height: 100%;
+
+}
+
 body {
-    background: url(../images/background.png) no-repeat center center;
-    top: 40%;
     text-align: center;
     font-family: "felicity";
     line-height: 1.4em;
     color: black;
+}
+
+#panelcontainer{
+    position: absolute;
+    box-shadow: -10px 0px 5px rgba(0, 0, 0, 0.6);
+
+    top:0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: url(../images/background.png) no-repeat center center;
 }
 
 p {
@@ -475,6 +489,16 @@ a {
     color: #d92400;
 }
 
+#menu-toggle {
+    @media (min-width: 800px) {
+        visibility:hidden;
+    }
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1001;
+}
+
 button {
     cursor: pointer;
     font-size: 1.33333em;
@@ -649,13 +673,18 @@ button {
 }
 
 .about .linkholder .links li {
+    width: 33.3%;
+
+}
+.links li {
     box-sizing: border-box;
     display: block;
     float: left;
-    width: 33.3%;
+    width: 100%;
+
 }
 
-.about .linkholder .links li a {
+.links li a {
     border-radius: 0 0 0 5px;
     background-clip: padding-box;
 }
@@ -669,7 +698,7 @@ button {
     background-clip: padding-box;
 }
 
-.about .linkholder .links a {
+.links a {
     font-size: 1.33333em;
     font-family: "Dosis", sans-serif;
     text-transform: uppercase;
@@ -823,6 +852,9 @@ button:hover {
     width: 22vw;
     @media (max-width: 800px) {
         width: 80vw;
+        @media (orientation:landscape){
+            width: 50vw;
+        }
     }
     height: auto;
     min-width: 150px;

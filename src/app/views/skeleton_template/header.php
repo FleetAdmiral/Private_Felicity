@@ -36,6 +36,7 @@ if (empty($is_ajax)):
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/styles/core.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/styles/new.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/styles/vendor/felicons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     <script src="<?= base_url() ?>static/scripts/vendor/jquery.min.js"></script>
     <script type="text/javascript">
         var baseUrl = '<?= base_url() ?>';
@@ -47,7 +48,9 @@ if (empty($is_ajax)):
         $page_slug = 'static';
     }
 ?>
+
 <body  style="overflow: hidden;">
+
   <?php if (isset($is_authenticated)): ?>
     <div class="auth-quick-links">
         <?php if ($is_authenticated): ?>
@@ -61,10 +64,11 @@ if (empty($is_ajax)):
         <?php endif; ?>
     </div>
     <?php endif; ?>
+
     <div id="container" class="wrapper">
-      <div id="loaderswing">
-        <img class="loaderhoverslow" src="<?= base_url() ?>static/images/feli-board.png" />
-      </div>
+     <button id="menu-toggle" class="toggle-button">☰</button>
+      <div id="panelcontainer">
+
       <ul style="list-style: none;">
           <li class="layer" data-depth="0.00">
               <div class="background"></div>
@@ -94,6 +98,11 @@ if (empty($is_ajax)):
                 <div onclick="toggleDetails('contact')" class="cloud cloud-6"><span>Contact</span></div>
             </li>
       </ul>
+           
+
+      <div id="loaderswing">
+        <img class="loaderhoverslow" src="<?= base_url() ?>static/images/feli-board.png" />
+      </div>
       <section id="about" class="about">
             <div class="cell">
                 <div class="cables center accelerate">
