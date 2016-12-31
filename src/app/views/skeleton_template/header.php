@@ -66,7 +66,7 @@ if (empty($is_ajax)):
     <?php endif; ?>
 
     <div id="container" class="wrapper">
-     <button id="menu-toggle" class="toggle-button">☰</button>
+     <button id="menu-toggle" class="toggle-button" >☰</button>
       <div id="panelcontainer">
 
       <ul style="list-style: none;">
@@ -111,6 +111,7 @@ if (empty($is_ajax)):
                             <li><a onclick="showPage('about')">About US</a></li>
                             <li><a onclick="showPage('sponsors')">Sponsors</a></li>
                             <li><a onclick="showPage('contact')">Contact Us</a></li>
+                            <!-- <li><a onclick="showPage('<?= isset($title) ? $title . ' · ' : '' ?><?= __('Felicity') ?>')"><?= isset($title) ? $title : '' ?></a></li> -->
                         </ul>
                     </div>
                     <div class="panel accelerate content-holder">

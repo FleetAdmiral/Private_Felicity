@@ -29,6 +29,7 @@ body {
     width: 100%;
     height: 100%;
     background: url(../images/background.png) no-repeat center center;
+    background-size: cover;
 }
 
 p {
@@ -529,9 +530,13 @@ button {
     background-color: rgba(255, 255, 255, 0.0);
     background-size: 399px 357px;
     padding-bottom: 40px;
+    @media (max-width: 800px) {
+        height: 100vh;
+        width: 100%;
+    }
     height: 88vh;
+    width: 88%; 
     margin: 0 auto;
-    width: 88%;
 }
 
 .cell {
@@ -612,6 +617,9 @@ button {
 }
 
 .about .linkholder {
+    @media (max-width: 800px) {
+        display: none;
+    }
     background-clip: padding-box;
     background: transparent url(../images/map.png) 0 0 no-repeat;
     background-size: 60.5px 82.5px;
