@@ -1,6 +1,9 @@
-<?php //$this->load_fragment('skeleton_template/header', ['title' => __('Schedule')]); ?>
+<?php $this->load_fragment('skeleton_template/header', ['title' => __('Schedule')]); ?>
 <?php if (!$is_ajax): ?>
 <article class="page open schedule">
+<header>
+          <h1>Sche<span class="tabheading">dule</span></h1>
+</header>
 <?php endif; ?>
 <?php
     $events_list = array_filter($events_data, function ($event) {
@@ -45,6 +48,7 @@
         }
     };
 ?>
+
 <div class="container row">
     <div class="col6">
         <div class="cal-month">
@@ -214,4 +218,4 @@
 <?php if (!$is_ajax): ?>
 </article>
 <?php endif; ?>
-<?php //$this->load_fragment('skeleton_template/footer'); ?>
+<?php $this->load_fragment('skeleton_template/footer'); ?>

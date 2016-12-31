@@ -30,7 +30,6 @@ $green: rgb(28, 184, 65);
 }
 
 * {
-    box-sizing: border-box;
 }
 
 html,
@@ -644,8 +643,7 @@ article {
     z-index: 2;
 
     &.open {
-        min-height: calc(100vh - 5em);
-        top: 5em;
+        min-height: calc(100vh - 2em);
         height: auto;
         transition: all $page-open-animation-timeout;
     }
@@ -867,8 +865,8 @@ article {
 .page.schedule {
 
     .cal-month-name {
-        font-weight: 700;
-        font-size: 1.3em;
+        font-weight: 900;
+        font-size: 1.8em;
         text-align: right;
     }
 
@@ -878,8 +876,8 @@ article {
         border-spacing: 6px;
 
         th {
-            width: 2.5em;
-            font-weight: 400;
+            width: 2.8em;
+            font-weight: 600;
         }
 
         td {
@@ -894,11 +892,12 @@ article {
             }
 
             &.has-event {
-                background-color: #373348;
+                background-color: #555;
                 cursor: pointer;
-
+                color: #fff;
                 &:hover {
-                    background-color: #111a29;
+                    background-color: #aaa;
+                    color: #333;
                 }
             }
         }
@@ -917,14 +916,15 @@ article {
         }
 
         .event-container {
-            border-left: .2em solid white;
+            border-left: .35em solid #333;
             padding-left: 1em;
         }
 
         .event {
+            color:white;
             display: block;
             position: relative;
-            background-color: #756a81;
+            background-color: #333;
             border-radius: .2em;
             width: 10em;
             padding: .5em;
@@ -936,7 +936,7 @@ article {
             bottom: 0;
             margin: auto;
             left: -1.6em;
-            background-color: #fff;
+            background-color: #333;
             width: 1em;
             height: 1em;
             border-radius: .5em;
