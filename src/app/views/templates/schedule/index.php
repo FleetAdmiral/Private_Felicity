@@ -55,7 +55,7 @@
             <table class="cal-table" data-month="Jan">
                 <thead>
                     <tr>
-                        <th class="cal-month-name" colspan="7"><?= strftime('%B %Y', strtotime('January 2016')) ?></th>
+                        <th class="cal-month-name" colspan="7"><?= strftime('%B %Y', strtotime('January 2017')) ?></th>
                     </tr>
                     <tr>
                         <th><?= strftime('%a', strtotime('Sun')) ?></th>
@@ -69,51 +69,44 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="empty"></td>
-                        <td class="empty"></td>
-                        <td class="empty"></td>
-                        <td class="empty"></td>
-                        <td class="empty"></td>
                         <td<?php $is_imp('1-1'); ?>>1</td>
                         <td<?php $is_imp('1-2'); ?>>2</td>
-                    </tr>
-                    <tr>
                         <td<?php $is_imp('1-3'); ?>>3</td>
                         <td<?php $is_imp('1-4'); ?>>4</td>
                         <td<?php $is_imp('1-5'); ?>>5</td>
                         <td<?php $is_imp('1-6'); ?>>6</td>
                         <td<?php $is_imp('1-7'); ?>>7</td>
-                        <td<?php $is_imp('1-8'); ?>>8</td>
-                        <td<?php $is_imp('1-9'); ?>>9</td>
                     </tr>
                     <tr>
+                        <td<?php $is_imp('1-8'); ?>>8</td>
+                        <td<?php $is_imp('1-9'); ?>>9</td>
                         <td<?php $is_imp('1-10'); ?>>10</td>
                         <td<?php $is_imp('1-11'); ?>>11</td>
                         <td<?php $is_imp('1-12'); ?>>12</td>
                         <td<?php $is_imp('1-13'); ?>>13</td>
                         <td<?php $is_imp('1-14'); ?>>14</td>
-                        <td<?php $is_imp('1-15'); ?>>15</td>
-                        <td<?php $is_imp('1-16'); ?>>16</td>
                     </tr>
                     <tr>
+                        <td<?php $is_imp('1-15'); ?>>15</td>
+                        <td<?php $is_imp('1-16'); ?>>16</td>
                         <td<?php $is_imp('1-17'); ?>>17</td>
                         <td<?php $is_imp('1-18'); ?>>18</td>
                         <td<?php $is_imp('1-19'); ?>>19</td>
                         <td<?php $is_imp('1-20'); ?>>20</td>
                         <td<?php $is_imp('1-21'); ?>>21</td>
-                        <td<?php $is_imp('1-22'); ?>>22</td>
-                        <td<?php $is_imp('1-23'); ?>>23</td>
                     </tr>
                     <tr>
+                        <td<?php $is_imp('1-22'); ?>>22</td>
+                        <td<?php $is_imp('1-23'); ?>>23</td>
                         <td<?php $is_imp('1-24'); ?>>24</td>
                         <td<?php $is_imp('1-25'); ?>>25</td>
                         <td<?php $is_imp('1-26'); ?>>26</td>
                         <td<?php $is_imp('1-27'); ?>>27</td>
                         <td<?php $is_imp('1-28'); ?>>28</td>
-                        <td<?php $is_imp('1-29'); ?>>29</td>
-                        <td<?php $is_imp('1-30'); ?>>30</td>
                     </tr>
                     <tr>
+                        <td<?php $is_imp('1-29'); ?>>29</td>
+                        <td<?php $is_imp('1-30'); ?>>30</td>
                         <td<?php $is_imp('1-31'); ?>>31</td>
                     </tr>
                 </tbody>
@@ -123,7 +116,7 @@
             <table class="cal-table" data-month="Feb">
                 <thead>
                     <tr>
-                        <th class="cal-month-name" colspan="7"><?= strftime('%B %Y', strtotime('February 2016')) ?></th>
+                        <th class="cal-month-name" colspan="7"><?= strftime('%B %Y', strtotime('February 2017')) ?></th>
                     </tr>
                     <tr>
                         <th><?= strftime('%a', strtotime('Sun')) ?></th>
@@ -138,43 +131,44 @@
                 <tbody>
                     <tr>
                         <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
                         <td<?php $is_imp('2-1'); ?>>1</td>
                         <td<?php $is_imp('2-2'); ?>>2</td>
                         <td<?php $is_imp('2-3'); ?>>3</td>
                         <td<?php $is_imp('2-4'); ?>>4</td>
-                        <td<?php $is_imp('2-5'); ?>>5</td>
-                        <td<?php $is_imp('2-6'); ?>>6</td>
                     </tr>
                     <tr>
+                        <td<?php $is_imp('2-5'); ?>>5</td>
+                        <td<?php $is_imp('2-6'); ?>>6</td>
                         <td<?php $is_imp('2-7'); ?>>7</td>
                         <td<?php $is_imp('2-8'); ?>>8</td>
                         <td<?php $is_imp('2-9'); ?>>9</td>
                         <td<?php $is_imp('2-10'); ?>>10</td>
                         <td<?php $is_imp('2-11'); ?>>11</td>
-                        <td<?php $is_imp('2-12'); ?>>12</td>
-                        <td<?php $is_imp('2-13'); ?>>13</td>
                     </tr>
                     <tr>
+                        <td<?php $is_imp('2-12'); ?>>12</td>
+                        <td<?php $is_imp('2-13'); ?>>13</td>
                         <td<?php $is_imp('2-14'); ?>>14</td>
                         <td<?php $is_imp('2-15'); ?>>15</td>
                         <td<?php $is_imp('2-16'); ?>>16</td>
                         <td<?php $is_imp('2-17'); ?>>17</td>
                         <td<?php $is_imp('2-18'); ?>>18</td>
-                        <td<?php $is_imp('2-19'); ?>>19</td>
-                        <td<?php $is_imp('2-20'); ?>>20</td>
                     </tr>
                     <tr>
+                        <td<?php $is_imp('2-19'); ?>>19</td>
+                        <td<?php $is_imp('2-20'); ?>>20</td>
                         <td<?php $is_imp('2-21'); ?>>21</td>
                         <td<?php $is_imp('2-22'); ?>>22</td>
                         <td<?php $is_imp('2-23'); ?>>23</td>
                         <td<?php $is_imp('2-24'); ?>>24</td>
                         <td<?php $is_imp('2-25'); ?>>25</td>
-                        <td<?php $is_imp('2-26'); ?>>26</td>
-                        <td<?php $is_imp('2-27'); ?>>27</td>
                     </tr>
                     <tr>
+                        <td<?php $is_imp('2-26'); ?>>26</td>
+                        <td<?php $is_imp('2-27'); ?>>27</td>
                         <td<?php $is_imp('2-28'); ?>>28</td>
-                        <td<?php $is_imp('2-29'); ?>>29</td>
                     </tr>
                 </tbody>
             </table>
