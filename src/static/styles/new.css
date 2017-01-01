@@ -473,9 +473,9 @@ margin: 0px 0px;
 }
 
 .cloud-5 {
-    left: 80%;
+    left: 75%;
     animation: bob 1.7s 0.01s infinite linear;
-    top: 8%;
+    top: 15%;
 }
 
 .cloud-6 {
@@ -665,6 +665,7 @@ button {
 
 .about .linkholder .links {
     zoom: 1;
+    display: flex;
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     position: relative;
@@ -681,9 +682,12 @@ button {
 }
 
 .about .linkholder .links li {
-    width: 33.3%;
-
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: 1;
 }
+
 .links li {
     box-sizing: border-box;
     display: block;
@@ -714,7 +718,9 @@ button {
     padding: 1em 0 1.1em;
     display: block;
 }
-
+.about .linkholder .links li a {
+    width: 100%;
+}
 .about .linkholder .links a.github:before, .about .linkholder .links a.download:before {
     content: "";
     font-family: "icons";
