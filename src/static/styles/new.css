@@ -877,7 +877,7 @@ button:hover {
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 0;
+    z-index: -1;
 }
 
 #loaderswing>img {
