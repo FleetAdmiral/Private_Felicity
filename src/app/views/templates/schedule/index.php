@@ -1,10 +1,8 @@
 <?php $this->load_fragment('skeleton_template/header', ['title' => __('Schedule')]); ?>
-<?php if (!$is_ajax): ?>
-<article class="page open schedule">
+<article class="page schedule">
 <header>
           <h1>Sche<span class="tabheading">dule</span></h1>
 </header>
-<?php endif; ?>
 <?php
     $events_list = array_filter($events_data, function ($event) {
         return $event['template'] == 'event';
@@ -209,9 +207,7 @@
         </table>
     </div>
 </div>
-<?php if (!$is_ajax): ?>
 </article>
-<?php endif; ?>
 <?php $this->load_fragment('skeleton_template/footer'); ?>
 <?php if (!$is_ajax): ?>
 <script>
