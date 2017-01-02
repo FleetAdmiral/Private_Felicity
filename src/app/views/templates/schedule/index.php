@@ -137,7 +137,7 @@
                         <td class="event-container">
                             <a href="<?= locale_base_url() . $event['path'] ?>" class="event">
                                 <div class="circle"><div class="innercircle"></div></div>
-                                <span><?= __($event['data']['name']) ?></span>
+                                <span><?= __($event['data']['name']) ?></span><br/>
                             </a>
                         </td>
                     </tr>
