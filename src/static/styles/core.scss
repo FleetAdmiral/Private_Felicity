@@ -174,21 +174,17 @@ a {
 
 .btn {
     display: inline-block;
-    background-color: white;
+    background-color: #333;
     border: 1px solid rgb(38, 40, 61);
-    color: rgb(38, 40, 61);
+    color: #fff;
     font-weight: normal;
     padding: .5em 1.5em;
     transition: all .3s;
 
-    @at-root a#{&} {
-        color: rgb(38, 40, 61);
-    }
-
     &:hover {
         color: #fff;
-        background-color: rgb(38, 40, 61);
-        border: 1px solid rgb(19, 20, 30);
+        background-color: #3c93b0;
+        border: 1px solid #3c93b0;
     }
 
     &.large {
@@ -809,8 +805,8 @@ article {
     text-align: center;
 
     .date-time {
-        color: #fff;
-        border-bottom: 1px solid #fff;
+        color: #333;
+        border-bottom: 1px solid #333;
 
         &:hover {
             border-bottom-style: dashed;
@@ -819,7 +815,7 @@ article {
 
     h1 {
         font-size: 3em;
-        margin-bottom: 0;
+        margin-bottom: 0.5em;
     }
 
     .lead {
@@ -868,7 +864,7 @@ article {
     .cal-month-name {
         font-weight: 900;
         font-size: 1.8em;
-        text-align: right;
+        text-align: center;
     }
 
     .cal-table {

@@ -1,9 +1,7 @@
 <?php $this->load_fragment('skeleton_template/header', [
     'title' => __($name)
 ]); ?>
-<?php if (!$is_ajax): ?>
-<article class="page open full event <?= $page_slug ?>">
-<?php endif; ?>
+<article class="page event <?= $page_slug ?>">
     <div class="container">
     <h1><?= __($name) ?></h1>
     <?php if (isset($tagline)): ?>
@@ -84,7 +82,13 @@
             </div>
         </div>
     </div>
-<?php if (!$is_ajax): ?>
 </article>
-<?php endif; ?>
 <?php $this->load_fragment('skeleton_template/footer'); ?>
+<?php if (!$is_ajax): ?>
+<script>
+    (function() {
+        $('#toggle').removeClass('i');
+        $('.toggle-contact').css('display', 'none');
+    })();
+</script>
+<?php endif; ?>
