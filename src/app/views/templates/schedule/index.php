@@ -1,8 +1,9 @@
 <?php $this->load_fragment('skeleton_template/header', ['title' => __('Schedule')]); ?>
 <article class="page schedule">
 <header>
-          <h1>Sche<span class="tabheading">dule</span></h1>
+    <h1>Sche<span class="tabheading">dule</span></h1>
 </header>
+
 <?php
     $events_list = array_filter($events_data, function ($event) {
         return $event['template'] == 'event';
@@ -48,6 +49,21 @@
 ?>
 
 <div class="container row">
+<div class="linkholder">
+    <div class="categories">
+        <?php 
+        foreach ($events_list as $event){
+            $cat[$event['type']]=1;
+        }
+        foreach ($cat as $key => $value):
+?>
+        <li><a class="event" onclick="$('.timeline').hide();$('.<?= $key ?>').show()"> <?=$key?> </a></li>
+        <?php endforeach; ?>
+
+
+        <!-- <li><a onclick="showPage('<?= isset($title) ? $title . ' · ' : '' ?><?= __('Felicity') ?>')"><?= isset($title) ? $title : '' ?></a></li> -->
+    </div>
+</div>
     <div class="col6">
         <div class="cal-month">
             <table class="cal-table" data-month="Jan">
@@ -132,7 +148,7 @@
                                 <?= $formatted ?>
                             </td>
                         <?php else: ?>
-                            <td class="day"></td>
+                            <td class="day" style="visibility: hidden;"><?= $formatted ?></td>
                         <?php endif; ?>
                         <td class="event-container">
                             <a href="<?= locale_base_url() . $event['path'] ?>" class="event">

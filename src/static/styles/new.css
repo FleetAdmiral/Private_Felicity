@@ -616,7 +616,7 @@ button {
     right: 0;
 }
 
-.about .linkholder {
+.about.linkholder {
     @media (max-width: 800px) {
         display: none;
     }
@@ -665,13 +665,28 @@ button {
 
 .about .linkholder .links {
     zoom: 1;
-    display: flex;
     box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
 }
-
+.linkholder .links {
+        display: flex;
+}
+.event {
+    color: white;
+    position: relative;
+    background-color: #333;
+    padding: .5em;
+    width:100%;
+}
+.event:hover {
+    background-color: #505a89;
+}   
+.categories {
+        display: flex;
+        margin: 0 0 1.5em 0;
+}
 .about .linkholder .links:after, .about .linkholder .links:before {
     display: table;
     content: "";
@@ -681,7 +696,14 @@ button {
     clear: both;
 }
 
-.about .linkholder .links li {
+.linkholder .links li {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: 1;
+}
+
+.categories li {
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
