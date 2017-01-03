@@ -681,8 +681,8 @@ li .event {
     width:100%;
 }
 li .event:hover {
-    background-color: #505a89;
-}   
+    background-color: #d92400;
+}
 .categories {
         display: flex;
         margin: 0 0 1.5em 0;

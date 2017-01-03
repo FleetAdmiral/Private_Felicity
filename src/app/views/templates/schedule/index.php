@@ -1,7 +1,7 @@
 <?php $this->load_fragment('skeleton_template/header', ['title' => __('Schedule')]); ?>
 <article class="page schedule">
 <header>
-    <h1>Sche<span class="tabheading">dule</span></h1>
+    <h1>Eve<span class="tabheading">nts</span></h1>
 </header>
 
 <?php
@@ -51,17 +51,14 @@
 <div class="container row">
 <div class="linkholder">
     <div class="categories">
-        <?php 
+        <?php
         foreach ($events_list as $event){
             $cat[$event['type']]=1;
         }
         foreach ($cat as $key => $value):
 ?>
-        <li><a class="event" onclick="$('.timeline').hide();$('.<?= $key ?>').show()"> <?=$key?> </a></li>
+        <li><a class="event" href="/<?= $key ?>" onmouseover="$('.timeline').hide();$('.<?= $key ?>').show()"> <?=$key?> </a></li>
         <?php endforeach; ?>
-
-
-        <!-- <li><a onclick="showPage('<?= isset($title) ? $title . ' · ' : '' ?><?= __('Felicity') ?>')"><?= isset($title) ? $title : '' ?></a></li> -->
     </div>
 </div>
     <div class="col6">
