@@ -673,14 +673,14 @@ button {
 .linkholder .links {
         display: flex;
 }
-.event {
+li .event {
     color: white;
     position: relative;
     background-color: #333;
     padding: .5em;
     width:100%;
 }
-.event:hover {
+li .event:hover {
     background-color: #505a89;
 }   
 .categories {
