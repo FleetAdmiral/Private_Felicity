@@ -616,7 +616,7 @@ button {
     right: 0;
 }
 
-.about.linkholder {
+.about .linkholder {
     @media (max-width: 800px) {
         display: none;
     }
