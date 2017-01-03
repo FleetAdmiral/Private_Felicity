@@ -57,7 +57,7 @@
         }
         foreach ($cat as $key => $value):
 ?>
-        <li><a class="event" href="/<?= $key ?>" onmouseover="$('.timeline').hide();$('.<?= $key ?>').show()"> <?=$key?> </a></li>
+        <li><a class="event" href="<?= base_url() ?><?= $key ?>" onmouseover="$('.timeline').hide();$('.<?= $key ?>').show()"> <?=$key?> </a></li>
         <?php endforeach; ?>
     </div>
 </div>
