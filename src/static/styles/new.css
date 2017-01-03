@@ -656,6 +656,7 @@ button {
 .about .panel p {
     position: relative;
     z-index: 1;
+	font-size: 1.5em;
 }
 
 .about .panel p strong {
