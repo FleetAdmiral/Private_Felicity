@@ -641,6 +641,7 @@ button {
     font-size: 3.83333em;
     font-weight: 100;
     color: #d92400;
+    margin-top: 0.5em;
 }
 
 .about .panel h2 {
@@ -681,6 +682,11 @@ li .event {
     padding: .5em;
     width:100%;
 }
+
+li .event.active{
+    background-color: #d92400;
+}
+
 li .event:hover {
     background-color: #d92400;
 }
