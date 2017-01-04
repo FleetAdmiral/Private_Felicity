@@ -148,7 +148,7 @@
                                 <?= $formatted ?>
                             </td>
                         <?php else: ?>
-                            <td class="day" style="visibility: hidden;"><?= $formatted ?></td>
+                            <td class="day repeat-day hidden"><?= $formatted ?></td>
                         <?php endif; ?>
                         <td class="event-container">
                             <a href="<?= locale_base_url() . $event['path'] ?>" class="event">
@@ -171,7 +171,11 @@
                 $('.timeline').show();
                 $('.event-calender').show();
                 $('.event-description-div').hide();
+                $(".repeat-day").addClass("hidden-day");;
+
             } else {
+                // $(".hidden-day").css("visibility","true");
+                $(".repeat-day").removeClass("hidden-day");
                 var id = $(this).attr('id');
                 $(".event-tab").removeClass("active");
                 $(this).addClass("active");

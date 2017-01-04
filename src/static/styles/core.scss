@@ -903,6 +903,7 @@ article {
     }
 
     .eventslist {
+        margin:auto;
         td {
             position: relative;
             padding: .5em;
@@ -913,7 +914,9 @@ article {
             font-size: 1.3em;
             padding-right: 1em;
         }
-
+        .hidden-day {
+            visibility: hidden;
+        }
         .event-container {
             border-left: .35em solid #333;
             padding-left: 0.95em;
