@@ -699,8 +699,7 @@ li .event:hover {
     margin: 0 0 0.5rem 0;
 }
 .fixedcal{
-    position: absolute;
-    top:300px;
+    position: fixed;
 }
 .about .linkholder .links:after, .about .linkholder .links:before {
     display: table;

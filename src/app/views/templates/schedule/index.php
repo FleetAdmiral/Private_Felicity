@@ -61,7 +61,7 @@
         <?php endforeach; ?>
     </div>
 </div>
-    <div class="col6 event-calender">
+    <div class="col6 event-calender" style="z-index: -1">
         <div class="cal-month">
             <table class="cal-table" data-month="Jan">
                 <thead>
@@ -127,7 +127,7 @@
     <div class="col6 event-description-div" style="display:none">
         <p class="lead text-justify some-top-margin event-description"></p>
     </div>
-    <div class="col6">
+    <div class="col6 rightcol">
         <table class="eventslist">
             <tbody>
                 <?php
@@ -197,21 +197,37 @@
     (function() {
         var wrap = $(".page.schedule");
         var cal = $(".event-calender");
+        var rc = $(".rightcol");
         var nav = $("#categoriesnav");
         var fixed = false;
-        wrap.on("scroll", function(e) {
-          if (this.scrollTop > 105) {
-            if (fixed==false) {
-                nav.detach().prependTo(".panel");
+        function enableSnapping(){
+            if (this.scrollTop > 95) {
+                if (fixed==false) {
+                    cal.addClass("fixedcal");
+                    rc.addClass("offset6");
+                    nav.detach().prependTo(".panel");
+                }
+                fixed=true;
+              } else {
+                if (fixed==true) {
+                    cal.removeClass("fixedcal");
+                    rc.removeClass("offset6");
+                    nav.detach().prependTo(".container.row");
+                }
+                fixed=false;
+              }
+        }
+            
+        $(window).resize(function(){
+            if($(window).width()>800){
+              wrap.on("scroll", enableSnapping);    
+            }else{
+              wrap.unbind("scroll",enableSnapping);
             }
-            fixed=true;
-          } else {
-            if (fixed==true) {
-                nav.detach().prependTo(".container.row");
-            }
-            fixed=false;
-          }
         });
+        if($(window).width()>800)wrap.on("scroll", enableSnapping);
+
+        
     })();
 </script>
 <?php $this->load_fragment('skeleton_template/footer'); ?>
