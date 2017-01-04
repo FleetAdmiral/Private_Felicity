@@ -177,7 +177,7 @@
                 $('.timeline').hide();
                 $('.' + id).show();
                 $(".event-description").load( + " .event-desc");
-                $.ajax({url: localeBaseUrl + "/api/" + id, success: function(result){
+                $.ajax({url: localeBaseUrl + "/api/" + id + "/", success: function(result){
                     $(".event-description").html(result.page_data.long_description);
                     $('.event-description-div').show();
                     $('.event-calender').hide();
