@@ -548,7 +548,7 @@ button {
     background-clip: padding-box;
     transform: translate3d(0, 0, 0);
     position: relative;
-    overflow: scroll;
+    /*overflow: scroll;*/
     height: 90%;
     overflow-x: hidden;
 }
@@ -692,7 +692,13 @@ li .event:hover {
 }
 .categories {
         display: flex;
-        margin: 0 0 1.5em 0;
+}
+#categoriesnav{
+    z-index: 100;
+}
+.fixedcal{
+    position: absolute;
+    top:300px;
 }
 .about .linkholder .links:after, .about .linkholder .links:before {
     display: table;

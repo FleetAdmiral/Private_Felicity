@@ -107,14 +107,14 @@ if (empty($is_ajax)):
             <div class="cell">
                 <div class="cables center accelerate">
                     <div class="linkholder">
-                        <ul class="links">
+                        <div class="links">
                             <li><a onclick="showPage('about')">About US</a></li>
                             <li><a onclick="showPage('schedule')">Events</a></li>
                             <li><a onclick="showPage('sponsors')">Sponsors</a></li>
                             <li><a onclick="showPage('contact')">Contact Us</a></li>
 
                             <!-- <li><a onclick="showPage('<?= isset($title) ? $title . ' · ' : '' ?><?= __('Felicity') ?>')"><?= isset($title) ? $title : '' ?></a></li> -->
-                        </ul>
+                        </div>
                     </div>
                     <div class="panel accelerate content-holder">
 

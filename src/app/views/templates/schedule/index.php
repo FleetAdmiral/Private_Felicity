@@ -1,8 +1,4 @@
 <?php $this->load_fragment('skeleton_template/header', ['title' => __('Events')]); ?>
-<article class="page schedule">
-<header>
-    <h1>Eve<span class="tabheading">nts</span></h1>
-</header>
 <?php
     $events_list = array_filter($events_data, function ($event) {
         return $event['template'] == 'event';
@@ -47,8 +43,13 @@
     };
 ?>
 
+<article class="page schedule" style="height: 90%; overflow-y:scroll;">
+<header>
+    <h1>Eve<span class="tabheading">nts</span></h1>
+</header>
+
 <div class="container row">
-<div class="linkholder">
+<div id = "categoriesnav" class="linkholder">
     <div class="categories">
         <?php
         foreach ($events_list as $event){
@@ -184,6 +185,28 @@
                 }});
 
             }
+        });
+    })();
+</script>
+
+<script type="text/javascript">
+    (function() {
+        var wrap = $(".page.schedule");
+        var cal = $(".event-calender");
+        var nav = $("#categoriesnav");
+        var fixed = false;
+        wrap.on("scroll", function(e) {
+          if (this.scrollTop > 105) {
+            if (fixed==false) {
+                nav.detach().prependTo(".panel");
+            }
+            fixed=true;
+          } else {
+            if (fixed==true) {
+                nav.detach().prependTo(".container.row");
+            }
+            fixed=false;
+          }
         });
     })();
 </script>
