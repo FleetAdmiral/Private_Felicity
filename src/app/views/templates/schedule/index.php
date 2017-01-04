@@ -56,7 +56,7 @@
         }
         foreach ($cat as $key => $value):
 ?>
-        <li><a class="event event-tab" id="<?=$key?>"> <?=$key?> </a></li>
+        <li><a class="event event-tab" style="text-transform: capitalize;" id="<?=$key?>"> <?=$key?> </a></li>
         <?php endforeach; ?>
     </div>
 </div>
