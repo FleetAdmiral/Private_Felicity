@@ -1,13 +1,12 @@
 <?php $this->load_fragment('skeleton_template/header', [
     'title' => __($name)
 ]); ?>
-<?php if (!$is_ajax): ?>
 <article class="page open full category <?= $page_slug ?>">
-<?php endif; ?>
 <?php
 $path = str_replace('__', '/', $page_slug);
 $len = strlen($path);
 $events_to_display = [];
+
 foreach ($events_data as $event) {
     if ( substr($event['path'], 1, $len) == $page_slug && $event['template'] == 'event' ) {
         $events_to_display[] = $event;
@@ -30,7 +29,7 @@ usort($events_to_display, function ($e1, $e2) {
     <?php endif; ?>
     <div class="row">
         <div class="col6">
-            <p class="lead text-justify some-top-margin"><?= nl2br(__($long_description)) ?></p>
+            <p class="lead text-justify some-top-margin event-desc"><?= nl2br(__($long_description)) ?></p>
         </div>
         <div class="col6">
             <h2><?= __('Events') ?></h2>

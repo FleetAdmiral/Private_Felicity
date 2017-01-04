@@ -680,6 +680,11 @@ li .event {
     padding: .5em;
     width:100%;
 }
+
+li .event.active{
+    background-color: #d92400;
+}
+
 li .event:hover {
     background-color: #d92400;
 }

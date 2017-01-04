@@ -1,9 +1,8 @@
-<?php $this->load_fragment('skeleton_template/header', ['title' => __('Schedule')]); ?>
+<?php $this->load_fragment('skeleton_template/header', ['title' => __('Events')]); ?>
 <article class="page schedule">
 <header>
     <h1>Eve<span class="tabheading">nts</span></h1>
 </header>
-
 <?php
     $events_list = array_filter($events_data, function ($event) {
         return $event['template'] == 'event';
@@ -57,11 +56,11 @@
         }
         foreach ($cat as $key => $value):
 ?>
-        <li><a class="event" href="<?= base_url() ?><?= $key ?>" onmouseover="$('.timeline').hide();$('.<?= $key ?>').show()"> <?=$key?> </a></li>
+        <li><a class="event event-tab" id="<?=$key?>"> <?=$key?> </a></li>
         <?php endforeach; ?>
     </div>
 </div>
-    <div class="col6">
+    <div class="col6 event-calender">
         <div class="cal-month">
             <table class="cal-table" data-month="Jan">
                 <thead>
@@ -124,6 +123,9 @@
             </table>
         </div>
     </div>
+    <div class="col6 event-description-div" style="display:none">
+        <p class="lead text-justify some-top-margin event-description"></p>
+    </div>
     <div class="col6">
         <table class="eventslist">
             <tbody>
@@ -160,6 +162,31 @@
     </div>
 </div>
 </article>
+<script>
+    (function() {
+        $( ".event-tab" ).click(function() {
+            if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                $('.timeline').show();
+                $('.event-calender').show();
+                $('.event-description-div').hide();
+            } else {
+                var id = $(this).attr('id');
+                $(".event-tab").removeClass("active");
+                $(this).addClass("active");
+                $('.timeline').hide();
+                $('.' + id).show();
+                $(".event-description").load( + " .event-desc");
+                $.ajax({url: "<?= base_url() ?>/api/" + id, success: function(result){
+                    $(".event-description").html(result.page_data.long_description);
+                    $('.event-description-div').show();
+                    $('.event-calender').hide();
+                }});
+
+            }
+        });
+    })();
+</script>
 <?php $this->load_fragment('skeleton_template/footer'); ?>
 <?php if (!$is_ajax): ?>
 <script>
