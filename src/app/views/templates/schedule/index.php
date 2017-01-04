@@ -206,12 +206,14 @@
                     cal.addClass("fixedcal");
                     rc.addClass("offset6");
                     nav.detach().prependTo(".panel");
+                    nav.addClass("absolute");
                 }
                 fixed=true;
               } else {
                 if (fixed==true) {
                     cal.removeClass("fixedcal");
                     rc.removeClass("offset6");
+                    nav.removeClass("absolute");
                     nav.detach().prependTo(".container.row");
                 }
                 fixed=false;
