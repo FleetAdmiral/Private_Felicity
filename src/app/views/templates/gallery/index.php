@@ -1,18 +1,19 @@
 <?php $this->load_fragment('skeleton_template/header', ['title' => __('Gallery')]); ?>
-<article class="page gallery">
-  <header>
-      <h1>Gallery</h1>
-  </header>
-  <div class="thumbnail-wrapper">
-      <div class="col col1"></div>
-      <div class="col col2"></div>
+<div style="height: 100%; width: 100%;">
+    <section id="photostack-1" class="photostack">
+    <div id="inner">
+      
+    </div>
+  </section>
   </div>
+<link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/styles/vendor/component.css" />
+  <script src="<?= base_url() ?>static/scripts/vendor/modernizr.min.js"></script>
+  <script src="<?= base_url() ?>static/scripts/vendor/classie.js"></script>
+  <script src="<?= base_url() ?>static/scripts/vendor/photostack.js"></script>
 
-  <div class="large-image"></div>
-
-  <script type="text/javascript">
-  (function () {
-      var galleryImages = [
+  <script>
+    var stack = document.getElementById('photostack-1')
+    var galleryImages = [
           "6.jpg","HairPainting.jpg","old_87.jpg","old_85.jpg","old_84.jpg",
           "old_83.jpg","old_79.jpg","old_74.jpg","old_55.jpg","old_53.jpg",
           "old_41.jpg","old_40.jpg","old_39.jpg","old_38.jpg","old_35.jpg",
@@ -20,55 +21,42 @@
           "IMG_0132.jpg","9.jpg","8.jpg","7.jpg","5.jpg","4.jpg","old_88.jpg",
           "3.jpg","22.jpg","21.jpg","20.jpg","2.jpg","19.jpg","18.jpg","17.jpg",
           "16.jpg","15.jpg","14.jpg","13.jpg","12.jpg","11.jpg","10.jpg","1.jpg"
-      ],
-      col1H = 0,
-      col2H = 0,
-      $col1 = $('.col1'),
-      $col2 = $('.col2'),
-      $largeImg = $('.large-image'),
-      $window = $(window);
-
-      // (function (o) {
-      // 	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-      // })(galleryImages);
-
-      var thumbOnClick = function (e) {
-          var $img = $largeImg.children();
-          if ( $img.length === 0 ) {
-              $largeImg.append( $('<img>').attr( 'src', this.src.replace('gallery_thumbs', 'gallery')) );
-          } else {
-              $img.attr( 'src', this.src.replace('gallery_thumbs', 'gallery'));
-          }
-      };
-
-      var getImage = function(i, imageName) {
-          var I = new Image();
-          I.src = baseUrl + 'static/images/gallery_thumbs/' + imageName;
+      ]
+    var getImage = function(imageName) {
+          var F = document.createElement("figure");
+          var I = document.createElement("img");
+          I.src = baseUrl + 'static/images/gallery/' + imageName;
           I.alt = 'gallery thumbnail';
 
-          I.onload = placeThumb;
-      };
+          // I.onload = placeThumb;
+          F.appendChild(I);
+          $("#inner").append(F);
 
-      var placeThumb = function () {
-          if ( $largeImg.children().length === 0 ) {
-              $largeImg.append( $('<img>').attr( 'src', this.src.replace('gallery_thumbs', 'gallery')) );
-          }
-          if (col1H <= col2H) {
-              col1H += $col1.append( $(this).addClass('thumbnail').click(thumbOnClick) ).height();
-          } else {
-              col2H += $col2.append( $(this).addClass('thumbnail').click(thumbOnClick) ).height();
-          }
       };
-      if (!$($window).data('gallery-scroll-handler')) {
-          $window.data('gallery-scroll-handler', true);
-          $window.on('scroll', function () {
-              $largeImg.css('top', Math.max(0, $('.gallery').offset().top - $(document).scrollTop()));
-          });
+      for(var i in galleryImages){
+        getImage(galleryImages[i]);
       }
-      $.each(galleryImages, getImage);
-  })();
+     photostack = new Photostack(stack);
+     setTimeout(function(){photostack._resizeHandler();},100);
+     function changePhoto(dir){
+        
+        if(dir==37){
+          if (photostack.current == 0){
+          photostack._showPhoto(photostack.allItemsCount-1);
+          return;}
+          photostack._showPhoto( photostack.current - 1 );
+        }else if(dir==39){
+          if (photostack.current == photostack.allItemsCount-1){
+          photostack._showPhoto(0);
+          return;}
+          photostack._showPhoto( photostack.current + 1 );
+        }
+     }
+     document.addEventListener('keyup', function(e) {
+      changePhoto(e.keyCode);
+     });
   </script>
-</article>
+
 <?php $this->load_fragment('skeleton_template/footer'); ?>
 <?php if (!$is_ajax): ?>
 <script>

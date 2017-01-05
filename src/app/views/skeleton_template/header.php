@@ -112,9 +112,9 @@ if (empty($is_ajax)):
                             <li><a onclick="showPage('schedule')">Events</a></li>
                             <li><a onclick="showPage('sponsors')">Sponsors</a></li>
                             <li><a onclick="showPage('contact')">Contact Us</a></li>
-                           <!--  <li><a onclick="showPage('team')">Team</a></li>
+                            <!-- <li><a onclick="showPage('team')">Team</a></li> -->
                             <li><a onclick="showPage('gallery')">Gallery</a></li>
- -->
+
 
                             <!-- <li><a onclick="showPage('<?= isset($title) ? $title . ' · ' : '' ?><?= __('Felicity') ?>')"><?= isset($title) ? $title : '' ?></a></li> -->
                         </div>

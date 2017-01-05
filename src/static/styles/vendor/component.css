@@ -1,0 +1,70 @@
+.photostack {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+/* Wrapper and figures */
+
+/* The size of this wrapper can be smaller if the items should not be scattered across the whole container */ 
+.photostack > div {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.photostack figure {
+	background-color: white;
+	padding: .5em;
+	text-align: center;
+	box-shadow: 0 1px 10px 0 black;
+}
+
+.photostack figure {
+	position: absolute;
+	display: block;
+}
+.photostack figure img{
+	height: 15vh;
+}
+
+/* Navigation dots */
+.photostack nav {
+	position: absolute;
+	background-color: rgba(28,28,28,0.5);
+	width: 100%;
+	bottom: 0px;
+	z-index: 90 !important;
+	text-align: center;
+}
+
+.photostack nav span {
+	display: inline-block;
+	margin: 0 2px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	background: #fff;
+	border-radius: 50%;
+	transition: transform 0.6s ease-in-out, background 0.3s;
+	transform: scale(0.48);
+}
+
+.photostack-transition figure {
+	transition: transform 0.6s ease-in-out;
+}
+
+nav span.current {
+	background: red;
+	-webkit-transform: scale(0.61);
+	transform: scale(0.71);
+}
+.photostack-current {
+	top:-15vh;
+	left: -10vw;
+	z-index: 80;
+}
+.photostack-current img{
+	height: 40vh !important;
+	transition: transform 0.6s;
+}
