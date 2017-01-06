@@ -1,5 +1,5 @@
 <?php $this->load_fragment('skeleton_template/header', ['title' => __('Gallery')]); ?>
-<div style="height: 100%; width: 100%;">
+<div style="zoom:0.5; height: 100%">
     <section id="photostack-1" class="photostack">
     <div id="inner">
       

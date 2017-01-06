@@ -349,26 +349,8 @@
 	}
 
 	Photostack.prototype._getSizes = function() {
-		function getHeight(element)
-		{
-		    element.style.visibility = "hidden";
-		    document.body.appendChild(element);
-		    var height = element.offsetHeight + 0;
-		    document.body.removeChild(element);
-		    element.style.visibility = "visible";
-		    return height;
-		}
-		function getWidth(element)
-		{
-		    element.style.visibility = "hidden";
-		    document.body.appendChild(element);
-		    var height = element.offsetWidth + 0;
-		    document.body.removeChild(element);
-		    element.style.visibility = "visible";
-		    return height;
-		}
 		this.sizes = {
-			inner : { width : getWidth(this.inner), height : getHeight(this.inner) },
+			inner : { width : this.inner.offsetWidth, height : this.inner.offsetHeight },
 			item : { width : this.currentItem.offsetWidth, height : this.currentItem.offsetHeight }
 		};
 		

@@ -1,7 +1,7 @@
 .photostack {
 	height: 100%;
-	width: 100%;
 	position: relative;
+	overflow: hidden;
 }
 
 /* Wrapper and figures */
@@ -15,36 +15,35 @@
 
 .photostack figure {
 	background-color: white;
-	padding: .5em;
-	text-align: center;
 	box-shadow: 0 1px 10px 0 black;
+	position: relative;
+	padding: 40px;
+	text-align: center;
 }
 
 .photostack figure {
 	position: absolute;
 	display: block;
 }
-.photostack figure img{
-	height: 15vh;
-}
 
 /* Navigation dots */
 .photostack nav {
 	position: absolute;
+	box-shadow: 0 1px 10px 0 black;
 	background-color: rgba(28,28,28,0.5);
 	width: 100%;
 	bottom: 0px;
-	z-index: 90 !important;
+	z-index: 101;
 	text-align: center;
 }
 
 .photostack nav span {
 	display: inline-block;
-	margin: 0 2px;
-	width: 15px;
-	height: 15px;
+	margin: 0 5px;
+	width: 30px;
+	height: 30px;
 	cursor: pointer;
-	background: #fff;
+	background: #aaa;
 	border-radius: 50%;
 	transition: transform 0.6s ease-in-out, background 0.3s;
 	transform: scale(0.48);
@@ -54,17 +53,12 @@
 	transition: transform 0.6s ease-in-out;
 }
 
+.photostack-current {
+	z-index: 100;
+}
+
 nav span.current {
 	background: red;
 	-webkit-transform: scale(0.61);
-	transform: scale(0.71);
-}
-.photostack-current {
-	top:-15vh;
-	left: -10vw;
-	z-index: 80;
-}
-.photostack-current img{
-	height: 40vh !important;
-	transition: transform 0.6s;
+	transform: scale(0.61);
 }
