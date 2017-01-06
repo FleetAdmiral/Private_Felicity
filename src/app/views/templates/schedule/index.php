@@ -196,7 +196,7 @@
 <script type="text/javascript">
     (function() {
         var wrap = $(".page.schedule");
-        var cal = $(".event-calender");
+        var cal = $(".cal-month");
         var rc = $(".rightcol");
         var nav = $("#categoriesnav");
         var fixed = false;
