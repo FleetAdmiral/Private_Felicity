@@ -29,7 +29,7 @@ $ gulp watch
 After running these commands, you'll have a built copy of the site in a `build/` folder in the root of the project. You work in `src/` and the built site goes to `build/`.
 
 Also,
-- Copy `src/app/config.sample.php` to `src/app/config.php` and edit values (at least the database configuration).
+- Copy `src/app/config-sample.php` to `src/app/config.php` and edit values (at least the database configuration).
 - Import the `database.sql` file into your database, you can do this by `mysql -u username -p password DBNAME < database.sql`
 - There are additional SQL files to import in `/sql/` and if you already have a particular version of the database and want to upgrade, look at `/sql/migrations/`.
 - For pretty URLs (`/hello/world/` instead of `/index.php/hello/world/`), copy the `src/HTACCESS` file and name it `src/.htaccess`. You probably need to edit the line `RewriteBase /` and replace it with the URL it is meant to be accessible in your server setup, followed by `/build`, such as maybe `RewriteBase /felicity16-website/build`.
