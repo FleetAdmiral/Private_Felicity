@@ -13,7 +13,7 @@ function showDetails() {
     $toggle.css('display', 'block');
     $about.removeClass('hide');
     $toggle.removeClass('i');
-    $('.toggle-contact').css('display', 'none');
+    $('.btn-box').css('display', 'none');
     $about.css('display', 'table');
     slideout.close();
 
@@ -27,7 +27,7 @@ function hideDetails() {
     }, 500);
     $toggle.addClass('i');
     setTimeout(function() {
-        $('.toggle-contact').fadeIn().css('display', 'block');
+        $('.btn-box').fadeIn().css('display', 'block');
     }, 200);
     history.pushState(localeBaseUrl, null, localeBaseUrl);
 }

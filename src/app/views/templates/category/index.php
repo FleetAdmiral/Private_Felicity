@@ -59,7 +59,7 @@ usort($events_to_display, function ($e1, $e2) {
 <script>
     (function() {
         $('#toggle').removeClass('i');
-        $('.toggle-contact').css('display', 'none');
+        $('.btn-box').css('display', 'none');
     })();
 </script>
 <?php endif; ?>

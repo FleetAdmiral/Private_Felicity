@@ -10,7 +10,7 @@
 <script>
     (function() {
         $('#toggle').removeClass('i');
-        $('.toggle-contact').css('display', 'none');
+        $('.btn-box').css('display', 'none');
     })();
 </script>
 <?php endif; ?>
