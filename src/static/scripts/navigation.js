@@ -33,8 +33,8 @@ function hideDetails() {
 }
 
 function toggleDetails(type) {
-    showPage(type);
     $toggle.hasClass('i') ? showDetails() : hideDetails();
+    showPage(type);
 }
 
 function openPage(type) {

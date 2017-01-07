@@ -90,10 +90,10 @@ if (empty($is_ajax)):
             </li>
             <li class="layer" data-depth="0.09">
                 <div onclick="toggleDetails('about')" class="cloud cloud-1"><span>About</span></div>
-                <div onclick="window.open('https://felicity.iiit.ac.in/sap/')" class="cloud cloud-2"><span>SAP</span></div>
-                <!--<div onclick="toggleDetails('sponsors')" class="cloud cloud-3"><span>Events</span></div>-->
+                <div onclick="toggleDetails('schedule')" class="cloud cloud-2"><span>Events</span></div>
+                <div onclick="window.open('https://felicity.iiit.ac.in/sap/')" class="cloud cloud-3"><span>SAP</span></div>
                 <div onclick="toggleDetails('sponsors')" class="cloud cloud-4"><span>Sponsors</span></div>
-                <div onclick="toggleDetails('schedule')" class="cloud cloud-5"><span>Events</span></div>
+                <div onclick="toggleDetails('gallery')" class="cloud cloud-5"><span>Gallery</span></div>
                 <div onclick="toggleDetails('contact')" class="cloud cloud-6"><span>Contact</span></div>
 
             </li>

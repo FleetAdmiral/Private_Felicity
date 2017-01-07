@@ -460,13 +460,13 @@ margin: 0px 0px;
 .cloud-2 {
     left: 15%;
     animation: bob 2s 0.01s infinite linear;
-    top: 10%;
+    top: 14%;
 }
 
 .cloud-3 {
     left: 26%;
     animation: bob 1.8s 0.01s infinite linear;
-    top: 2%;
+    top: 3%;
 }
 
 .cloud-4 {
