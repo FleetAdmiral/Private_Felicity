@@ -24,7 +24,7 @@ $text_input = function ($name, $large_text=false) use ($errors) {
     color: #555;
 }
 </style>
-<article class="page open full">
+<article class="page full">
     <div class="container">
         <h1 class="text-center">
             <small><a class="underlined" href="<?= locale_base_url() ?>talks-and-workshops/web-development/"><?= __('Web development workshop') ?></a></small><br/>
@@ -57,3 +57,11 @@ $text_input = function ($name, $large_text=false) use ($errors) {
         </form>
     </div>
 </article>
+<?php if (!$is_ajax): ?>
+<script>
+    (function() {
+        $('#toggle').removeClass('i');
+        $('.btn-box').css('display', 'none');
+    })();
+</script>
+<?php endif; ?>

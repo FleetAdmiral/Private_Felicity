@@ -18,172 +18,257 @@ function img($img_name, $name=null) {
 <div>
     <h2 class="text-center"><?= __('The Felicity Coordinators')?></h2>
     <div class="row">
-        <div class="col3 offset1"><?php img('Jeevan-Chowdary.jpg', __('Jeevan Chowdary')); ?></div>
-        <div class="col3 offset-half"><?php img('Sanatan-Mishra.jpg', __('Sanatan Mishra')); ?></div>
-        <div class="col3 offset-half"><?php img('Vivek-Ghaisas.jpg', __('Vivek Ghaisas')); ?></div>
+        <div class="col3 offset1"><?php img('Arihant.jpg', __('Arihant Jain')); ?></div>
+        <div class="col3 offset-half"><?php img('Nishant.jpg', __('Nishant Gupta')); ?></div>
+        <div class="col3 offset-half"><?php img('Sahith.jpg', __('Sai Sahith Nama')); ?></div>
     </div>
 </div>
 <div>
-    <h2 class="text-center"><?= __('Finance Council') ?></h2>
     <div class="row">
-        <div class="col3 offset2"><?php img('Shyamili-Venkatapathy.jpg', __('Shyamli Venkatapathy')); ?></div>
-        <div class="col3 offset2"><?php img('Gorang-Maniar.jpg', __('Gorang Maniar')); ?></div>
+        <div class="col6">
+            <h2 class="text-center"><?= __('Core Team') ?></h2>
+            <?php img('CoreTeam.jpg'); ?>
+            <div class="container">
+                <p class="names">
+                    <strong><?= __('First row') ?></strong>:<br>
+                    <?= __('Arihant Jain') ?>,
+                    <?= __('Nishant Jain') ?>,
+                    <?= __('Sai sahith Nama') ?>,
+                </p>
+                <p class="names">
+                    <strong><?= __('Second row') ?></strong>:<br>
+                    <?= __('Devansh Manu') ?>,
+                    <?= __('Divanshu Jain') ?>,
+                    <?= __('Dipankar Jain') ?>,
+                    <?= __('Anshul Singhal') ?>,
+                    <?= __('Riya Pal') ?>,
+                </p>
+                <p class="names">
+                    <strong><?= __('Third row') ?></strong>:<br>
+                    <?= __('Apaar garg') ?>,
+                    <?= __('Himakar Yv') ?>,
+                    <?= __('Mayank Modi') ?>,
+                    <?= __('Isha Mangurkar') ?>,
+                </p>
+            </div>
+        </div>
+        <div class="col6">
+            <h2 class="text-center"><?= __('Finance Council') ?></h2>
+            <?php img('FinanceC.jpg'); ?>
+            <div class="container">
+                <p class="names">
+                    <?= __('Aayush Naik') ?>,
+                    <?= __('Nikita Chaturvedi') ?>,
+                </p
+            </div>
+        </div>
     </div>
+</div>
+<div>
+
 </div>
 <div>
     <h2 class="text-center"><?= __('The Threads Team') ?></h2>
     <div class="row">
         <div class="col11 offset-half">
-            <?php img('Threads-Team.jpg'); ?>
+            <?php img('Threads.jpg'); ?>
         </div>
     </div>
     <div class="container">
         <p class="names">
             <strong><?= __('First row') ?></strong>:<br>
-            <?= __('Aditya Baskar') ?>,
-            <?= __('Rounak Mundra') ?>,
-            <?= __('Rahul Nahata') ?>,
-            <?= __('Amitha Reddy') ?>,
-            <?= __('Meghana Manusanipalli') ?>
+            <?= __('Tanmay Chaudhari') ?>,
+            <?= __('Shubham Vijayvargiya') ?>,
+            <?= __('Satyam Pandey') ?>,
+            <?= __('Abhinav Aggarwal') ?>,
+            <?= __('Rahul Nahata') ?>
         </p>
         <p class="names">
             <strong><?= __('Second row') ?></strong>:<br>
-            <?= __('Ayush Mishra') ?>,
-            <?= __('Chanakya Malireddy') ?>,
-            <?= __('Sriram Narayanan') ?>,
-            <?= __('Shriram Rahatgaonkar') ?>,
-            <?= __('Harshil Goel') ?>,
-            <?= __('Saksham Aggarwal') ?>,
-            <?= __('Tanmay Sahay') ?>,
-            <?= __('Himanshu Dahiya') ?>,
-            <?= __('Ashish Jain') ?>,
-            <?= __('Kunal Singh') ?>
+            <?= __('Shivin Yadav') ?>,
+            <strong><?= __('Pinkesh Badjatiya')  ?> (<?= __('Server Admin')?>)</strong>,
+            <?= __('Rohan Karnawat') ?>,
+            <?= __('Vikash') ?>,
+            <?= __('Aalekh Jain') ?>,
+            <?= __('Animesh Chandra Pathak') ?>,
+            <?= __('Arvind') ?>
         </p>
         <p class="names">
             <strong><?= __('Third row') ?></strong>:<br>
-            <?= __('Vivek Ghaisas') ?>,
-            <?= __('Nikhil Daliya') ?>,
-            <?= __('Anveshi Shukla') ?>,
-            <?= __('Aniket Jain') ?>,
-            <?= __('Harshit Harchani') ?>,
-            <?= __('Pranjal Rai') ?>,
-            <strong><?= __('Abhineet Jain')  ?> (<?= __('Coordinator')?>)</strong>,
-            <strong><?= __('Parth Kolekar')  ?> (<?= __('Primary Server Admin')?>)</strong>,
-            <strong><?= __('Nisarg Jhaveri') ?> (<?= __('Secondary Server Admin')?>)</strong>,
-            <?= __('Anurag Gupta') ?>,
-            <?= __('Rohan Karnawat') ?>,
-            <?= __('Ayan Shrivastava') ?>
+            <?= __('Aadarsh Sanjeev') ?>,
+            <?= __('Archit Rai') ?>,
+            <?= __('Amit Kumar Gupta') ?>,
+            <?= __('Saatwik Singh Nagpal') ?>,
+            <strong><?= __('Shivam Kakkar')  ?> (<?= __('Threads Coordinator')?>)</strong>,
+            <strong><?= __('Vishal Batchu')  ?> (<?= __('Threads Coordinator')?>)</strong>,
+            <strong><?= __('Anshul Singhal')  ?> (<?= __('Server Admin')?>)</strong>,
+            <?= __('Tanuj Khattar') ?>
         </p>
     </div>
-    <div class="row">
-        <div class="col3 offset1"><?php img('Abhineet-Jain.jpg', __('Abhineet Jain<br>Threads Coordinator')); ?></div>
-        <div class="col3 offset-half"><?php img('Nisarg-Jhaveri.jpg', __('Nisarg Jhaveri<br>Secondary Server Admin')); ?></div>
-        <div class="col3 offset-half"><?php img('Parth-Kolekar.jpg', __('Parth Laxmikant Kolekar<br>Primary Server Admin')); ?></div>
-    </div>
 </div>
-<?php /*
 <div>
-    <h2 class="text-center"><?= __('The Pulsation Coordinators') ?></h2>
     <div class="row">
-        <div class="col3"><?php img('Aditya-Sreekar.jpg', __('Aditya Sreekar')); ?></div>
-        <div class="col3"><?php img('Danish-Sodhi.jpg', __('Danish Sodhi')); ?></div>
-        <div class="col3"><?php img('Nayan-Joshi.jpg', __('Nayan Joshi')); ?></div>
-        <div class="col3"><?php img('Rajat-Singla.jpg', __('Rajat Singla')); ?></div>
-    </div>
-    <div class="row">
-        <div class="col3 offset2"><?php img('Roopal-Nahar.jpg', __('Roopal Nahar')); ?></div>
-        <div class="col3 offset2"><?php img('Sai-Krishna.jpg', __('Sai Krishna')); ?></div>
-    </div>
-</div>
-*/ ?>
-<div>
-    <h2 class="text-center"><?= __('The Marketing and HR Team') ?></h2>
-    <div class="row">
-        <div class="col8 offset2">
-            <?php img('Marketing-Team.jpg'); ?>
+        <div class="col6">
+            <h2 class="text-center"><?= __('Web and Server Team') ?></h2>
+            <?php img('WebAndServer.jpg', false); ?>
+            <div class="container">
+                <p class="names">
+                    <?= __('Mukul Hase') ?>,
+                    <?= __('Aadarsh Sanjeev') ?>,
+                    <?= __('Anshul Singhal') ?>,
+                    <?= __('Pinkesh Badjatiya') ?>,
+                    <?= __('Aalekh Jain') ?>,
+                    <?= __('Animesh Pathak') ?>
+                </p>
+            </div>
+        </div>
+        <div class="col6">
+            <h2 class="text-center"><?= __('The Pulsation Team') ?></h2>
+            <?php img('Pulsation.jpg', false); ?>
+            <div class="container">
+                <p class="names">
+                    <?= __('Aalekh Jain') ?>,
+                    <?= __('Shubham Rai') ?>,
+                    <?= __('Harshil Jain') ?>,
+                    <?= __('Diplav') ?>,
+                    <?= __('Parv Parkhiya') ?>,
+                    <?= __('Akansha Baranwal') ?>,
+                    <?= __('Pooja Guhan') ?>
+                </p>
+            </div>
         </div>
     </div>
-    <div class="container text-center">
-        <p class="names">
-            <strong><?= __('First row') ?></strong>:<br>
-            <?= __('Jeevan Chowdary') ?>
-        </p>
-        <p class="names">
-            <strong><?= __('Second row') ?></strong>:<br>
-            <?= __('Pranjal Rai') ?>,
-            <?= __('Inturi Suhas Reddy') ?>,
-            <?= __('Revi Teja') ?>,
-            <?= __('Rishabh Khawad') ?>
-        </p>
-        <p class="names">
-            <strong><?= __('Third row') ?></strong>:<br>
-            <?= __('Pooja Shamili Ganti') ?>,
-            <?= __('Akruti Kushwaha') ?>,
-            <?= __('Smriti Singh') ?>
-        </p>
+</div>
+<div>
+    <div class="row">
+        <div class="col6">
+            <h2 class="text-center"><?= __('The Marketing Team') ?></h2>
+            <?php img('Marketing.jpg'); ?>
+            <div class="container text-center">
+                <p class="names">
+                    <strong><?= __('First row') ?></strong>:<br>
+                    <?= __('Divanshu Jain') ?>,
+                    <?= __('Sri Aurobindo Munagala') ?>,
+                    <?= __('Apaar Agrawal') ?>,
+                    <?= __('Aayush Deva') ?>
+                </p>
+                <p class="names">
+                    <strong><?= __('Second row') ?></strong>:<br>
+                    <?= __('Devansh Manu') ?>,
+                    <?= __('Mayank Modi') ?>,
+                    <?= __('Himakar Yv') ?>,
+                    <?= __('Pranav Basin') ?>
+                </p>
+            </div>
+        </div>
+        <div class="col6">
+            <h2 class="text-center"><?= __('The Sponsorship Team') ?></h2>
+            <?php img('Sponsorship.jpg'); ?>
+            <div class="container text-center">
+                <p class="names">
+                    <?= __('Anirudh Sharma') ?>,
+                    <?= __('Nishant Jain') ?>,
+                    <?= __('Aayush Aanand') ?>,
+                    <?= __('Rahul Nahata') ?>,
+                    <?= __('Sidhant Subramanian') ?>,
+                    <?= __('Arihant Jain') ?>
+                    <?= __('Sai Sahith Nama') ?>,
+                    <?= __('Seshadri Reddy') ?>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 <div>
     <h2 class="text-center"><?= __('The Kalakshetra Team') ?></h2>
     <div class="row">
         <div class="col10 offset1">
-            <?php img('Kalakshetra-Team.jpg', false); ?>
+            <?php img('Kalashetra.jpg', false); ?>
         </div>
     </div>
-    <div class="container">
+    <div class="container text-center">
         <p class="names">
             <strong><?= __('First row') ?></strong>:<br>
-            <?= __('Sagar Gaur') ?>,
-            <?= __('Aditya Baskar') ?>,
-            <strong><?= __('Apuroop Kumar Reddy') ?> (<?= __('Coordinator') ?>)</strong>,
-            <?= __('Anvesh Rao') ?>,
-            <?= __('Saksham Agrawal') ?>,
-            <?= __('Nurendra Choudhary') ?>,
-            <?= __('Abhinav Prasad') ?>,
-            <?= __('Debayan Das') ?>
+            <?= __('PG Harsha') ?>,
+            <?= __('Varshit Battu') ?>,
+            <?= __('Nishanth Reddy') ?>,
+            <?= __('Harshavardhan Bandi') ?>,
+            <?= __('Himakar Yv') ?>
         </p>
         <p class="names">
             <strong><?= __('Second row') ?></strong>:<br>
-            <?= __('Roopal Nahar') ?>,
-            <?= __('Amitha Reddy') ?>,
-            <?= __('Kaveri Anuranjana') ?>,
-            <?= __('Shyamli Venkatapathy') ?>,
-            <?= __('Srishti Aggarwal') ?>,
-            <?= __('Smriti Singh') ?>,
-            <?= __('Sanjana Sharma') ?>,
-            <?= __('Nisarg Jhaveri') ?>
+            <?= __('Apaar agrawal') ?>,
+            <?= __('Ankur jain') ?>,
+            <?= __('vikas thamizharasan') ?>,
+            <?= __('Rishith Reddy') ?>,
+            <?= __('Rohith Punati') ?>
         </p>
         <p class="names">
             <strong><?= __('Third row') ?></strong>:<br>
-            <?= __('Rishabh Khawad') ?>
+            <?= __('Aiswarya Sunil') ?>,
+            <?= __('Sailaja') ?>,
+            <?= __('Vaishnavi Reddy') ?>,
+            <?= __('Surya Soujanya') ?>,
+            <?= __('Vanalata Bulusu') ?>
         </p>
     </div>
 </div>
 <div>
-    <h2 class="text-center"><?= __('The LitCafe Coordinators') ?></h2>
     <div class="row">
-        <div class="col3"><?php img('Akanksha-Srivastava.jpg', __('Akanksha Srivastava')); ?></div>
-        <div class="col3"><?php img('Anurag-Ghosh.jpg', __('Anurag Ghosh')); ?></div>
-        <div class="col3"><?php img('Gorang-Maniar.jpg', __('Gorang Maniar')); ?></div>
-        <div class="col3"><?php img('Vatika-Harlalka.jpg', __('Vatika Harlalka')); ?></div>
+        <div class="col6">
+            <h2 class="text-center"><?= __('The LitCafe Team') ?></h2>
+            <?php img('Litcafe.jpg', false); ?>
+            <div class="container text-center">
+                <p class="names">
+                    <?= __('Mayank Modi') ?>,
+                    <?= __('Parv parkhiya') ?>,
+                    <?= __('Vivek iyer') ?>,
+                    <?= __('Alok debnath') ?>,
+                    <?= __('Neelesh') ?>,
+                    <?= __('Vishnu') ?>
+                </p>
+            </div>
+        </div>
+        <div class="col6">
+            <h2 class="text-center"><?= __('The Sports Team') ?></h2>
+            <?php img('Sports.jpg', false); ?>
+            <div class="container text-center">
+                <p class="names">
+                    <?= __('Allen Jojo') ?>,
+                    <?= __('Dipankar Jain') ?>,
+                    <?= __('Siddharth Gairola') ?>,
+                    <?= __('Vinay singh') ?>,
+                    <?= __('Swapnil') ?>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 <div>
-    <h2 class="text-center"><?= __('The Pronites Coordinators') ?></h2>
+    <h2 class="text-center"><?= __('The Cultural Team') ?></h2>
     <div class="row">
-        <div class="col3 offset2"><?php img('Anurag-Gupta.jpg', __('Anurag Gupta')); ?></div>
-        <div class="col3 offset2"><?php img('Shashank-Agrawal.jpg', __('Shashank Agrawal')); ?></div>
+        <div class="col10 offset1">
+            <?php img('Cultural.jpg', false); ?>
+        </div>
     </div>
 </div>
 <div>
-    <h2 class="text-center"><?= __('Show Management Team') ?></h2>
     <div class="row">
-        <div class="col4 offset4">
-            <?php img('Show-Manage-Team.jpg'); ?>
-            <p class="name">
-                <?= __('Aishwary Gupta') ?>,
-                <?= __('Aditya Bohra') ?>
-            </p>
+        <div class="col6">
+            <h2 class="text-center"><?= __('The MUN Team') ?></h2>
+            <?php img('MUN.jpg', false); ?>
+        </div>
+        <div class="col6">
+            <h2 class="text-center"><?= __('The Zombiezone Team') ?></h2>
+            <?php img('Zombiezone.jpg', false); ?>
+        </div>
+    </div>
+</div>
+<div>
+    <h2 class="text-center"><?= __('The Complete Family') ?></h2>
+    <div class="row">
+        <div class="col10 offset1">
+            <?php img('Team.jpg', false); ?>
         </div>
     </div>
 </div>
@@ -191,3 +276,11 @@ function img($img_name, $name=null) {
 </article>
 <?php endif; ?>
 <?php $this->load_fragment('skeleton_template/footer'); ?>
+<?php if (!$is_ajax): ?>
+<script>
+    (function() {
+        $('#toggle').removeClass('i');
+        $('.btn-box').css('display', 'none');
+    })();
+</script>
+<?php endif; ?>
