@@ -32,8 +32,8 @@ function img($img_name, $name=null) {
                 <p class="names">
                     <strong><?= __('First row') ?></strong>:<br>
                     <?= __('Arihant Jain') ?>,
-                    <?= __('Nishant Jain') ?>,
-                    <?= __('Sai sahith Nama') ?>,
+                    <?= __('Nishant Gupta') ?>,
+                    <?= __('Sai Sahith Nama') ?>,
                 </p>
                 <p class="names">
                     <strong><?= __('Second row') ?></strong>:<br>
