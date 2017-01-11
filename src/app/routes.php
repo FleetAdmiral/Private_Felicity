@@ -28,8 +28,10 @@ $routes = [
     "/sap/portal/"                              => "/sap_portal/",
     "/sap/"                                     => "/sap/",
 
-    "/talks-and-workshops/web-development/register/"    => "/contest/webdev_workshop/",
-    "/sports/futsal/register/"                          => "/contest/futsal/",
+    "/talks-and-workshops/web-development/register/payment-webhook/"   => "/webdev_workshop/webhook/",
+    "/talks-and-workshops/web-development/register/success/"           => "/webdev_workshop/success/",
+    "/talks-and-workshops/web-development/register/"                   => "/webdev_workshop/register/",
+    "/talks-and-workshops/web-development/pay_again/"                   => "/webdev_workshop/pay_again/",
 
     "/litcafe/ttt-workshop/register/payment-webhook/"   => "/ttt_workshop/webhook/",
     "/litcafe/ttt-workshop/register/success/"           => "/ttt_workshop/success/",

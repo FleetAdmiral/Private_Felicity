@@ -28,40 +28,39 @@ $text_input = function ($name, $large_text=false) use ($errors) {
     <div class="container">
         <h1 class="text-center">
             <small><a class="underlined" href="<?= locale_base_url() ?>talks-and-workshops/web-development/"><?= __('Web development workshop') ?></a></small><br/>
-            <?= __('Register') ?>
+            <br/><br/><?= __('Register') ?>
         </h1>
-        <form class="pure-form pure-form-stacked row" method="post" action="">
-            <fieldset class="offset3 col6">
+        <?php if ($user_details['payment_status'] == 'failed'): ?>
+            <a class="btn" href="<?= locale_base_url() ?>talks-and-workshops/web-development/pay_again/"> Click to pay again </a>
+            <h3> Payment Unsuccessful. <br/>In case of any discrepancy, Please drop a mail at webdev@felicity.iiit.ac.in</h3>
+        <?php elseif($user_details['payment_status'] == 'success'): ?>
+            <h3> Payment successful. Kindly carry your payment receipt while atteding workshop. </h3>
+            <h3> In case of any discrepancy, Please drop a mail at webdev@felicity.iiit.ac.in </h3>
+        <?php else: ?>
+          <form class="pure-form pure-form-stacked row" method="post" action="">
+              <fieldset class="offset3 col6">
+                  <?php if (isset($errors['common'])): ?>
+                      <div class="error pure-input-1-1"><?= $errors['common'] ?></div>
+                  <?php endif; ?>
 
-                <?php if (isset($errors['common'])): ?>
-                    <div class="error pure-input-1-1"><?= $errors['common'] ?></div>
-                <?php endif; ?>
+                  <label><?= __('Contact number') ?></label>
+                  <?php $text_input('contact_number'); ?>
 
-                <label><?= __('Contact number') ?></label>
-                <?php $text_input('contact_number'); ?>
+                  <label><?= __('Stream of study / Branch') ?></label>
+                  <?php $text_input('stream'); ?>
 
-                <label><?= __('Stream of study / Branch') ?></label>
-                <?php $text_input('stream'); ?>
+                  <label><?= __('Year of study') ?></label>
+                  <?php $text_input('year'); ?>
 
-                <label><?= __('Year of study') ?></label>
-                <?php $text_input('year'); ?>
+                  <label><?= __('Your experience in web development') ?></label>
+                  <?php $text_input('experience', true); ?>
 
-                <label><?= __('Your experience in web development') ?></label>
-                <?php $text_input('experience', true); ?>
+                  <label><?= __('Why you want to do this workshop?') ?></label>
+                  <?php $text_input('why_join', true); ?>
 
-                <label><?= __('Why you want to do this workshop?') ?></label>
-                <?php $text_input('why_join', true); ?>
-
-                <button type="submit" class="pure-button pure-button-primary some-top-margin"><?= __('Proceed to payment') ?></button>
-            </fieldset>
-        </form>
+                  <button type="submit" class="pure-button pure-button-primary some-top-margin" style="width: 200px;height:40px;"><?= __('Proceed to payment') ?></button>
+              </fieldset>
+          </form>
+        <?php endif; ?>
     </div>
 </article>
-<?php if (!$is_ajax): ?>
-<script>
-    (function() {
-        $('#toggle').removeClass('i');
-        $('.btn-box').css('display', 'none');
-    })();
-</script>
-<?php endif; ?>

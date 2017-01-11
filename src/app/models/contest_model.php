@@ -234,4 +234,34 @@ class contest_model extends Model {
             false
         );
     }
+
+    public function webdev_payment_success($payment_id, $nick, $status, $payment_data) {
+        $stmt = $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "UPDATE `webdev_registrations`
+            SET `payment_id` = ?, `payment_status` = ?, `payment_data` = ?
+            WHERE `nick` = ?",
+            "ssss",
+            [$payment_id, $status, $payment_data, $nick]
+        );
+        $this->webdev_dump_data($nick, 'callback', $payment_data);
+        if (!$stmt) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public function webdev_dump_data($nick, $type, $response) {
+        $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "INSERT INTO `webdev_payment_dump`
+            (`nick`, `type`, `response`)
+            VALUES (?, ?, ?)",
+            "sss",
+            [$nick, $type, $response]
+        );
+    }
+
 }
