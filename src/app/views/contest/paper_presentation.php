@@ -23,7 +23,7 @@ $text_input = function ($name, $type="text") use ($errors) {
     <div class="container">
         <h1 class="text-center">
             <small><a class="underlined" href="<?= locale_base_url() ?>talks-and-workshops/paper-presentation/"><?= __('Paper presentation') ?></a></small><br/>
-            <?= __('Register') ?>
+            <br/><br/><?= __('Register') ?>
         </h1>
         <?php if ($user_details): ?>
             <div class="row">

@@ -37,6 +37,8 @@ $routes = [
     "/litcafe/ttt-workshop/register/success/"           => "/ttt_workshop/success/",
     "/litcafe/ttt-workshop/register/"                   => "/ttt_workshop/register/",
 
+    "/talks-and-workshops/paper-presentation/register/" => "/contest/paper_presentation/",
+
     "/api/"     => "/page/show/api/",
     "/"         => "/page/show/"
 ];
