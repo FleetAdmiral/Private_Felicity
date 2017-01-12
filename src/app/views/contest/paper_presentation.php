@@ -48,7 +48,7 @@ $text_input = function ($name, $type="text") use ($errors) {
                     <label><?= __('Link of your paper') ?></label>
                     <?php $text_input('paper_link', 'url'); ?>
 
-                    <button type="submit" class="pure-button pure-button-primary some-top-margin"><?= __('Confirm Registration') ?></button>
+                    <button type="submit" class="pure-button pure-button-primary some-top-margin" style="width: 200px;height:40px;"><?= __('Confirm Registration') ?></button>
                 </fieldset>
             </form>
         <?php endif; ?>
