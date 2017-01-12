@@ -264,4 +264,133 @@ class contest_model extends Model {
         );
     }
 
+    /*
+    |---------------------------------------------------------------------------
+    | Artuino Workshop
+    |---------------------------------------------------------------------------
+    */
+
+    private function get_artuino_team($team_id) {
+        $stmt = $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "SELECT *
+            FROM `artuino_teams`
+            WHERE `id` = ?",
+            "i",
+            [$team_id]
+        );
+        if (!$stmt) {
+            return false;
+        }
+        $team_info = $stmt->get_result()->fetch_assoc();
+        if ($team_info) {
+            return $team_info;
+        }
+        return false;
+    }
+
+    public function is_registered_for_artuino($user_nick) {
+        $user_details = $this->is_registered('artuino_participants', $user_nick);
+        if ($user_details) {
+            $team_info = $this->get_artuino_team($user_details['team_id']);
+            return $team_info;
+        }
+        return false;
+    }
+
+    public function check_artuino_team_exists($team_name) {
+        $stmt = $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "SELECT *
+            FROM `artuino_teams`
+            WHERE `team_name` = ?",
+            "s",
+            [$team_name]
+        );
+        if (!$stmt) {
+            return false;
+        }
+        $stmt->store_result();
+        if ($stmt->num_rows > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public function check_artuino_participant_exists($user_nick) {
+        $stmt = $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "SELECT *
+            FROM `artuino_participants`
+            WHERE `nick` = ?",
+            "s",
+            [$user_nick]
+        );
+        if (!$stmt) {
+            return false;
+        }
+        $stmt->store_result();
+        if ($stmt->num_rows > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public function register_for_artuino($team_name, $contact_number, $team) {
+        $this->DB->contest->begin_transaction(MYSQLI_TRANS_START_READ_WRITE);
+        $stmt = $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "INSERT INTO `artuino_teams`
+            (`team_name`, `contact_number`) VALUES (?, ?)",
+            "ss",
+            [$team_name, $contact_number]
+        );
+        if (!$stmt) {
+            return false;
+        }
+        $team_id = $this->DB->contest->insert_id;
+        foreach ($team as $nick) {
+            $stmt = $this->db_lib->prepared_execute(
+                $this->DB->contest,
+                "INSERT INTO `artuino_participants`
+                (`team_id`, `nick`) VALUES (?, ?)",
+                "is",
+                [$team_id, $nick]
+            );
+            if (!$stmt) {
+                return false;
+            }
+        }
+        return $this->DB->contest->commit();
+    }
+
+    public function artuino_payment_success($payment_id, $team_id, $status, $payment_data) {
+        $stmt = $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "UPDATE `artuino_teams`
+            SET `payment_id` = ?, `payment_status` = ?, `payment_data` = ?
+            WHERE `id` = ?",
+            "ssss",
+            [$payment_id, $status, $payment_data, $team_id]
+        );
+        $this->artuino_dump_data($team_id, 'callback', $payment_data);
+        if (!$stmt) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public function artuino_dump_data($team_id, $type, $response) {
+        $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "INSERT INTO `artuino_payment_dump`
+            (`team_id`, `type`, `response`)
+            VALUES (?, ?, ?)",
+            "sss",
+            [$team_id, $type, $response]
+        );
+    }
+
 }

@@ -34,7 +34,7 @@ $text_input = function ($name, $large_text=false) use ($errors) {
             <a class="btn" href="<?= locale_base_url() ?>talks-and-workshops/web-development/pay_again/"> Click to pay again </a>
             <h3> Payment Unsuccessful. <br/>In case of any discrepancy, Please drop a mail at webdev@felicity.iiit.ac.in</h3>
         <?php elseif($user_details['payment_status'] == 'success'): ?>
-            <h3> Payment successful. Kindly carry your payment receipt while atteding workshop. </h3>
+            <h3> Payment successful. Kindly carry your payment receipt which is mailed to you while atteding workshop.</h3>
             <h3> In case of any discrepancy, Please drop a mail at webdev@felicity.iiit.ac.in </h3>
         <?php else: ?>
           <form class="pure-form pure-form-stacked row" method="post" action="">
