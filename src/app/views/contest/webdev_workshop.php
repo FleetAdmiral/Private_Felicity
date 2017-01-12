@@ -41,7 +41,7 @@ $text_input = function ($name, $large_text=false) use ($errors) {
                 <a class="btn" href="<?= locale_base_url() ?>talks-and-workshops/web-development/pay_again/"> Click here to pay again.</a>
             <?php else: ?>
                 <p class="text-center lead success">
-                    Payment Succesful. You're registered for the event.
+                    Payment Successful. You're registered for the event.
                 </p>
                 <p class="text-center">
                     Kindly carry your payment receipt which is mailed to you while atteding workshop.<br/>

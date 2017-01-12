@@ -38,7 +38,7 @@ $text_input = function ($name, $required=true) use ($errors) {
                 <a class="btn" href="<?= locale_base_url() ?>pulsation/artuino/pay_again/"> Click here to pay again.</a>
             <?php else: ?>
                 <p class="text-center lead success">
-                    Payment Succesful. You're registered for the event as a part of team <?= $team_info['team_name'] ?>
+                    Payment Successful. You're registered for the event as a part of team <?= $team_info['team_name'] ?>
                 </p>
                 <p class="text-center">
                     Kindly carry your payment receipt which is mailed to you while atteding workshop.<br/>
