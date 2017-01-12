@@ -144,6 +144,7 @@ class artuino_workshop extends Controller {
             $this->load_library('http_lib', 'http');
             $this->http->redirect($redirect_url);
         } else {
+            $this->load_library('http_lib', 'http');
             $this->http->redirect(base_url() . "pulsation/artuino/register/");
         }
     }

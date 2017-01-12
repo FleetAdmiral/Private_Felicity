@@ -57,60 +57,55 @@ class webdev_workshop extends Controller {
         $user_nick = $this->auth->get_user();
         global $payment_cfg;
         $user_details = $this->model->is_registered_for_webdev($user_nick);
-        if ($user_details['payment_status'] == 'pending') {
-            $redirect_url = $this->get_webdev_payment_url($user_nick, $user_details['contact_number']);
-            $this->load_library('http_lib', 'http');
-            $this->http->redirect($redirect_url);
-        } else {
-            $errors = [];
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                required_post_params(['contact_number', 'stream', 'year', 'experience', 'why_join'], $errors);
-                if (!empty($_POST['contact_number']) && !is_valid_phone_number($_POST['contact_number']) ) {
-                    $errors['contact_number'] = 'Please enter a valid phone number';
-                }
-                if (!$errors) {
-                    $user_details = [
-                        'nick'              => $user_nick,
-                        'contact_number'    => $_POST['contact_number'],
-                        'stream'            => $_POST['stream'],
-                        'year'              => $_POST['year'],
-                        'experience'        => $_POST['experience'],
-                        'why_join'          => $_POST['why_join'],
-                    ];
-                    if ($this->model->register_for_webdev($user_details)) {
-                        $redirect_url = $this->get_webdev_payment_url($user_nick, $_POST['contact_number']);
-                        $this->load_library('http_lib', 'http');
-                        $this->http->redirect( $redirect_url );
-                    } else {
-                        $errors['common'] = __('Some unexpected error occurred');
-                    }
+        $errors = [];
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            required_post_params(['contact_number', 'stream', 'year', 'experience', 'why_join'], $errors);
+            if (!empty($_POST['contact_number']) && !is_valid_phone_number($_POST['contact_number']) ) {
+                $errors['contact_number'] = 'Please enter a valid phone number';
+            }
+            if (!$errors) {
+                $user_details = [
+                    'nick'              => $user_nick,
+                    'contact_number'    => $_POST['contact_number'],
+                    'stream'            => $_POST['stream'],
+                    'year'              => $_POST['year'],
+                    'experience'        => $_POST['experience'],
+                    'why_join'          => $_POST['why_join'],
+                ];
+                if ($this->model->register_for_webdev($user_details)) {
+                    $redirect_url = $this->get_webdev_payment_url($user_nick, $_POST['contact_number']);
+                    $this->load_library('http_lib', 'http');
+                    $this->http->redirect( $redirect_url );
+                } else {
+                    $errors['common'] = __('Some unexpected error occurred');
                 }
             }
-            $this->load_view('skeleton_template/header', [
-                'title'             => __('Register').' · '.__('Web development Workshop'),
-                'is_authenticated'  => true,
-                'user_nick'         => $user_nick,
-            ]);
-
-            $this->load_view('contest/webdev_workshop', [
-                'user_nick' => $user_nick,
-                'user_details'  => $user_details,
-                'errors'    => $errors
-            ]);
-            $this->load_view('skeleton_template/footer');
-            $this->load_view('skeleton_template/buttons_hide');
         }
+        $this->load_view('skeleton_template/header', [
+            'title'             => __('Register').' · '.__('Web development Workshop'),
+            'is_authenticated'  => true,
+            'user_nick'         => $user_nick,
+        ]);
+
+        $this->load_view('contest/webdev_workshop', [
+            'user_nick' => $user_nick,
+            'user_details'  => $user_details,
+            'errors'    => $errors
+        ]);
+        $this->load_view('skeleton_template/footer');
+        $this->load_view('skeleton_template/buttons_hide');
     }
 
     public function pay_again() {
         $user_nick = $this->auth->get_user();
         global $payment_cfg;
         $user_details = $this->model->is_registered_for_webdev($user_nick);
-        if ($user_details['payment_status'] == 'failed') {
+        if ($user_details['payment_status'] != 'success') {
             $redirect_url = $this->get_webdev_payment_url($user_nick, $user_details['contact_number']);
             $this->load_library('http_lib', 'http');
             $this->http->redirect($redirect_url);
         } else {
+            $this->load_library('http_lib', 'http');
             $this->http->redirect(base_url() . "talks-and-workshops/web-development/register/");
         }
     }
