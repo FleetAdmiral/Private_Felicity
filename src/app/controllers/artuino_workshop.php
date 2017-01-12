@@ -139,7 +139,7 @@ class artuino_workshop extends Controller {
         $user_nick = $this->auth->get_user();
         global $payment_cfg;
         $team_info = $this->contest_model->is_registered_for_artuino($user_nick);
-        if ($team_info['payment_status'] != 'success') {
+        if ($team_info && $team_info['payment_status'] != 'success') {
             $redirect_url = $this->get_artuino_payment_url($team_info['team_name'], $team_info['contact_number']);
             $this->load_library('http_lib', 'http');
             $this->http->redirect($redirect_url);

@@ -100,7 +100,7 @@ class webdev_workshop extends Controller {
         $user_nick = $this->auth->get_user();
         global $payment_cfg;
         $user_details = $this->model->is_registered_for_webdev($user_nick);
-        if ($user_details['payment_status'] != 'success') {
+        if ($user_details && $user_details['payment_status'] != 'success') {
             $redirect_url = $this->get_webdev_payment_url($user_nick, $user_details['contact_number']);
             $this->load_library('http_lib', 'http');
             $this->http->redirect($redirect_url);
