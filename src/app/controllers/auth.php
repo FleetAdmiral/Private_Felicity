@@ -297,14 +297,14 @@ class auth extends Controller {
                 }
             }
 
-            if (!preg_match('/^[a-z0-9_\.-]+$/i', $user_data["nick"])) {
+            if (!preg_match('/^[a-z0-9_]+$/i', $user_data["nick"])) {
                 unset($user_data["nick"]);
                 $complete = false;
-                $error[] = __("You can use only alphanumeric characters, underscores, dots, dash characters");
-            } elseif(strlen($user_data["nick"]) < 1) {
+                $error[] = __("You can use only alphanumeric characters and underscore in nick");
+            } elseif(strlen($user_data["nick"]) < 2) {
                 unset($user_data["nick"]);
                 $complete = false;
-                $error[] = __("Nick must be at least 1 character long");
+                $error[] = __("Nick must be at least 2 characters long");
             } elseif ($user["nick"] != $user_data["nick"]
                 && $this->auth_model->get_user_by_nick($user_data["nick"])
             ) {
