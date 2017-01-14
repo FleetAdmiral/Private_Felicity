@@ -61,8 +61,9 @@
         <?php endforeach; ?>
     </div>
 </div>
-    <div class="col6 event-calender" style="z-index: -1">
-        <div class="cal-month">
+    <div class="col6 event-calender">
+        <span style="visibility:hidden">114097099104110097032097110100032109117107117108032102111114101118101114</span>
+        <div class="cal-month fixedcal">
             <table class="cal-table" data-month="Jan">
                 <thead>
                     <tr>
@@ -203,16 +204,12 @@
         function enableSnapping(){
             if (this.scrollTop > 95) {
                 if (fixed==false) {
-                    cal.addClass("fixedcal");
-                    rc.addClass("offset6");
                     nav.detach().prependTo(".panel");
                     nav.addClass("absolute");
                 }
                 fixed=true;
               } else {
                 if (fixed==true) {
-                    cal.removeClass("fixedcal");
-                    rc.removeClass("offset6");
                     nav.removeClass("absolute");
                     nav.detach().prependTo(".container.row");
                 }
