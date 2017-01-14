@@ -7,7 +7,7 @@
     <meta name="description" content="<?= $name ?> Threads Felicity ">
     <meta name="keywords" content="felicity, threads, <?= $name ?>, math, logic, iiit, iiit hyderabad">
     <meta property="og:title" content="Scoreboard · <?= $name ?> · Threads  · Felicity">
-    <meta property="og:image" content="<?= base_url() . (isset($og_image) ? $og_image : 'files/16/logos/felicity16-logo-large.png') ?>">
+    <meta property="og:image" content="<?= base_url() . (isset($og_image) ? $og_image : 'files/17/logos/logo.png') ?>">
 
     <link rel="stylesheet" href="<?= base_url() ?>static/styles/vendor/normalize.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
@@ -22,7 +22,7 @@
 body {
     overflow-y: scroll;
     font-family: "Noto Sans", sans-serif;
-    background-image: url('https://felicity.iiit.ac.in/static/images/bg.jpg');
+    background-image: url('https://felicity.iiit.ac.in/static/images/background.png');
     background-size: cover;
     background-position: 0 0;
     background-attachment: fixed;
@@ -339,8 +339,7 @@ td.user-nick {
 }
 
 .my-table-header {
-    background-color: rgba( 93, 188, 210, .7);
-    background-color: rgba(250, 210,  50, .8);
+    background-color: rgba(0, 159, 73, 0.9);
     padding: 0.5em 1em;
     font-weight: bold;
 }
@@ -390,10 +389,12 @@ td.user-nick {
 <body>
     <header class="header">
         <div class="header-content">
-            <h1 class="title"><a href="<?= locale_base_url() ?>"><?= __('Felicity') ?></a></h1>
-            <p class="year">2016</p>
+            <h1 class="title">
+                <a href="https://felicity.iiit.ac.in/"><img src="https://felicity.iiit.ac.in/static/images/logo-small.png"/></a>
+            </h1>
         </div>
     </header>
+
     <div class="wrapper">
         <div class="container title-and-nav-container clearfix">
             <div class="page-title text-left">
