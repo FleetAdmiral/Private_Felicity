@@ -208,6 +208,31 @@ class contest_model extends Model {
 
     /*
     |---------------------------------------------------------------------------
+    | Visualize it
+    |---------------------------------------------------------------------------
+    */
+
+    public function is_registered_for_visualizeit($user_nick) {
+        return $this->is_registered('visualizeit', $user_nick);
+    }
+
+    public function register_for_visualizeit($info) {
+        return $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "INSERT INTO `visualizeit`
+            (`nick`, `paper_link`)
+            VALUES  (?, ?)",
+            "ss",
+            [
+                $info['nick'],
+                $info['paper_link'],
+            ],
+            false
+        );
+    }
+
+    /*
+    |---------------------------------------------------------------------------
     | Web Development Workshop
     |---------------------------------------------------------------------------
     */
@@ -257,6 +282,60 @@ class contest_model extends Model {
         $this->db_lib->prepared_execute(
             $this->DB->contest,
             "INSERT INTO `webdev_payment_dump`
+            (`nick`, `type`, `response`)
+            VALUES (?, ?, ?)",
+            "sss",
+            [$nick, $type, $response]
+        );
+    }
+
+    /*
+    |---------------------------------------------------------------------------
+    | ARVR Workshop
+    |---------------------------------------------------------------------------
+    */
+
+    public function is_registered_for_arvr($user_nick) {
+        return $this->is_registered('arvr_registrations', $user_nick);
+    }
+
+    public function register_for_arvr($info) {
+        return $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "INSERT INTO `arvr_registrations`
+            (`nick`, `contact_number`)
+            VALUES  (?, ?)",
+            "ss",
+            [
+                $info['nick'],
+                $info['contact_number'],
+            ],
+            false
+        );
+    }
+
+    public function arvr_payment_success($payment_id, $nick, $status, $payment_data) {
+        $stmt = $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "UPDATE `arvr_registrations`
+            SET `payment_id` = ?, `payment_status` = ?, `payment_data` = ?
+            WHERE `nick` = ?",
+            "ssss",
+            [$payment_id, $status, $payment_data, $nick]
+        );
+        $this->arvr_dump_data($nick, 'callback', $payment_data);
+        if (!$stmt) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public function arvr_dump_data($nick, $type, $response) {
+        $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "INSERT INTO `arvr_payment_dump`
             (`nick`, `type`, `response`)
             VALUES (?, ?, ?)",
             "sss",

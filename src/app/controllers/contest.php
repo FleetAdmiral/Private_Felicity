@@ -123,6 +123,40 @@ class contest extends Controller {
         $this->load_view('skeleton_template/buttons_hide');
     }
 
+    public function visualizeit() {
+        $user_nick = $this->auth->get_user();
+        $user_details = $this->model->is_registered_for_visualizeit($user_nick);
+        $errors = [];
+        if (!$user_details && $_SERVER['REQUEST_METHOD'] === 'POST') {
+            required_post_params(['paper_link'], $errors);
+            if (!empty($_POST['paper_link']) && !is_valid_url($_POST['paper_link']) ) {
+                $errors['paper_link'] = 'Please enter a valid link';
+            }
+            if (!$errors) {
+                $user_details = [
+                    'nick'              => $user_nick,
+                    'paper_link'        => $_POST['paper_link'],
+                ];
+                $success = $this->model->register_for_visualizeit($user_details);
+                if (!$success) {
+                    $errors['common'] = 'Some unexpected error occured';
+                }
+            }
+        }
+        $this->load_view('skeleton_template/header', [
+            'title'             => __('Register').' · '.__('Paper Presentation'),
+            'is_authenticated'  => true,
+            'user_nick'         => $user_nick,
+        ]);
+        $this->load_view('contest/visualizeit', [
+            'user_details'  => $user_details,
+            'errors'        => $errors
+        ]);
+        $this->load_view('skeleton_template/footer');
+        $this->load_view('skeleton_template/buttons_hide');
+    }
+
+
     public function breakin() {
         $user_nick = $this->auth->get_user();
 

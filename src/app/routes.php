@@ -33,6 +33,11 @@ $routes = [
     "/talks-and-workshops/web-development/register/"                   => "/webdev_workshop/register/",
     "/talks-and-workshops/web-development/pay_again/"                   => "/webdev_workshop/pay_again/",
 
+    "/talks-and-workshops/arvr/register/webhook/"           => "/arvr_workshop/webhook/",
+    "/talks-and-workshops/arvr/register/success/"           => "/arvr_workshop/success/",
+    "/talks-and-workshops/arvr/register/"                   => "/arvr_workshop/register/",
+    "/talks-and-workshops/arvr/pay_again/"                  => "/arvr_workshop/pay_again/",
+    //"/talks-and-workshops/artuino/"                         => "/threads/cachein/",
     "/pulsation/artuino/register/webhook/"           => "/artuino_workshop/webhook/",
     "/pulsation/artuino/register/success/"           => "/artuino_workshop/success/",
     "/pulsation/artuino/register/"                   => "/artuino_workshop/register/",
@@ -43,6 +48,7 @@ $routes = [
     "/litcafe/ttt-workshop/register/"                   => "/ttt_workshop/register/",
 
     "/talks-and-workshops/paper-presentation/register/" => "/contest/paper_presentation/",
+    "/threads/visualizeit/submit/" => "/contest/visualizeit/",
 
     "/api/"     => "/page/show/api/",
     "/"         => "/page/show/"
