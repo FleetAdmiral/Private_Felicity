@@ -86,7 +86,7 @@ function img($img_name, $name=null) {
             <strong><?= __('Pinkesh Badjatiya')  ?> (<?= __('Server Admin')?>)</strong>,
             <?= __('Rohan Karnawat') ?>,
             <?= __('Vikash') ?>,
-            <?= __('Aalekh Jain') ?>,
+            <strong><?= __('Aalekh Jain')  ?> (<?= __('Server Admin')?>)</strong>,
             <?= __('Animesh Chandra Pathak') ?>,
             <?= __('Arvind') ?>
         </p>
