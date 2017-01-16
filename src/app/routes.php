@@ -33,6 +33,11 @@ $routes = [
     "/talks-and-workshops/web-development/register/"                   => "/webdev_workshop/register/",
     "/talks-and-workshops/web-development/pay_again/"                   => "/webdev_workshop/pay_again/",
 
+    "/cultural-Colosseum/bob/register/webhook/"           => "/riderofstorms/webhook/",
+    "/cultural-Colosseum/bob/register/success/"           => "/riderofstorms/success/",
+    "/cultural-Colosseum/bob/register/"                   => "/riderofstorms/register/",
+    "/cultural-Colosseum/bob/pay_again/"                  => "/riderofstorms/pay_again/",
+
     "/talks-and-workshops/arvr/register/webhook/"           => "/arvr_workshop/webhook/",
     "/talks-and-workshops/arvr/register/success/"           => "/arvr_workshop/success/",
     "/talks-and-workshops/arvr/register/"                   => "/arvr_workshop/register/",

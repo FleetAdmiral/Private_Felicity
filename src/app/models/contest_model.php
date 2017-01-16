@@ -291,6 +291,76 @@ class contest_model extends Model {
 
     /*
     |---------------------------------------------------------------------------
+    | Riders on the storm
+    |---------------------------------------------------------------------------
+    */
+
+    public function is_registered_for_riderofstorms($user_nick) {
+        return $this->is_registered('riderofstorms_registrations', $user_nick);
+    }
+
+    public function register_for_riderofstorms($info) {
+        /*$user_details = [
+            'nick'              => $info['nick'],
+            'contact_number'    => $info['contact_number'],
+            'name'              => $info['name'],
+            'leader'            => $info['leader'],
+            'members'           => $info['members'],
+            'link'              => $info['link'],
+            'tell'              => $info['tell']
+        ];*/
+
+        return $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "INSERT INTO `riderofstorms_registrations`
+            (`nick`, `name`, `contact_number`, `leader`, `link`, `members`, `tell`)
+            VALUES  (?, ?, ?, ?, ?, ?, ?)",
+            "sssssss",
+            [
+              $info['nick'],
+              $info['name'],
+              $info['contact_number'],
+              $info['leader'],
+              $info['link'],
+              $info['members'],
+              $info['tell']
+            ],
+            false
+        );
+    }
+
+    public function riderofstorms_payment_success($payment_id, $nick, $status, $payment_data) {
+        $stmt = $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "UPDATE `riderofstorms_registrations`
+            SET `payment_id` = ?, `payment_status` = ?, `payment_data` = ?
+            WHERE `nick` = ?",
+            "ssss",
+            [$payment_id, $status, $payment_data, $nick]
+        );
+        $this->riderofstorms_dump_data($nick, 'callback', $payment_data);
+        if (!$stmt) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public function riderofstorms_dump_data($nick, $type, $response) {
+        $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "INSERT INTO `riderofstorms_payment_dump`
+            (`nick`, `type`, `response`)
+            VALUES (?, ?, ?)",
+            "sss",
+            [$nick, $type, $response]
+        );
+    }
+
+
+    /*
+    |---------------------------------------------------------------------------
     | ARVR Workshop
     |---------------------------------------------------------------------------
     */
