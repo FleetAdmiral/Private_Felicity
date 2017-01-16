@@ -91,9 +91,9 @@ if (empty($is_ajax)):
             <li class="layer" data-depth="0.09">
                 <div onclick="toggleDetails('about')" class="cloud cloud-1"><span>About</span></div>
                 <div onclick="toggleDetails('events')" class="cloud cloud-2"><span>Events</span></div>
-                <div onclick="window.open('https://felicity.iiit.ac.in/sap/')" class="cloud cloud-3"><span>SAP</span></div>
-                <div onclick="toggleDetails('sponsors')" class="cloud cloud-4"><span>Sponsors</span></div>
-                <div onclick="toggleDetails('gallery')" class="cloud cloud-5"><span>Gallery</span></div>
+                <div onclick="toggleDetails('gallery')" class="cloud cloud-3"><span>Gallery</span></div>
+                <div onclick="toggleDetails('team')" class="cloud cloud-4"><span>Team</span></div>
+                <div onclick="toggleDetails('sponsors')" class="cloud cloud-5"><span>Sponsors</span></div>
                 <div onclick="toggleDetails('contact')" class="cloud cloud-6"><span>Contact</span></div>
             </li>
       </ul>
@@ -109,9 +109,10 @@ if (empty($is_ajax)):
                         <div class="links">
                             <li><a onclick="showPage('about')">About US</a></li>
                             <li><a onclick="showPage('events')">Events</a></li>
+                            <li><a onclick="showPage('gallery')">Gallery</a></li>
+                            <li><a onclick="showPage('team')">Team</a></li>
                             <li><a onclick="showPage('sponsors')">Sponsors</a></li>
                             <li><a onclick="showPage('contact')">Contact Us</a></li>
-                            <li><a onclick="showPage('gallery')">Gallery</a></li>
                         </div>
                     </div>
                     <div class="panel accelerate content-holder">

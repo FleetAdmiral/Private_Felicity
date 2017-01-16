@@ -671,12 +671,7 @@ article {
 }
 
 .page.team {
-    .row {
-        border-top: 2px solid white;
-    }
-
     [class*=col] {
-        border-top: 2px solid white;
         transform: translateY(-2px);
         margin-top: 0;
         padding: 0 1em;

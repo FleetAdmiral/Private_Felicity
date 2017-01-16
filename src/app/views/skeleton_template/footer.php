@@ -36,6 +36,7 @@ if (empty($is_ajax)):
   <ul class="links" style="list-style: none;padding-left: 0px">
       <li><a onclick="openPage('about')">About US</a></li>
       <li><a onclick="openPage('events')">Events</a></li>
+      <li><a onclick="openPage('team')">Team</a></li>
       <li><a onclick="openPage('sponsors')">Sponsors</a></li>
       <li><a onclick="openPage('contact')">Contact Us</a></li>
   </ul>

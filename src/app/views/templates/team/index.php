@@ -1,12 +1,9 @@
 <?php $this->load_fragment('skeleton_template/header'); ?>
-<?php if (!$is_ajax): ?>
-<article class="page open team">
-<?php endif; ?>
+<article class="page team">
 <?php
 function img($img_name, $name=null) {
 ?>
     <div class="img-container<?=$name ? '' : ' group-pic' ?>" style="transform: rotate(<?= 2 - rand(1, 4) ?>deg)">
-        <img src="<?=base_url()?>static/images/clip.png" class="clip">
         <img src="<?=base_url()?>static/images/team/<?=$img_name?>">
     </div>
     <?php if ($name): ?>
@@ -45,7 +42,7 @@ function img($img_name, $name=null) {
                 </p>
                 <p class="names">
                     <strong><?= __('Third row') ?></strong>:<br>
-                    <?= __('Apaar garg') ?>,
+                    <?= __('Apaar Agrawal') ?>,
                     <?= __('Himakar Yv') ?>,
                     <?= __('Mayank Modi') ?>,
                     <?= __('Isha Mangurkar') ?>,
@@ -167,7 +164,7 @@ function img($img_name, $name=null) {
             <div class="container text-center">
                 <p class="names">
                     <?= __('Anirudh Sharma') ?>,
-                    <?= __('Nishant Jain') ?>,
+                    <?= __('Nishant Gupta') ?>,
                     <?= __('Aayush Aanand') ?>,
                     <?= __('Rahul Nahata') ?>,
                     <?= __('Sidhant Subramanian') ?>,
@@ -272,9 +269,7 @@ function img($img_name, $name=null) {
         </div>
     </div>
 </div>
-<?php if (!$is_ajax): ?>
 </article>
-<?php endif; ?>
 <?php $this->load_fragment('skeleton_template/footer'); ?>
 <?php if (!$is_ajax): ?>
 <script>
