@@ -59,7 +59,7 @@ class riderofstorms extends Controller {
         $user_details = $this->model->is_registered_for_riderofstorms($user_nick);
         $errors = [];
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            required_post_params(['name', 'leader', 'contact_number', 'members'], $errors);
+            required_post_params(['name', 'leader', 'contact_number', 'members', 'link'], $errors);
             if (!empty($_POST['contact_number']) && !is_valid_phone_number($_POST['contact_number']) ) {
                 $errors['contact_number'] = 'Please enter a valid phone number';
             }

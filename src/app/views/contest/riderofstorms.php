@@ -57,20 +57,20 @@ $text_input = function ($name, $large_text=false, $required=true) use ($errors) 
                         <div class="error pure-input-1-1"><?= $errors['common'] ?></div>
                     <?php endif; ?>
 
-                    <label><?= __('Name of the Band') ?></label>
+                    <label><?= __('Name of the Band (*)') ?></label>
                     <?php $text_input('name'); ?>
 
-                    <label><?= __('Band Leader / Manager') ?></label>
+                    <label><?= __('Band Leader / Manager (*)') ?></label>
                     <?php $text_input('leader'); ?>
 
-                    <label><?= __('Contact number') ?></label>
+                    <label><?= __('Contact number (*)') ?></label>
                     <?php $text_input('contact_number'); ?>
 
-                    <label><?= __('Band members and their roles') ?></label>
+                    <label><?= __('Band members and their roles (*)') ?></label>
                     <?php $text_input('members', true); ?>
 
-                    <label><?= __('Provide a link with') ?></label>
-                    <?php $text_input('link', false, false); ?>
+                    <label><?= __('Provide a link to one of your recorded songs (E.g: SoundCloud, YouTube, etc) (*)') ?></label>
+                    <?php $text_input('link', false, true); ?>
 
                     <label><?= __('Tell us about yourself') ?></label>
                     <?php $text_input('tell', true, false); ?>
