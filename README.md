@@ -8,6 +8,9 @@ This is the repository for the Felicity '17 website. `[This is a fork of the Fel
 
 In order to clone this repository, you will need to use the `--recursive` flag with `git clone` (or you could initialize the submodule later with `git submodule update --init --recursive`).
 
+## Felicity Email
+For instructions on setting up felicity emails refer to [this](https://github.com/felicity-iiith/felicity17-website/wiki/Felicity-email-setup-Instructions) wiki.  
+
 ## Prerequisites
 
 You will need an Apache server that can run PHP and a MySQL-compatiable server for the database. You will also need to install the `mysqlnd` mysql driver.
