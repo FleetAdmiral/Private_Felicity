@@ -42,11 +42,13 @@ $routes = [
     "/talks-and-workshops/arvr/register/success/"           => "/arvr_workshop/success/",
     "/talks-and-workshops/arvr/register/"                   => "/arvr_workshop/register/",
     "/talks-and-workshops/arvr/pay_again/"                  => "/arvr_workshop/pay_again/",
-    //"/talks-and-workshops/artuino/"                         => "/threads/cachein/",
+
     "/pulsation/artuino/register/webhook/"           => "/artuino_workshop/webhook/",
     "/pulsation/artuino/register/success/"           => "/artuino_workshop/success/",
     "/pulsation/artuino/register/"                   => "/artuino_workshop/register/",
     "/pulsation/artuino/pay_again/"                  => "/artuino_workshop/pay_again/",
+
+    "/threads/kaizala/submit/"                       => "/contest/kaizala/",
 
     "/litcafe/ttt-workshop/register/payment-webhook/"   => "/ttt_workshop/webhook/",
     "/litcafe/ttt-workshop/register/success/"           => "/ttt_workshop/success/",

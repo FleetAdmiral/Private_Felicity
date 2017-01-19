@@ -123,6 +123,19 @@ class contest extends Controller {
         $this->load_view('skeleton_template/buttons_hide');
     }
 
+    public function kaizala() {
+        $user_nick = $this->auth->get_user();
+        $this->load_view('skeleton_template/header', [
+            'title'             => __('Submit').' · '.__('Kaizala Hackathon'),
+            'is_authenticated'  => true,
+            'user_nick'         => $user_nick,
+        ]);
+        $this->load_view('contest/kaizala');
+        $this->load_view('skeleton_template/footer');
+        $this->load_view('skeleton_template/buttons_hide');
+    }
+
+
     public function visualizeit() {
         $user_nick = $this->auth->get_user();
         $user_details = $this->model->is_registered_for_visualizeit($user_nick);
