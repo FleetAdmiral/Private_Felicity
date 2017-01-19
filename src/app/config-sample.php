@@ -36,17 +36,9 @@ $cfg = [
     'i18n' => [
         'locales' => [
             'en_IN',
-            'hi_IN',
-            'te_IN',
-            'gu_IN',
-            'mr_IN'
         ],
         'languages' => [
             'en' => 'en_IN',
-            'hi' => 'hi_IN',
-            'te' => 'te_IN',
-            'gu' => 'gu_IN',
-            'mr' => 'mr_IN'
         ],
         // 'gettext' => false,
         'gettext' => [
