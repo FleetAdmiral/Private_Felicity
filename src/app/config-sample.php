@@ -62,6 +62,8 @@ $cas_cfg = [
     'server_ca_cert' => APPPATH . 'iiit.ac.in.pem', // Optional, Recommended.
 ];
 
+$SECRET_STRING = 'kuchbhi';
+
 $email_cfg = [
     'server_host'   => 'email_server_host_ip',
     'server_domain' => 'email.server.domain.name',

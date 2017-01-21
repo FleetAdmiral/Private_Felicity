@@ -11,6 +11,8 @@ $routes = [
     "/ajax/"                => "/ajax/",
     "/auth/"                => "/auth/",
 
+    "/unsubscribe/"         => "/auth/unsubscribe/",
+
     "/login/"               => "/static_page/login/",
     "/logout/"              => "/static_page/logout/",
     "/register/"            => "/static_page/register/",
