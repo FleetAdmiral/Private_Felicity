@@ -13,11 +13,18 @@ function img($img_name, $name=null) {
 }
 ?>
 <div>
-    <h2 class="text-center"><?= __('The Felicity Coordinators')?></h2>
+    <h2 class="text-center"><?= __('The Felicity Coordinators') ?></h2>
     <div class="row">
-        <div class="col3 offset1"><?php img('Arihant.jpg', __('Arihant Jain')); ?></div>
-        <div class="col3 offset-half"><?php img('Nishant.jpg', __('Nishant Gupta')); ?></div>
-        <div class="col3 offset-half"><?php img('Sahith.jpg', __('Sai Sahith Nama')); ?></div>
+        <div class="col11 offset-half">
+            <?php img('FCs.jpg'); ?>
+        </div>
+    </div>
+    <div class="container">
+        <p class="names">
+            <?= __('Arihant Jain') ?>,
+            <?= __('Nishant Gupta') ?>,
+            <?= __('Sai Sahith Nama') ?>,
+        </p>
     </div>
 </div>
 <div>
@@ -60,9 +67,6 @@ function img($img_name, $name=null) {
             </div>
         </div>
     </div>
-</div>
-<div>
-
 </div>
 <div>
     <h2 class="text-center"><?= __('The Threads Team') ?></h2>
