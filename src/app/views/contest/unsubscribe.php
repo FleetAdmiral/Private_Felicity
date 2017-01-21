@@ -1,4 +1,4 @@
-<?php $this->load_fragment('skeleton_template/header', ['title' => __('UnSubscribe')]); ?>
+<?php $this->load_fragment('skeleton_template/header', ['title' => __('Unsubscribe')]); ?>
     <div class="page about-content">
       <header>
           <h1>UnSubscribe</h1>
