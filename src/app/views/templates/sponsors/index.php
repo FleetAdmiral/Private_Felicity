@@ -44,7 +44,108 @@ $sponsors2014 = [
         <header>
             <h1>Spon<span class="tabheading">sors</span></h1>
         </header>
-        <h2><?= __('Felicity 2016 Sponsors') ?></h2>
+        <h2><?= __('Felicity 2017 Sponsors') ?></h2>
+        <div class="row some-top-margin">
+            <div class="col6 offset3">
+                <p>Title Sponsor</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/qualcomm.jpg" alt="Qualcomm logo"/>
+            </div>
+        </div>
+        <p>Powered By</p>
+        <div class="row some-top-margin">
+            <div class="col3 offset3 container">
+                <img src="<?= base_url() ?>static/images/sponsors/17/9xo.jpg" alt="9XO Logo"/>
+            </div>
+            <div class="col3 container">
+                <img src="<?= base_url() ?>static/images/sponsors/17/9xm.jpg" alt="9XM Logo"/>
+            </div>
+        </div>
+        <div class="row some-top-margin">
+            <div class="col4 container">
+                <p>Associate Sponsor</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/sbh.png" alt="SBH logo"/>
+            </div>
+            <div class="col4 container">
+                <p><a class="underlined" href="<?= base_url() ?>threads/">Threads</a> sponsor</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/microsoft.jpg" alt="Microsoft Logo"/>
+            </div>
+            <div class="col4 container">
+                <p>Telecom Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/airtel.jpg" alt="Airtel logo"/>
+            </div>
+        </div>
+        <div class="row some-top-margin">
+            <div class="col4 container">
+                <p>Codecraft and Kings of ML</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/progress.png" alt="Progress Logo"/>
+            </div>
+            <div class="col4 container">
+                <p>Health Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/reddy.jpg" alt="Dr Reddy Logo"/>
+            </div>
+            <div class="col4 container">
+                <p>Audio Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/zebronics.png" alt="Zebronics Logo"/>
+            </div>
+        </div>
+        <div class="row some-top-margin">
+            <div class="col4 container">
+                <p>Radio Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/redfm.png" alt="RedFM Logo"/>
+            </div>
+            <div class="col4 container">
+                <p>Travel Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/uber.png" alt="Uber Logo"/>
+            </div>
+            <div class="col4 container">
+                <p>Dare Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/dare.png" alt="Dare Logo"/>
+            </div>
+        </div>
+        <div class="row some-top-margin">
+            <div class="col4 container">
+                <p>Merchandise Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/merchandise.png" alt="Your Merchandise Logo"/>
+            </div>
+            <div class="col4 container">
+                <p>Cafe Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/cafe.png" alt="Barista Logo"/>
+            </div>
+            <div class="col4 container">
+                <p>Gaming Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/blaze.jpg" alt="Blaze Logo"/>
+            </div>
+        </div>
+        <div class="row some-top-margin">
+            <div class="col4 container">
+                <p>Riders on Storm Title Sponsor</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/musicneedsyou.jpg" alt="Music needs you Logo"/>
+            </div>
+            <div class="col4 container">
+                <p>Riders on Storm Associate Sponsor</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/soundkraft.jpg" alt="SoundKraft Logo"/>
+            </div>
+            <div class="col4 container">
+                <p>Official Ticket Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/bms.png" alt="Book My show Logo"/>
+            </div>
+        </div>
+        <div class="row some-top-margin">
+            <div class="col4 container">
+                <p>Entertainment Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/entertainment.png" alt="White Heaven Logo"/>
+            </div>
+            <div class="col4 container">
+                <p>Online Outreach Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/justapplause.png" alt="Just Applause Logo"/>
+            </div>
+            <div class="col4 container">
+                <p>Adventure Partner</p>
+                <img src="<?= base_url() ?>static/images/sponsors/17/exploreout.png" alt="Explore Out Logo"/>
+            </div>
+        </div>
+        <h2><?= __('Past sponsors') ?></h2>
+        <h3><?= __('Year 2016') ?></h3>
         <div class="row some-top-margin">
             <div class="col6 offset3">
                 <p>Title Sponsor</p>
@@ -104,7 +205,6 @@ $sponsors2014 = [
                 <?php endforeach; ?>
             </div>
         <?php endforeach; ?>
-        <h2><?= __('Past sponsors') ?></h2>
         <h3><?= __('Year 2015') ?></h3>
         <div class="row some-top-margin">
             <div class="col6 offset3">
