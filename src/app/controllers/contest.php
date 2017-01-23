@@ -247,5 +247,6 @@ class contest extends Controller {
         ]);
 
         $this->load_view('skeleton_template/footer');
+        $this->load_view('skeleton_template/buttons_hide');
     }
 }

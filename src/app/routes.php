@@ -55,7 +55,7 @@ $routes = [
     "/litcafe/ttt-workshop/register/payment-webhook/"   => "/ttt_workshop/webhook/",
     "/litcafe/ttt-workshop/register/success/"           => "/ttt_workshop/success/",
     "/litcafe/ttt-workshop/register/"                   => "/ttt_workshop/register/",
-
+    "/threads/breakin/register/"                        => "/contest/breakin/",
     "/talks-and-workshops/paper-presentation/register/" => "/contest/paper_presentation/",
     "/threads/visualizeit/submit/" => "/contest/visualizeit/",
 

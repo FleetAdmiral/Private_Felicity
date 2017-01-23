@@ -3,7 +3,7 @@
     color: #555;
 }
 </style>
-<article class="page open full">
+<article class="page full">
     <div class="container">
         <h1 class="text-center">Register for <a class="underlined" href="<?= locale_base_url() ?>threads/breakin/">Breakin</a></h1>
         <?php if ($team_info): ?>
@@ -43,7 +43,7 @@
                         <?php endif; ?>
                     </div>
                     <div class="pure-controls">
-                        <button type="submit" class="pure-button pure-button-primary">Register</button>
+                        <button type="submit" class="pure-button pure-button-primary" style="width: 200px;height:40px;">Register</button>
                     </div>
                 </fieldset>
             </form>
