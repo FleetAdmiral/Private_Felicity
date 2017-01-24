@@ -50,8 +50,6 @@ $routes = [
     "/pulsation/artuino/register/"                   => "/artuino_workshop/register/",
     "/pulsation/artuino/pay_again/"                  => "/artuino_workshop/pay_again/",
 
-    "/threads/kaizala/submit/"                       => "/contest/kaizala/",
-
     "/litcafe/ttt-workshop/register/payment-webhook/"   => "/ttt_workshop/webhook/",
     "/litcafe/ttt-workshop/register/success/"           => "/ttt_workshop/success/",
     "/litcafe/ttt-workshop/register/"                   => "/ttt_workshop/register/",
