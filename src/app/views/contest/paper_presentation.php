@@ -45,7 +45,7 @@ $text_input = function ($name, $type="text") use ($errors) {
                     <label><?= __('Contact number') ?></label>
                     <?php $text_input('contact_number'); ?>
 
-                    <label><?= __('Link of your paper') ?></label>
+                    <label><?= __('Link of your paper<br/>Note: Click <a href="https://www.youtube.com/watch?v=Itn3WIhQ6NQ" target="_blank"> here </a>to know how to create a link') ?></label>
                     <?php $text_input('paper_link', 'url'); ?>
 
                     <button type="submit" class="pure-button pure-button-primary some-top-margin" style="width: 200px;height:40px;"><?= __('Confirm Registration') ?></button>
