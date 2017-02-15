@@ -96,7 +96,7 @@ function img($img_name, $name=null) {
         </p>
         <p class="names">
             <strong><?= __('Third row') ?></strong>:<br>
-            <?= __('Aadarsh Sanjeev') ?>,
+            <?= __('Adarsh Sanjeev') ?>,
             <?= __('Archit Rai') ?>,
             <?= __('Amit Kumar Gupta') ?>,
             <?= __('Saatwik Singh Nagpal') ?>,
@@ -115,7 +115,7 @@ function img($img_name, $name=null) {
             <div class="container">
                 <p class="names">
                     <?= __('Mukul Hase') ?>,
-                    <?= __('Aadarsh Sanjeev') ?>,
+                    <?= __('Adarsh Sanjeev') ?>,
                     <?= __('Anshul Singhal') ?>,
                     <?= __('Pinkesh Badjatiya') ?>,
                     <?= __('Aalekh Jain') ?>,
@@ -133,7 +133,7 @@ function img($img_name, $name=null) {
                     <?= __('Harshil Jain') ?>,
                     <?= __('Diplav') ?>,
                     <?= __('Parv Parkhiya') ?>,
-                    <?= __('Akansha Baranwal') ?>,
+                    <?= __('Akanksha Baranwal') ?>,
                     <?= __('Pooja Guhan') ?>
                 </p>
             </div>
