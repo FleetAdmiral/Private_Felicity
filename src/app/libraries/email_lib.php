@@ -39,8 +39,8 @@ class email_lib extends Library {
         $mail->isSMTP();
         $mail->Host       = $email_cfg['server_host'];
         $mail->Hostname   = $email_cfg['server_domain'];
-        $mail->SMTPAuth   = true;
-        $mail->SMTPSecure = "tls";
+        $mail->SMTPAuth   = $email_cfg['smtp_auth'];
+        $mail->SMTPSecure = $email_cfg['smtp_secure'];
         $mail->Port       = $email_cfg['server_port'];
         $mail->Username   = $from['username'];
         $mail->Password   = $from['password'];
