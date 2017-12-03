@@ -69,39 +69,24 @@ if (empty($is_ajax)):
      <button id="menu-toggle" class="toggle-button" >☰</button>
       <div id="panelcontainer">
 
-      <ul style="list-style: none;">
-          <li class="layer" data-depth="0.00">
-              <div class="background"></div>
-          </li>
-            <li class="layer" data-depth="0.40">
-                <div class="wave plain depth-60"></div>
-            </li>
-            <li class="layer" data-depth="0.50">
-                <div class="wave paint depth-50"></div>
-            </li>
-            <li class="layer" data-depth="0.50">
-                <div class="boat depth-50"></div>
-            </li>
-            <li class="layer" data-depth="0.60">
-                <div class="wave plain depth-40"></div>
-            </li>
-            <li class="layer" data-depth="0.70">
-                <div class="wave paint depth-30"></div>
-            </li>
-            <li class="layer" data-depth="0.09">
-                <div onclick="toggleDetails('about')" class="cloud cloud-1"><span>About</span></div>
-                <div onclick="toggleDetails('events')" class="cloud cloud-2"><span>Events</span></div>
-                <div onclick="toggleDetails('gallery')" class="cloud cloud-3"><span>Gallery</span></div>
-                <div onclick="toggleDetails('team')" class="cloud cloud-4"><span>Team</span></div>
-                <div onclick="toggleDetails('sponsors')" class="cloud cloud-5"><span>Sponsors</span></div>
-                <div onclick="toggleDetails('contact')" class="cloud cloud-6"><span>Contact</span></div>
-            </li>
-      </ul>
-
-
-      <div id="loaderswing">
-        <img class="loaderhoverslow" src="<?= base_url() ?>static/images/feli-board.png" />
+      <div class="left-navbar">
+            <a class="pure-button btn" onclick="toggleDetails('about')"><span>About</span></a>
+            <a class="pure-button btn" onclick="toggleDetails('events')"><span>Events</span></a>
+            <a class="pure-button btn" onclick="toggleDetails('gallery')"><span>Gallery</span></a>
+            <a class="pure-button btn" onclick="toggleDetails('team')"><span>Team</span></a>
+            <a class="pure-button btn" onclick="toggleDetails('sponsors')"><span>Sponsors</span></a>
+            <a class="pure-button btn" onclick="toggleDetails('contact')"><span>Contact</span></a>
       </div>
+
+      <div class="content-center">
+          <div>
+              <img class="whitelogo" src="static/images/logo.png">
+              <p class="text-landing">
+                  Around The World In 3 Days.
+              </p>
+          </div>
+      </div>
+
       <section id="about" class="about">
             <div class="cell">
                 <div class="cables center accelerate">

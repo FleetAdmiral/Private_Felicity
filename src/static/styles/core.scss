@@ -1045,6 +1045,43 @@ textarea {
     }
 }
 
+.left-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 300;
+
+    .btn {
+      margin-left: 0em;
+      margin-right: 0em;
+    }
+}
+
+.content-center {
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    :first-child {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+img.whitelogo {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.text-landing {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 1.6rem;
+    text-transform: uppercase;
+}
+
 .lang-quick-links {
     position: absolute;
     top: 0;
