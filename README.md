@@ -1,6 +1,6 @@
 # Felicity '18
-[![Build Status](https://travis-ci.org/felicity-iiith/felicity16-website.svg?branch=master)](https://travis-ci.org/felicity-iiith/felicity16-website)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/felicity-iiith/felicity16-website/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/felicity-iiith/felicity16-website/?branch=master)
+[![Build Status](https://travis-ci.org/felicity-iiith/felicity18-website.svg?branch=master)](https://travis-ci.org/felicity-iiith/felicity18-website)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/felicity-iiith/felicity18-website/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/felicity-iiith/felicity18-website/?branch=master)
 
 This is the repository for the Felicity '18 website. `[This is a fork of the Felicity '17 website]`
 
@@ -35,6 +35,6 @@ Also,
 - Copy `src/app/config-sample.php` to `src/app/config.php` and edit values (at least the database configuration).
 - Import the `database.sql` file into your database, you can do this by `mysql -u username -p password DBNAME < database.sql`
 - There are additional SQL files to import in `/sql/` and if you already have a particular version of the database and want to upgrade, look at `/sql/migrations/`.
-- For pretty URLs (`/hello/world/` instead of `/index.php/hello/world/`), copy the `src/HTACCESS` file and name it `src/.htaccess`. You probably need to edit the line `RewriteBase /` and replace it with the URL it is meant to be accessible in your server setup, followed by `/build`, such as maybe `RewriteBase /felicity16-website/build`.
+- For pretty URLs (`/hello/world/` instead of `/index.php/hello/world/`), copy the `src/HTACCESS` file and name it `src/.htaccess`. You probably need to edit the line `RewriteBase /` and replace it with the URL it is meant to be accessible in your server setup, followed by `/build`, such as maybe `RewriteBase /felicity18-website/build`.
 
 Please contribute!
