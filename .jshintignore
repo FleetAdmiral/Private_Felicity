@@ -1,1 +1,4 @@
 src/static/scripts/vendor
+
+# TODO: to remove
+src/static/scripts/navigation.js
