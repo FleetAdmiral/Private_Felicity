@@ -41,7 +41,7 @@ body {
 
 body {
     overflow-y: scroll;
-    font-family: "Noto Sans";
+    font-family: 'Noto Sans';
     background-size: cover;
     background-position: 0 0;
     background-attachment: fixed;
@@ -471,7 +471,7 @@ article {
     }
 
     .iiit-h {
-        font-family: "Times new roman", hindi, telugu, gujarati, serif;
+        font-family: 'Times new roman', hindi, telugu, gujarati, serif;
         font-size: 2em;
         line-height: 1.25em;
         margin: 0;
@@ -618,11 +618,13 @@ article {
 
 .page.gallery {
     padding-top: 0;
-    /*zoom:0.75;*/
+    // zoom:0.75;
     padding-bottom: $ball-height / 2;
+
     h1 {
-        display:none;
+        display: none;
     }
+
     .thumbnail-wrapper {
         background-color: black;
 
@@ -790,7 +792,7 @@ article {
         .event {
             display: block;
             margin-bottom: 10px;
-			border-radius: 10px 0px 30px 0px;
+            border-radius: 10px 0px 30px 0px;
         }
 
         .lead {
@@ -813,7 +815,8 @@ article {
         text-align: center;
         border-collapse: separate;
         border-spacing: 6px;
-        margin:auto;
+        margin: auto;
+
         th {
             width: 2.8em;
             font-weight: 600;
@@ -834,6 +837,7 @@ article {
                 background-color: #555;
                 cursor: pointer;
                 color: #fff;
+
                 &:hover {
                     background-color: #aaa;
                     color: #333;
@@ -844,6 +848,7 @@ article {
 
     .eventslist {
         margin:auto;
+
         td {
             position: relative;
             padding: .5em;
@@ -854,9 +859,11 @@ article {
             font-size: 1.3em;
             padding-right: 1em;
         }
+
         .hidden-day {
             visibility: hidden;
         }
+
         .event-container {
             border-left: .35em solid #333;
             padding-left: 0.95em;
@@ -1052,8 +1059,8 @@ textarea {
     z-index: 300;
 
     .btn {
-      margin-left: 0em;
-      margin-right: 0em;
+        margin-left: 0em;
+        margin-right: 0em;
     }
 }
 

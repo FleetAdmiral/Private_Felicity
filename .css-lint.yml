@@ -1,5 +1,7 @@
 scss_files: 'src/static/styles/**/*.css'
-exclude: 'src/static/styles/vendor/**'
+exclude:
+    - 'src/static/styles/vendor/**'
+    - 'src/static/styles/assets/**'
 
 linters:
     Indentation:

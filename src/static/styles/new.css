@@ -15,7 +15,7 @@ body #container{
 
 body {
     text-align: center;
-    font-family: "felicity";
+    font-family: 'felicity';
     line-height: 1.4em;
     color: black;
 }
@@ -84,7 +84,7 @@ button {
     cursor: pointer;
     font-size: 1.33333em;
     line-height: 45.6px;
-    font-family: "Dosis", sans-serif;
+    font-family: 'Dosis', sans-serif;
     background-color: #f2f2f2;
     font-weight: 600;
     border-radius: 28px;
@@ -174,7 +174,7 @@ button {
     position: absolute;
     display: block;
     height: 100%;
-    content: "";
+    content: '';
     left: 5%;
     top: 0;
 }
@@ -190,7 +190,7 @@ button {
     height: 160px;
     width: 120px;
     opacity: 0.2;
-    content: "";
+    content: '';
     bottom: 0;
     right: 0;
 }
@@ -211,7 +211,7 @@ button {
     height: 150px;
     width: 110px;
     opacity: 0.8;
-    content: "";
+    content: '';
     left: 0;
     top: 0;
 }
@@ -285,7 +285,7 @@ li .event:hover {
 }
 .about .linkholder .links:after, .about .linkholder .links:before {
     display: table;
-    content: "";
+    content: '';
 }
 
 .about .linkholder .links:after {
@@ -330,7 +330,7 @@ li .event:hover {
 
 .links a {
     font-size: 1.33333em;
-    font-family: "Dosis", sans-serif;
+    font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     padding: 1em 0 1.1em;
@@ -340,8 +340,8 @@ li .event:hover {
     width: 100%;
 }
 .about .linkholder .links a.github:before, .about .linkholder .links a.download:before {
-    content: "";
-    font-family: "icons";
+    content: '';
+    font-family: 'icons';
     text-transform: none;
     font-weight: normal;
     font-style: normal;
@@ -500,11 +500,11 @@ button:hover {
 }
 
 blockquote {
-  border-left: 10px solid #ccc;
-  quotes: "\201C""\201D""\2018""\2019";
-  text-align: center;
-  max-width: 50em;
-  margin: auto;
+    border-left: 10px solid #ccc;
+    quotes: '\201C''\201D''\2018''\2019';
+    text-align: center;
+    max-width: 50em;
+    margin: auto;
 }
 
 blockquote:before {
