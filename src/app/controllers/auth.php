@@ -608,7 +608,7 @@ class auth extends Controller {
 
     function unsubscribe($nick=null, $email=null, $hash=null) {
 
-      if ( $nick == NULL || $email == NULL || $hash == NULL) {
+      if ( $nick == null || $email == null || $hash == null) {
             $this->load_view('contest/unsubscribe', [
                 'message' => 'Unable to process your request'
             ]);

@@ -29,11 +29,11 @@ class artuino_workshop extends Controller {
 
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_PROXY, $proxy);
-        curl_setopt($ch, CURLOPT_HEADER, FALSE);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+        curl_setopt($ch, CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $api_headers);
-        $payload = Array(
+        $payload = array(
             'purpose' => $purpose,
             'amount' => $amount,
             'phone' => $phone,
@@ -47,7 +47,6 @@ class artuino_workshop extends Controller {
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($payload));
         $response = curl_exec($ch);
         curl_close($ch);
-
 
         $response_array = json_decode($response, true);
         return $response_array['payment_request']['longurl'];
@@ -131,7 +130,6 @@ class artuino_workshop extends Controller {
         $this->load_view('skeleton_template/footer');
         $this->load_view('skeleton_template/buttons_hide');
 
-
     }
 
     public function pay_again() {
@@ -174,9 +172,9 @@ class artuino_workshop extends Controller {
 
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_PROXY, $proxy);
-        curl_setopt($ch, CURLOPT_HEADER, FALSE);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+        curl_setopt($ch, CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $api_headers);
         $response = curl_exec($ch);
         curl_close($ch);
