@@ -542,4 +542,61 @@ class contest_model extends Model {
         );
     }
 
+    /*
+    |---------------------------------------------------------------------------
+    | MUN
+    |---------------------------------------------------------------------------
+    */
+
+    public function is_registered_for_mun($user_nick) {
+        return $this->is_registered('mun_registrations', $user_nick);
+    }
+
+    public function register_for_mun($info) {
+        return $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "INSERT INTO `mun_registrations`
+            (`nick`, `contact_number`, `institute`, `team_size`, `needs_accomodation`)
+            VALUES  (?, ?, ?, ?, ?)",
+            "sssii",
+            [
+                $info['nick'],
+                $info['contact_number'],
+                $info['institute'],
+                $info['team_size'],
+                $info['needs_accomodation'],
+            ],
+            false
+        );
+    }
+
+    public function mun_payment_success($payment_id, $nick, $status, $payment_data) {
+        $stmt = $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "UPDATE `mun_registrations`
+            SET `payment_id` = ?, `payment_status` = ?, `payment_data` = ?
+            WHERE `nick` = ?",
+            "ssss",
+            [$payment_id, $status, $payment_data, $nick]
+        );
+        $this->mun_dump_data($nick, 'callback', $payment_data);
+        if (!$stmt) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public function mun_dump_data($nick, $type, $response) {
+        $this->db_lib->prepared_execute(
+            $this->DB->contest,
+            "INSERT INTO `mun_payment_dump`
+            (`nick`, `type`, `response`)
+            VALUES (?, ?, ?)",
+            "sss",
+            [$nick, $type, $response]
+        );
+    }
+
 }

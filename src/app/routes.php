@@ -55,6 +55,11 @@ $routes = [
     "/litcafe/ttt-workshop/register/"                   => "/ttt_workshop/register/",
     "/threads/breakin/register/"                        => "/contest/breakin/",
 
+    "/talks-and-workshops/mun/register/webhook/"   => "/mun/webhook/",
+    "/talks-and-workshops/mun/register/success/"   => "/mun/success/",
+    "/talks-and-workshops/mun/register/"           => "/mun/register/",
+    "/talks-and-workshops/mun/pay_again/"          => "/mun/pay_again/",
+
     "/api/"     => "/page/show/api/",
     "/"         => "/page/show/"
 ];
