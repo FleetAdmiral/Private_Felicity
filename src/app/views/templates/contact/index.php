@@ -16,39 +16,39 @@
         <div class="row text-center">
             <div class="col4">
                 <p>
-                    <?= __('Arihant Jain') ?>
-                    <a target="_blank" href="https://www.facebook.com/arihantjn53">
+                    <?= __('Apaar Agrawal') ?>
+                    <a target="_blank" href="https://www.facebook.com/apaar.agrawal.3">
                         <img class="social-icon" src="<?= base_url() ?>static/images/fb-icon.png">
                     </a>
                 </p>
                 <p>
-                    <a target="_blank" class="underlined" href="mailto:arihant@felicity.iiit.ac.in">arihant@felicity.iiit.ac.in</a>
+                    <a target="_blank" class="underlined" href="mailto:apaar@felicity.iiit.ac.in">apaar@felicity.iiit.ac.in</a>
                 </p>
-                <p>(+91) 7799270649</p>
+                <p>(+91) 9515409221</p>
             </div>
             <div class="col4">
                 <p>
-                    <?= __('Nishant Gupta') ?>
-                    <a target="_blank" href="https://www.facebook.com/Nishanz">
+                    <?= __('Himakar Yv') ?>
+                    <a target="_blank" href="https://www.facebook.com/himakar.yv">
                         <img class="social-icon" src="<?= base_url() ?>static/images/fb-icon.png">
                     </a>
                 </p>
                 <p>
-                    <a target="_blank" class="underlined" href="mailto:nishant@felicity.iiit.ac.in">nishant@felicity.iiit.ac.in</a>
+                    <a target="_blank" class="underlined" href="mailto:himakar@felicity.iiit.ac.in">himakar@felicity.iiit.ac.in</a>
                 </p>
-                <p>(+91) 9052678082</p>
+                <p>(+91) 7799013690</p>
             </div>
             <div class="col4">
                 <p>
-                    <?= __('Sai Sahith Nama') ?>
-                    <a target="_blank" href="https://www.facebook.com/namasahith">
+                    <?= __('Parth Shrivastava') ?>
+                    <a target="_blank" href="https://www.facebook.com/parth20shri">
                         <img class="social-icon" src="<?= base_url() ?>static/images/fb-icon.png">
                     </a>
                 </p>
                 <p>
-                    <a target="_blank" class="underlined" href="mailto:sahith@felicity.iiit.ac.in">sahith@felicity.iiit.ac.in</a>
+                    <a target="_blank" class="underlined" href="mailto:parth@felicity.iiit.ac.in">parth@felicity.iiit.ac.in</a>
                 </p>
-                <p>(+91) 7013835827</p>
+                <p>(+91) 8142657575</p>
             </div>
         </div>
     </div>
