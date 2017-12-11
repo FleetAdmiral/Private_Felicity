@@ -74,6 +74,7 @@ if (empty($is_ajax)):
             <a class="pure-button btn" onclick="toggleDetails('events')"><span>Events</span></a>
             <a class="pure-button btn" onclick="toggleDetails('gallery')"><span>Gallery</span></a>
             <a class="pure-button btn" onclick="toggleDetails('team')"><span>Team</span></a>
+            <a class="pure-button btn" onclick="toggleDetails('diary')"><span>Felicity Diaries</span></a>
             <a class="pure-button btn" onclick="toggleDetails('sponsors')"><span>Sponsors</span></a>
             <a class="pure-button btn" onclick="toggleDetails('contact')"><span>Contact</span></a>
       </div>
@@ -96,6 +97,7 @@ if (empty($is_ajax)):
                             <li><a onclick="showPage('events')">Events</a></li>
                             <li><a onclick="showPage('gallery')">Gallery</a></li>
                             <li><a onclick="showPage('team')">Team</a></li>
+                            <li><a onclick="showPage('diary')">Felicity Diaries</a></li>
                             <li><a onclick="showPage('sponsors')">Sponsors</a></li>
                             <li><a onclick="showPage('contact')">Contact Us</a></li>
                         </div>

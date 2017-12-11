@@ -1,3 +1,4 @@
+<?php $this->load_fragment('skeleton_template/header', ['title' => __('diary')]); ?>
 <!-- Resources -->
 <script src="js/ammap.js" type="text/javascript"></script>
 <script src="js/worldLow.js" type="text/javascript"></script>
@@ -11,7 +12,7 @@
 width: 100%;
 /*height: 500px;*/
 height: 85%;
-}     
+}
 
 
 p {
@@ -73,7 +74,7 @@ var map = AmCharts.makeChart( "chartdiv", {
     "longitudes": [ 151.2093, 78.4867, 50.5814, -97.7431, -117.1611, -122.0322, -79.9959, 2.15899, 2.3522, 4.8952, 37.6173, 151.209 ]
   } ],
 
-  "images": [ 
+  "images": [
 
       {
             "svgPath": targetSVG,
@@ -87,7 +88,7 @@ var map = AmCharts.makeChart( "chartdiv", {
             "title": "<img src='images/hyderabad_india_arpit.jpg' style='width: 30%; float: left; margin-right: 10px; margin-top: 4px; margin-bottom: 3px;' /><p style='font-size:20px;'><b>Hyderabad, India</b></p><p style='text-align: left; font-size:15px; margin-top: 12px;'>&quot;We have reached Ramoji Film City, Hyderabad. At 2000 acres, it is the largest integrated film city in the Telangana and the largest studio complex in the world.&quot;<br>Arpit Maheshwari<br>Batch 2k16</p>",
             "latitude": 17.3850,
             "longitude": 78.4867
-      }, 
+      },
 
 
 
@@ -96,7 +97,7 @@ var map = AmCharts.makeChart( "chartdiv", {
             "title": "<img src='images/bahrain_aryan.jpg' style='width: 36%; float: left; margin-right: 10px; margin-top: 4px; margin-bottom: 3px;' /><p style='font-size:20px;'><b>Bahrain</b></p><p style='text-align: left; font-size:15px; margin-top: 12px;'>&quot;An international icon, this building can be uniquely identified by the three generator fans attached to it. A symbol of global economic connection, no other icon in Bahrain comes close to representing what Felicity is all about! Here's to a smaller, more connected global world&quot;<br>Aryan Sakaria<br>Batch 2k17</p>",
             "latitude": 26.2392,
             "longitude": 50.5814
-      }, 
+      },
 
       {
             "svgPath": targetSVG,
@@ -221,3 +222,14 @@ var map = AmCharts.makeChart( "chartdiv", {
 <br/>
 <div id="chartdiv"></div>
 </body>
+
+
+<?php $this->load_fragment('skeleton_template/footer'); ?>
+<?php if (!$is_ajax): ?>
+<script>
+    (function() {
+        $('#toggle').removeClass('i');
+        $('.btn-box').css('display', 'none');
+    })();
+</script>
+<?php endif; ?>
