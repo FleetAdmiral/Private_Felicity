@@ -83,7 +83,7 @@ if (empty($is_ajax)):
           <div>
               <img class="whitelogo" src="static/images/logo.png">
               <p class="text-landing">
-                  Around The World In 3 Days.
+                  Around The World In 3 Days
               </p>
           </div>
       </div>
