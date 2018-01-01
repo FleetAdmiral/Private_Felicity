@@ -69,24 +69,12 @@ if (empty($is_ajax)):
      <button id="menu-toggle" class="toggle-button" >☰</button>
       <div id="panelcontainer">
 
-      <div class="left-navbar">
-            <a class="pure-button btn" onclick="toggleDetails('about')"><span>About</span></a>
-            <a class="pure-button btn" onclick="toggleDetails('events')"><span>Events</span></a>
-            <a class="pure-button btn" onclick="toggleDetails('gallery')"><span>Gallery</span></a>
-            <a class="pure-button btn" onclick="toggleDetails('team')"><span>Team</span></a>
-            <a class="pure-button btn" onclick="toggleDetails('diary')"><span>Felicity Diaries</span></a>
-            <a class="pure-button btn" onclick="toggleDetails('sponsors')"><span>Sponsors</span></a>
-            <a class="pure-button btn" onclick="toggleDetails('contact')"><span>Contact</span></a>
-      </div>
-
-      <div class="content-center">
-          <div>
-              <img class="whitelogo" src="static/images/logo.png">
-              <p class="text-landing">
-                  Around The World In 3 Days
-              </p>
-          </div>
-      </div>
+        <div class="content-center" style="position: relative;">
+          <div style="position: absolute;top: 38%; left: 8%;">
+                    <img class="whitelogo" src="static/images/logo.png" style="float: top; width: 30%">
+          <p class="text-landing" style="font-size: 200%;">Around the world in 3 days</p>
+                </div>
+        </div>
 
       <section id="about" class="about">
             <div class="cell">
