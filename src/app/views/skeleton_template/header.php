@@ -79,7 +79,7 @@ if (empty($is_ajax)):
       <section id="about" class="about">
             <div class="cell">
                 <div class="cables center accelerate">
-                    <div class="linkholder">
+                    <!-- <div class="linkholder">
                         <div class="links">
                             <li><a onclick="showPage('about')">About US</a></li>
                             <li><a onclick="showPage('events')">Events</a></li>
@@ -89,7 +89,7 @@ if (empty($is_ajax)):
                             <li><a onclick="showPage('sponsors')">Sponsors</a></li>
                             <li><a onclick="showPage('contact')">Contact Us</a></li>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="panel accelerate content-holder">
 
 <?php endif;
