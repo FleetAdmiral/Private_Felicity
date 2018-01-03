@@ -71,7 +71,7 @@ if (empty($is_ajax)):
 
         <div class="content-center" style="position: relative;">
           <div style="top: 45%">
-                    <img class="whitelogo" src="static/images/logo.png" style="display: block;
+                    <img class="whitelogo" src="<?= base_url() ?>static/images/logo.png" style="display: block;
     margin: 0 auto; width: 30%">
           <p class="text-landing" style="font-size: 175%">Global Weekend</p>
           <br><br>
