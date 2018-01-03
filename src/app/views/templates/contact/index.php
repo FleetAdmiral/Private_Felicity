@@ -52,6 +52,23 @@
             </div>
         </div>
     </div>
+    <table style="margin: 0 auto; margin-top: 5%;">
+    <tr>
+    <td>
+      <button class="toggle-contact fb-btn" onclick="window.open('https://www.facebook.com/felicity.iiith/')">
+        <i class="icon-facebook"></i>
+      </button>
+      </td><td>
+      <button class="toggle-contact youtube-btn" onclick="window.open('https://www.youtube.com/channel/UC_1vMv4Al_96QgYzkFjh99w/')">
+        <i class="icon-youtube"></i>
+      </button>
+      </td><td>
+      <button class="toggle-contact instagram-btn" onclick="window.open('https://www.instagram.com/felicity.iiith/')">
+        <i class="icon-instagram"></i>
+      </button>
+      </td>
+      </tr>
+    </table>
 </article>
 <?php $this->load_fragment('skeleton_template/footer'); ?>
 <?php if (!$is_ajax): ?>
