@@ -1,11 +1,11 @@
 @font-face {
-    font-family: Dosis;
-    src: url(../fonts/Dosis-Regular.ttf);
+    font-family: Oxygen-Regular;
+    src: url(../fonts/Oxygen-Regular.ttf);
 }
 
 @font-face {
-    font-family: felicity;
-    src: url(../fonts/GeosansLight.ttf);
+    font-family: Oxygen;
+    src: url(../fonts/Oxygen-Light.ttf);
 }
 
 body #container{
@@ -15,7 +15,7 @@ body #container{
 
 body {
     text-align: center;
-    font-family: 'felicity';
+    font-family: 'Oxygen';
     line-height: 1.4em;
     color: black;
 }
@@ -84,7 +84,7 @@ button {
     cursor: pointer;
     font-size: 1.33333em;
     line-height: 45.6px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Oxygen-Regular', sans-serif;
     background-color: #f2f2f2;
     font-weight: 600;
     border-radius: 28px;
