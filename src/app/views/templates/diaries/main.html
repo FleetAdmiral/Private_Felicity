@@ -1,0 +1,229 @@
+<!-- Resources -->
+<html>
+<head>
+  <title>
+    Felicity Diaries
+  </title>
+<script src="js/ammap.js" type="text/javascript"></script>
+<script src="js/worldLow.js" type="text/javascript"></script>
+<script src="js/export.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/export.css" type="text/css"/>
+<script src="js/light.js" type="text/javascript"></script>
+<!-- Styles -->
+<link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
+<style>
+#chartdiv {
+width: 100%;
+/*height: 500px;*/
+height: 85%;
+}
+
+
+p {
+  text-align: center;
+  /*font-family: "Chewy";*/
+  margin:0;
+}
+
+body {
+  margin:0;
+}
+
+img {
+  margin:0;
+}
+
+</style>
+
+<!-- Chart code -->
+<script>
+/**
+* SVG path for target icon
+*/
+var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
+
+/**
+* SVG path for plane icon
+*/
+var planeSVG = "m2,106h28l24,30h72l-44,-133h35l80,132h98c21,0 21,34 0,34l-98,0 -80,134h-35l43,-133h-71l-24,30h-28l15,-47";
+
+/**
+* Create the map
+*/
+var map = AmCharts.makeChart( "chartdiv", {
+"type": "map",
+"theme": "light",
+"balloon": { "textAlign": "left", "maxWidth": 500 },
+
+
+"dataProvider": {
+  "map": "worldLow",
+  "zoomLevel": 1,
+  "zoomLongitude": 10,
+  "zoomLatitude": 45,
+
+
+
+  "lines": [ {
+    "id": "line1",
+    "arc": -0.45,
+    "alpha": 0.3,
+    "latitudes": [ -33.8688, 17.3850, 26.2392, 30.2672, 32.7157, 37.3230, 40.4406, 41.38879, 48.8566, 52.3702, 55.7558, -33.8688 ],
+    "longitudes": [ 151.2093, 78.4867, 50.5814, -97.7431, -117.1611, -122.0322, -79.9959, 2.15899, 2.3522, 4.8952, 37.6173, 151.209 ]
+  }, {
+    "id": "line2",
+    "alpha": 0,
+    "color": "#000000",
+    "latitudes": [ -33.8688, 17.3850, 26.2392, 30.2672, 32.7157, 37.3230, 40.4406, 41.38879, 48.8566, 52.3702, 55.7558, -33.8688 ],
+    "longitudes": [ 151.2093, 78.4867, 50.5814, -97.7431, -117.1611, -122.0322, -79.9959, 2.15899, 2.3522, 4.8952, 37.6173, 151.209 ]
+  } ],
+
+  "images": [
+
+      {
+            "svgPath": targetSVG,
+            "title": "<img src='images/sydney_australia_vanya.jpg' style='width: 55%; float: left; margin-right: 10px; margin-top: 4px; margin-bottom: 4px;' /><p style='font-size:20px;'><b>Sydney, Australia</b></p><p style='text-align: left; font-size:15px;'>&quot;Felicity, a chance to have fun with friends preparing for the opening night, checking out different events and getting lots of food&quot;<br>Vanya Jauhal<br>Team Culturals'15<br>Batch 2k12</p>",
+            "latitude": -33.8688,
+            "longitude": 151.2093
+      },
+
+      {
+            "svgPath": targetSVG,
+            "title": "<img src='images/hyderabad_india_arpit.jpg' style='width: 30%; float: left; margin-right: 10px; margin-top: 4px; margin-bottom: 3px;' /><p style='font-size:20px;'><b>Hyderabad, India</b></p><p style='text-align: left; font-size:15px; margin-top: 12px;'>&quot;We have reached Ramoji Film City, Hyderabad. At 2000 acres, it is the largest integrated film city in the Telangana and the largest studio complex in the world.&quot;<br>Arpit Maheshwari<br>Batch 2k16</p>",
+            "latitude": 17.3850,
+            "longitude": 78.4867
+      },
+
+
+
+      {
+            "svgPath": targetSVG,
+            "title": "<img src='images/bahrain_aryan.jpg' style='width: 36%; float: left; margin-right: 10px; margin-top: 4px; margin-bottom: 3px;' /><p style='font-size:20px;'><b>Bahrain</b></p><p style='text-align: left; font-size:15px; margin-top: 12px;'>&quot;An international icon, this building can be uniquely identified by the three generator fans attached to it. A symbol of global economic connection, no other icon in Bahrain comes close to representing what Felicity is all about! Here's to a smaller, more connected global world&quot;<br>Aryan Sakaria<br>Batch 2k17</p>",
+            "latitude": 26.2392,
+            "longitude": 50.5814
+      },
+
+      {
+            "svgPath": targetSVG,
+            "title": "<img src='images/austin_usa_saksham.jpg' style='width: 55%; float: left; margin-right: 10px; margin-top: 4px;' /><p style='font-size:20px; margin-top: 4px;'><b>Austin, USA</b></p><p style='text-align: left; font-size:15px; margin-bottom: 4px;'>&quot;Felicity opens up a jar of nostalgia, taking me back to those endless nights, from the thrill of seeing Azeem Bannatwala live to watching some of the world's best programmers heating it out on the leaderboard! These moments make all the hard work seem worth it!&quot; - Saksham Aggarwal, Team Threads'16, Batch 2k13</p>",
+            "latitude": 30.2672,
+            "longitude": -97.7431
+      },
+
+      {
+            "svgPath": targetSVG,
+            "title": "<img src='images/sandiego_usa_aditi.jpg' style='width: 55%; float: left; margin-right: 10px; margin-top: 4px;' /><p style='font-size:20px; margin-top: 4px;'><b>San Diego, USA</b></p><p style='text-align: left; font-size:15px'>&quot;For me, Felicity brings back memories of the hours and hours of dance practice we had, hanging out with friends, teaching each other crazy steps and eating bondas at 4 every morning. Best time of the year!&quot; - Aditi Mavalankar, Team Culturals'15, Batch 2k12</p>",
+            "latitude": 32.7157,
+            "longitude": -117.1611
+      },
+
+      {
+            "svgPath": targetSVG,
+            "title": "<img src='images/cupertino_usa_vaidehi&co.jpg' style='width: 50%; float: left; margin-right: 10px; margin-top: 4px;' /><p style='font-size:20px; margin-top: 4px;'><b>Cupertino, USA</b></p><p style='text-align: left; font-size:15px'>&quot;Felicity is about meeting new people, making friends, coming out of your comfort zone and surprising yourself!&quot; - Rashika Kheria, Team Culturals'14, Batch 2k11</p><p style='text-align: left; font-size:15px; margin-bottom: 3px;'>Along with Vaidehi Chhajer, Samay Sharma, Abhayjeet Singh, Abhishekh Grover, Deepan Gupta.</p>",
+            "latitude": 37.3230,
+            "longitude": -122.0322
+      },
+
+      {
+            "svgPath": targetSVG,
+            "title": "<img src='images/pittsburg_usa_saksham&co.jpg' style='width: 35%; float: left; margin-right: 10px; margin-top: 4px;' /><p style='font-size:20px; margin-top: 4px;'><b>Pittsburg, USA</b></p><p style='text-align: left; font-size:12px'>&quot;It was amazing fun to try and bring the student body together to push the boundaries of Felicity as we knew it at the time. Over nights spent toiling away and running around, we formed new bonds with the most unexpected and amazing people who shared in our vision for Felicity. The sense of the commitment at the time almost seems funny now; whether it was organising cult practice all night for months straight, figuring out threads to start new events with complete uncertainty, or simply moving your mattress to the FCs room and living there to increase efficiency while working. It was scary at the time to be sacrificing so much academically, but I think we did okay. We learnt a lot in the process and if any of us had to do it again, we definitely would.&quot; - Arnav Kumar Agrawal (Cult Coordinator'15), Saksham Singhal (Threads team'15), Nishant Agrawal (Titles do not matter), Batch 2K12</p>",
+            "latitude": 40.4406,
+            "longitude": -79.9959
+      },
+
+
+      {
+        "svgPath": targetSVG,
+            "title": "<img src='images/barcelona_spain_shriyansh.jpg' style='width: 40%; float: left; margin-right: 10px; margin-top: 4px;' /><p style='font-size:20px; margin-top: 4px;'><b>Barcelona, Spain</b></p><p style='text-align: left; font-size:14px'>&quot;I can't believe it has been 10 months since Felicity'17 ended. It feels like just yesterday I was talking to Rahul Subramanian about various aspects of life on our trip from Rajiv Gandhi International Airport Hyderabad. Felicity is one aspect of my life I will always rejoice. It's not just those three days,but the journey as the whole where you meet lot of new people, ink tons of memories, learn lot of things about yourself & the wonderful people around you.&quot; - Shriyansh Agrawal, Team Hospitality & PR, Nights'17, Batch 2k14</p>",
+            "latitude": 41.38879,
+            "longitude": 2.15899
+      },
+
+      {
+            "svgPath": targetSVG,
+            "title": "<img src='images/paris_france_moneish.jpg' style='width: 25%; float: left; margin-right: 10px; margin-top: 4px; margin-bottom: 3px;' /><p style='font-size:20px;'><b>Paris, France</b></p><p style='text-align: left; font-size:15px; margin-top: 25px;'>&quot;It's that time of the year when everything else takes a back seat and everyone comes together to make and enjoy the fest. Of course lot of new friends and memories are forged enroute the journey&quot;<br>Moneish Kumar<br>Team Culturals, Kalakshetra & Pulsation 2k16<br>Batch 2k13</p>",
+            "latitude": 48.8566,
+            "longitude": 2.3522
+      },
+
+      {
+            "svgPath": targetSVG,
+            "title": "<img src='images/amsterdam_netherlands_drushti.jpg' style='width: 30%; float: left; margin-right: 10px; margin-top: 4px; margin-bottom: 3px;' /><p style='font-size:20px;'><b>Amsterdam, Netherlands</b></p><p style='text-align: left; font-size:15px; margin-top: 20px;'>&quot;I think Felicity for me was all about numbers, permissions, endless paperwork and making a lot of new friends and of course days without sleep.&quot;<br>G Drushti Apoorva<br>Finance Council 14-15<br>Batch 2k12</p>",
+            "latitude": 52.3702,
+            "longitude": 4.8952
+      },
+
+
+      {
+            "svgPath": targetSVG,
+            "title": "<img src='images/moscow_russia_payal.jpg' style='width: 22%; float: left; margin-right: 10px; margin-top: 4px; margin-bottom: 3px;' /><p style='font-size:20px;'><b>Moscow, Russia</b></p><p style='text-align: left; font-size:15px; margin-top: 25px;'>&quot;Felicity, a new exciting part of college experience that I'm eager to be a part of this year.&quot;<br>Payal Khullar<br>PhD Student, LTRC, Batch 2k17</p>",
+            "latitude": 55.7558,
+            "longitude": 37.6173
+      },
+
+      {
+        "svgPath": planeSVG,
+        "positionOnLine": 0,
+        "color": "#000000",
+        "alpha": 0.1,
+        "animateAlongLine": true,
+        "lineId": "line2",
+        "flipDirection": false,
+        "loop": true,
+        "scale": 0.1,
+        "positionScale": 1.3
+      },
+
+      {
+      "svgPath": planeSVG,
+      "positionOnLine": 0,
+      "color": "#585869",
+      "animateAlongLine": true,
+      "lineId": "line1",
+      "flipDirection": false,
+      "loop": true,
+      "scale": 0.09,
+      "positionScale": 1.8
+      }
+
+   ]
+},
+
+"areasSettings": {
+  // "unlistedAreasColor": "#8dd9ef"
+  // "unlistedAreasColor": "#33FFDD"
+  "unlistedAreasColor": "#006666"
+},
+
+"imagesSettings": {
+  "color": "#585869",
+  "rollOverColor": "#585869",
+  "selectedColor": "#585869",
+  "pauseDuration": 0.2,
+  "animationDuration": 3.5,
+  "adjustAnimationSpeed": true
+},
+
+"linesSettings": {
+  "color": "#585869",
+  "alpha": 0.4
+},
+
+"export": {
+  "enabled": true
+}
+
+} );
+
+
+
+</script>
+
+</head>
+<body bgcolor="#e6e6e6">
+<center><img src="images/logo.png" width="10%"/></center>
+<p style="font-family: Chewy"> Around the world in 3 days </p>
+<br/>
+<div id="chartdiv"></div>
+</body>
+</html>

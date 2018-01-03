@@ -18,7 +18,7 @@ if (empty($is_ajax)):
       <a onclick="toggleDetails('events')" style="font-size: 150%; color: white; padding-left: 6%;"><span>Events</span></a>
       <a onclick="toggleDetails('gallery')" style="font-size: 150%; color: white; padding-left: 6%;"><span>Gallery</span></a>
       <a onclick="toggleDetails('team')" style="font-size: 150%; color: white; padding-left: 6%;"><span>Team</span></a>
-      <a onclick="toggleDetails('diary')" style="font-size: 150%; color: white; padding-left: 6%;"><span>Felicity Diaries</span></a>
+      <a target="_blank" href="/useproperpathhereplease/diaries/main.html" style="font-size: 150%; color: white; padding-left: 6%;"><span>Felicity Diaries</span></a>
       <a onclick="toggleDetails('sponsors')" style="font-size: 150%; color: white; padding-left: 6%;"><span>Sponsors</span></a>
       <a onclick="toggleDetails('contact')" style="font-size: 150%; color: white; padding-left: 6%;"><span>Contact</span></a>
 </div>
