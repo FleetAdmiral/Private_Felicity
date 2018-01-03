@@ -85,6 +85,7 @@ if (empty($is_ajax)):
         display: block;
       }
     </style>
+    <?php $this->load_fragment('menu'); ?>
 <?php $this->load_fragment('google_analytics'); ?>
     </body>
 </html>

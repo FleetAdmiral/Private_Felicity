@@ -101,5 +101,4 @@ if (empty($is_ajax)):
                           </div>
                       </button> -->
       <!-- </section> -->
-
 <?php endif;
