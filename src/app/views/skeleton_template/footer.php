@@ -5,7 +5,7 @@ if (empty($is_ajax)):
         </div>
     </div>
 </section>
-<button id="toggle" class="toggle i">
+<button id="toggle" class="toggle i" style="display: block; left: 95%; top: 8%;">
     <div class="cross">
         <div class="x"></div>
         <div class="y"></div>
