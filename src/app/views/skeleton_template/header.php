@@ -70,11 +70,12 @@ if (empty($is_ajax)):
       <div id="panelcontainer">
 
         <div class="content-center" style="position: relative;">
-          <div style="position: absolute;top: 38%; left: 8%;">
-                    <img class="whitelogo" src="static/images/logo.png" style="float: top; width: 30%">
-          <p class="text-landing" style="font-size: 200%;">Around the world in 3 days</p>
+          <div style="top: 45%">
+                    <img class="whitelogo" src="static/images/logo.png" style="display: block;
+    margin: 0 auto; width: 30%">
+          <p class="text-landing" style="font-size: 150%">Around the world in 3 days</p>
           <br><br>
-          <p class="text-landing" style="font-size: 100%; width">January 27 - 29, 2018</p>
+          <p class="text-landing" style="font-size: 75%">January 27 - 29, 2018</p>
                 </div>
         </div>
 
