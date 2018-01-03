@@ -227,7 +227,7 @@ button {
 .about .panel h2 {
     font-size: 2em;
     font-weight: 100;
-    color: #d92400;
+    color: rgba(255, 101, 102, 1);
 }
 
 .about .panel h1 .tabheading {
@@ -459,7 +459,7 @@ li .event:hover {
 }
 
 button:hover {
-    background-color: #d92400;
+    background-color: rgba(127, 58, 93, 1);
     color: white;
 }
 
@@ -491,7 +491,7 @@ button:hover {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 16px;
     border-radius: 16px;
-    background: rgba(255, 0, 0, 0.8);
+    background: rgba(204, 92, 149, 1);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
