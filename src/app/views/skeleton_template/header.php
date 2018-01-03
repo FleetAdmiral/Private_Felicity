@@ -73,9 +73,9 @@ if (empty($is_ajax)):
           <div style="top: 45%">
                     <img class="whitelogo" src="static/images/logo.png" style="display: block;
     margin: 0 auto; width: 30%">
-          <p class="text-landing" style="font-size: 150%">Global Weekend</p>
+          <p class="text-landing" style="font-size: 175%">Global Weekend</p>
           <br><br>
-          <p class="text-landing" style="font-size: 75%">January 27 - 29, 2018</p>
+          <p class="text-landing" style="font-size: 100%">January 27 - 29, 2018</p>
                 </div>
         </div>
 
