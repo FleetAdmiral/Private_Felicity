@@ -14,3 +14,14 @@
     })();
 </script>
 <?php endif; ?>
+
+
+<div style="position: fixed; bottom: 0; width: 100%;">
+    <ul style="position: fixed; bottom: 0; width: 100%; display: flex;">
+      <li><a onclick="openPage('about')">About US</a></li>
+      <li><a onclick="openPage('events')">Events</a></li>
+      <li><a onclick="openPage('team')">Team</a></li>
+      <li><a onclick="openPage('sponsors')">Sponsors</a></li>
+      <li><a onclick="openPage('contact')">Contact Us</a></li>
+  </ul>
+</div>
