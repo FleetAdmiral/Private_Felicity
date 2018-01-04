@@ -184,6 +184,8 @@
                 $('.' + id).show();
                 $(".event-description").load( + " .event-desc");
                 $.ajax({url: localeBaseUrl + "/api/" + id + "/", success: function(result){
+                    document.querySelector('#panelcontainer').style.backgroundImage = "url(" + baseUrl + (result.page_data.background || 'static/images/bg.jpg') + ")";
+                    // document.querySelector('.center').style.backgroundImage = "url(" + baseUrl + (result.page_data.background || 'static/images/panel.jpg') + ")";
                     $(".event-description").html(result.page_data.long_description);
                     $('.event-description-div').show();
                     $('.event-calender').hide();

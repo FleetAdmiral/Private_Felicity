@@ -20,6 +20,7 @@ function showDetails() {
 }
 
 function hideDetails() {
+    document.querySelector('#panelcontainer').style.backgroundImage = "url(" + baseUrl + "static/images/bg.jpg)";
     $about.addClass('hide');
     $toggle.css('display', 'none');
     setTimeout(function() {
