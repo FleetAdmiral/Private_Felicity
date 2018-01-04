@@ -1,6 +1,6 @@
 {
-    "name": "felicity-iiith/felicity16",
-    "description": "Felicity 2k16 website",
+    "name": "felicity-iiith/felicity18",
+    "description": "Felicity 2k18 website",
     "license": "UNLICENSED",
     "require": {
         "phpmailer/phpmailer": "^5.2",

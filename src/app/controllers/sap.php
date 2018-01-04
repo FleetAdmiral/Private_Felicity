@@ -161,7 +161,7 @@ class sap extends Controller {
 
         if ($success) {
             $this->load_library('email_lib');
-            $subject = "Felicity '16 Student Ambassador Program";
+            $subject = "Felicity '18 Student Ambassador Program";
 
             $mail = $this->email_lib->compose_mail("noreply");
 

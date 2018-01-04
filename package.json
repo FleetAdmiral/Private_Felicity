@@ -1,15 +1,15 @@
 {
-  "name": "felicity16",
+  "name": "felicity18",
   "version": "0.0.0",
-  "description": "Felicity 2k16 website",
+  "description": "Felicity 2k18 website",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felicity-iiith/felicity16.git"
+    "url": "git+https://github.com/felicity-iiith/felicity18-website.git"
   },
   "license": "UNLICENSED",
   "private": "true",
   "bugs": {
-    "url": "https://github.com/felicity-iiith/felicity16/issues"
+    "url": "https://github.com/felicity-iiith/felicity18-website/issues"
   },
   "devDependencies": {
     "del": "^1.2.0",

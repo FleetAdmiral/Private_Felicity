@@ -317,7 +317,7 @@ class sap_portal extends Controller {
 
         // Send user email with link for creating password
         $this->load_library('email_lib');
-        $subject = "Felicity '16 Student Ambassador Program";
+        $subject = "Felicity '18 Student Ambassador Program";
 
         $mail = $this->email_lib->compose_mail("noreply");
 
@@ -354,7 +354,7 @@ class sap_portal extends Controller {
 
         // Send user email with link for creating password
         $this->load_library('email_lib');
-        $subject = "Felicity '16 Student Ambassador Program";
+        $subject = "Felicity '18 Student Ambassador Program";
 
         $mail = $this->email_lib->compose_mail("noreply");
 
