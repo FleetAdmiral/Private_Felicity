@@ -75,7 +75,7 @@ if (empty($is_ajax)):
     margin: 0 auto; width: 30%">
           <p class="text-landing" style="font-size: 175%">Global Weekend</p>
           <br><br>
-          <p class="text-landing" style="font-size: 100%">January 27 - 29, 2018</p>
+          <p class="text-landing" style="font-size: 100%">January 26 - 28, 2018</p>
                 </div>
         </div>
 
