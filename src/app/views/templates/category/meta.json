@@ -47,7 +47,7 @@
     "background": {
         "name": "Background image",
         "type": "text",
-        "default": "static/images/panel.jpg",
+        "default": "static/images/bg.jpg",
         "optional": true
     }
 }
