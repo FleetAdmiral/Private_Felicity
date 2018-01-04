@@ -1,6 +1,7 @@
 <?php
 if (empty($is_ajax)):
 ?>
+              <!-- </div> -->
             </div>
         </div>
     </div>
@@ -12,23 +13,6 @@ if (empty($is_ajax)):
     </div>
 </button>
 
-<table style="margin: 0 auto">
-<tr>
-<td>
-  <button class="toggle-contact fb-btn" onclick="window.open('https://www.facebook.com/felicity.iiith/')">
-    <i class="icon-facebook"></i>
-  </button>
-  </td><td>
-  <button class="toggle-contact youtube-btn" onclick="window.open('https://www.youtube.com/channel/UC_1vMv4Al_96QgYzkFjh99w/')">
-    <i class="icon-youtube"></i>
-  </button>
-  </td><td>
-  <button class="toggle-contact instagram-btn" onclick="window.open('https://www.instagram.com/felicity.iiith/')">
-    <i class="icon-instagram"></i>
-  </button>
-  </td>
-  </tr>
-</table>
 <div id="menu">
   <h2>Menu</h2>
   <ul class="links" style="list-style: none;padding-left: 0px">

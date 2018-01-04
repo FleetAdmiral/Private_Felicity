@@ -16,7 +16,7 @@ function showDetails() {
     $('.btn-box').css('display', 'none');
     $about.css('display', 'table');
     slideout.close();
-
+    $('.helpMe').css('display', 'none');
 }
 
 function hideDetails() {
@@ -30,6 +30,7 @@ function hideDetails() {
         $('.btn-box').fadeIn().css('display', 'block');
     }, 200);
     history.pushState(localeBaseUrl, null, localeBaseUrl);
+    $('.helpMe').fadeIn(1400).css('display', 'block');
 }
 
 function toggleDetails(type) {
