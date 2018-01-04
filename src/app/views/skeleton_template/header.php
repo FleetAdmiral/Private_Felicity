@@ -69,7 +69,7 @@ if (empty($is_ajax)):
      <button id="menu-toggle" class="toggle-button" >☰</button>
       <div id="panelcontainer">
 
-        <div class="content-center helpMe" style="position: relative;">
+        <div class="content-center" style="position: relative;">
           <div style="top: 45%">
                     <img class="whitelogo" src="<?= base_url() ?>static/images/logo.png" style="display: block;
     margin: 0 auto; width: 30%">
