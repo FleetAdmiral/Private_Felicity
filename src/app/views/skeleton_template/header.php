@@ -57,7 +57,7 @@ if (empty($is_ajax)):
             <?php if (!empty($user_nick)): ?>
                 <div class="nick"><?= sprintf(__('Hello, %s'), $user_nick) ?> <a href="<?= locale_base_url() . "logout/" ?>"><?= __('Logout') ?></a></div>
             <?php else: ?>
-                <div><a href="<?= locale_base_url() . "logout/" ?>" class="pure-button btn"><?= __('Logout') ?></a></div>
+                <div><a href="<?= locale_base_url() . "login/" ?>" class="pure-button btn"><?= __('Login / Register') ?></a></div>
             <?php endif; ?>
         <?php else: ?>
             <div><a href="<?= locale_base_url() . "login/" ?>" class="pure-button btn"><?= __('Login / Register') ?></a></div>
