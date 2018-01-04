@@ -43,5 +43,11 @@
             "tagline"       : "tagline",
             "icon"          : "nav_icon"
         }
+    },
+    "background": {
+        "name": "Background image",
+        "type": "text",
+        "default": "static/images/panel.jpg",
+        "optional": true
     }
 }
