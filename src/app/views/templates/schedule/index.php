@@ -43,7 +43,7 @@
     };
 ?>
 
-<article class="page schedule" style="height: 90%; overflow-y:scroll;">
+<article class="page schedule" style="height: 100%; overflow-y:scroll;">
 <header>
     <h1>Eve<span class="tabheading">nts</span></h1>
 </header>
@@ -216,17 +216,17 @@
                 fixed=false;
               }
         }
-            
+
         $(window).resize(function(){
             if($(window).width()>800){
-              wrap.on("scroll", enableSnapping);    
+              wrap.on("scroll", enableSnapping);
             }else{
               wrap.unbind("scroll",enableSnapping);
             }
         });
         if($(window).width()>800)wrap.on("scroll", enableSnapping);
 
-        
+
     })();
 </script>
 <?php $this->load_fragment('skeleton_template/footer'); ?>
