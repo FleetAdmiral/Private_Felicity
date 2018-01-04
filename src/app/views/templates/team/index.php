@@ -1,8 +1,15 @@
 <?php $this->load_fragment('skeleton_template/header'); ?>
+<div class="linkholder">
+  <div class="links">
+    <li><a onclick="showPage('about')">About Us</a></li>
+    <li class="selected"><a onclick="showPage('team')">Team</a></li>
+  </div>
+</div>
 <article class="page team">
 <?php
 function img($img_name, $name=null) {
 ?>
+
     <div class="img-container<?=$name ? '' : ' group-pic' ?>" style="transform: rotate(<?= 2 - rand(1, 4) ?>deg)">
         <img src="<?=base_url()?>static/images/team/<?=$img_name?>">
     </div>
@@ -287,15 +294,15 @@ function img($img_name, $name=null) {
         </div>
     </div>
 </div>
-<!-- <div>
-    <h2 class="text-center"><?= __('The Complete Family') ?></h2>
-    <div class="row">
-        <div class="col10 offset1">
+<!-- <div> -->
+    <!-- <h2 class="text-center"><?= __('The Complete Family') ?></h2> -->
+    <!-- <div class="row"> -->
+        <!-- <div class="col10 offset1"> -->
             <!-- <?php img('Team.jpg', false); ?>  -->
-        </div>
-    </div>
-</div>
- --></article>
+        <!-- </div> -->
+    <!-- </div> -->
+<!-- </div> -->
+</article>
 <?php $this->load_fragment('skeleton_template/footer'); ?>
 <?php if (!$is_ajax): ?>
 <script>

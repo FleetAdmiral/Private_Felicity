@@ -520,3 +520,21 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+.about .linkholder {
+    background-clip: padding-box;
+    background: transparent url(../images/map.png) 0 0 no-repeat;
+    background-size: 60.5px 82.5px;
+}
+
+.about .linkholder .links {
+  zoom: 1;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.links .selected {
+  background-color: rgba(255, 0, 0, 0.2);
+}

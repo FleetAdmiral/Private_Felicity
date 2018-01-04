@@ -1,8 +1,17 @@
 <?php $this->load_fragment('skeleton_template/header', ['title' => __('About Us')]); ?>
+
+    <div class="linkholder">
+      <div class="links">
+        <li class="selected"><a onclick="showPage('about')">About Us</a></li>
+        <li><a onclick="showPage('team')">Team</a></li>
+      </div>
+    </div>
+
     <div class="page about-content">
-      <header>
-          <h1>About<span class="tabheading"> Us</span></h1>
-      </header>
+      <!-- <header> -->
+      <br/> <br/>
+          <!-- <h1>About<span class="tabheading"> Us</span></h1> -->
+      <!-- </header> -->
       <?= __($about_us) ?>
     </div>
 <?php $this->load_fragment('skeleton_template/footer'); ?>
