@@ -55,11 +55,11 @@ $admins = [
     // List of user ids of admins
 ];
 
-$cas_cfg = [
-    'host'           => 'login.iiit.ac.in',
-    'context'        => '/cas',
-    'port'           => 443,
+$keycloak_cfg = [
+    'host'           => 'https://felicity.iiit.ac.in/auth/realms/master',
     'server_ca_cert' => APPPATH . 'iiit.ac.in.pem', // Optional, Recommended.
+    'client_id'      => 'mainwebsite',
+    'client_secret'  => '<secret here>'
 ];
 
 $SECRET_STRING = 'kuchbhi';
@@ -86,12 +86,6 @@ $email_cfg = [
             'reply_to_name' => 'Threads Team'
         ]
     ]
-];
-
-$ldap_cfg = [
-    "host"          => "ldap://192.168.0.1",
-    "bind_dn"       => "...",
-    "bind_password" => "...",
 ];
 
 $payment_cfg = [

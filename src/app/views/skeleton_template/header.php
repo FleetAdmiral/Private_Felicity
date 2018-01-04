@@ -55,12 +55,12 @@ if (empty($is_ajax)):
     <div class="auth-quick-links">
         <?php if ($is_authenticated): ?>
             <?php if (!empty($user_nick)): ?>
-                <div class="nick"><?= sprintf(__('Hello, %s'), $user_nick) ?> <a href="<?= locale_base_url() . "auth/logout/" ?>"><?= __('Logout') ?></a></div>
+                <div class="nick"><?= sprintf(__('Hello, %s'), $user_nick) ?> <a href="<?= locale_base_url() . "logout/" ?>"><?= __('Logout') ?></a></div>
             <?php else: ?>
-                <div><a href="<?= locale_base_url() . "auth/logout/" ?>" class="pure-button btn"><?= __('Logout') ?></a></div>
+                <div><a href="<?= locale_base_url() . "logout/" ?>" class="pure-button btn"><?= __('Logout') ?></a></div>
             <?php endif; ?>
         <?php else: ?>
-            <div><a href="<?= locale_base_url() . "auth/login/" ?>" class="pure-button btn"><?= __('Login / Register') ?></a></div>
+            <div><a href="<?= locale_base_url() . "login/" ?>" class="pure-button btn"><?= __('Login / Register') ?></a></div>
         <?php endif; ?>
     </div>
     <?php endif; ?>

@@ -3,9 +3,9 @@
     "description": "Felicity 2k16 website",
     "license": "UNLICENSED",
     "require": {
-        "jasig/phpcas": "^1.3",
         "phpmailer/phpmailer": "^5.2",
-        "squizlabs/php_codesniffer": "^2.5"
+        "squizlabs/php_codesniffer": "^2.5",
+        "felicityiiith/openid-connect-php": "^0.4.0"
     },
     "require-dev": {
         "jakub-onderka/php-parallel-lint": "0.9.*"

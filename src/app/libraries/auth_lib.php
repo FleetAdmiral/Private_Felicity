@@ -1,70 +1,51 @@
 <?php
 
+use felicityiiith\OpenIDConnectClient;
+
 /**
  * Auth Library
  */
 class auth_lib extends Library {
 
-    public function __construct() {
-        $this->load_library("cas_lib");
-        $this->load_model("auth_model");
-    }
+    private static $oidc = false;
 
-    private function register_new_user() {
-        $this->load_library("session_lib");
-        $this->load_library("http_lib");
-
-        $current_path = base_url()
-            . substr((empty($_SERVER["PATH_INFO"]) ? "" : $_SERVER["PATH_INFO"]), 1)
-            . (empty($_SERVER["QUERY_STRING"]) ? "" : ("?" . $_SERVER["QUERY_STRING"]));
-
-        $this->session_lib->flash_set("auth_go_back", $current_path);
-
-        $this->http_lib->redirect(locale_base_url() . "auth/register/");
+    private function construct_oidc() {
+        global $keycloak_cfg;
+        $oidc = new OpenIDConnectClient($keycloak_cfg['host'], $keycloak_cfg['client_id'], $keycloak_cfg['client_secret']);
+        $oidc->setCertPath($keycloak_cfg['server_ca_cert']);
+        return $oidc;
     }
 
     public function force_authentication() {
-        $this->cas_lib->forceAuthentication();
-
-        $oauth_id = $this->cas_lib->getUser();
-        $user = $this->auth_model->get_user($oauth_id);
-
-        if ($user === false
-            || $user["resitration_status"] != "complete"
-            || !$user["email_verified"]
-        ) {
-            $this->register_new_user();
-        }
+        $oidc = $this->construct_oidc();
+        $oidc->authenticate();
     }
 
     public function is_authenticated() {
-        return $this->cas_lib->isAuthenticated();
+        $oidc = $this->construct_oidc();
+        return (bool) $oidc->getIdToken();
     }
 
     public function logout() {
-        $this->cas_lib->logout();
+        $oidc = $this->construct_oidc();
+        $oidc->signOut($oidc->getAccessToken(), base_url());
     }
 
     public function get_user() {
         $user = $this->get_user_details();
 
-        if ($user && !empty($user["nick"])) {
-            return $user["nick"];
+        if ($user && !empty($user->preferred_username)) {
+            return $user->preferred_username;
         }
         return false;
     }
 
     public function get_user_details() {
-        if (!$this->cas_lib->isAuthenticated()) {
+        $oidc = $this->construct_oidc();
+        if (!$this->is_authenticated()) {
             return false;
         }
 
-        $oauth_id = $this->cas_lib->getUser();
-        $user = $this->auth_model->get_user($oauth_id);
-
-        if ($user) {
-            return $user;
-        }
-        return false;
+        return $oidc->requestUserInfo();
     }
 }

@@ -9,7 +9,7 @@ $routes = [
     "/jugaad/locale_dump/"  => "/page/locale_dump/",
     "/jugaad/"              => "/jugaad/read/",
     "/ajax/"                => "/ajax/",
-    "/auth/"                => "/auth/",
+    "/oidc/"                => "/oidc/",
 
     "/unsubscribe/"         => "/auth/unsubscribe/",
 
