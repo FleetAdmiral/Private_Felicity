@@ -17,6 +17,7 @@ class auth_lib extends Library {
     }
 
     public function force_authentication() {
+        if ($this->is_authenticated()) return;
         $oidc = $this->construct_oidc();
         $oidc->authenticate();
     }
