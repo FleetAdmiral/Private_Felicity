@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bbcd950142a94a8a2180ee3993926fa7",
-    "content-hash": "c15b80eb38eca19b040d53e71022f02f",
+    "hash": "3acd7e73726ea5ae30fd07686a56d9e7",
+    "content-hash": "b35d1b3049ef5f1583026f25562ffca1",
     "packages": [
         {
             "name": "felicityiiith/openid-connect-php",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/felicity-iiith/OpenID-Connect-PHP.git",
-                "reference": "772bd8052fdf27ecc8c6d0b04bd8ea328fa70741"
+                "reference": "2481b9c8bb02d49d55acd02c9eb16ff0014b6b91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/felicity-iiith/OpenID-Connect-PHP/zipball/772bd8052fdf27ecc8c6d0b04bd8ea328fa70741",
-                "reference": "772bd8052fdf27ecc8c6d0b04bd8ea328fa70741",
+                "url": "https://api.github.com/repos/felicity-iiith/OpenID-Connect-PHP/zipball/2481b9c8bb02d49d55acd02c9eb16ff0014b6b91",
+                "reference": "2481b9c8bb02d49d55acd02c9eb16ff0014b6b91",
                 "shasum": ""
             },
             "require": {
@@ -35,7 +35,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Bare-bones OpenID Connect client",
-            "time": "2018-01-04 10:39:36"
+            "time": "2018-01-04 14:13:36"
         },
         {
             "name": "phpmailer/phpmailer",

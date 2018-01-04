@@ -5,7 +5,7 @@
     "require": {
         "phpmailer/phpmailer": "^5.2",
         "squizlabs/php_codesniffer": "^2.5",
-        "felicityiiith/openid-connect-php": "^0.4.0"
+        "felicityiiith/openid-connect-php": "0.4.0"
     },
     "require-dev": {
         "jakub-onderka/php-parallel-lint": "0.9.*"

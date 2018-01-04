@@ -23,8 +23,7 @@ class auth_lib extends Library {
     }
 
     public function is_authenticated() {
-        $oidc = $this->construct_oidc();
-        return (bool) $oidc->getIdToken();
+        return (bool) $this->get_user();
     }
 
     public function logout() {
@@ -43,10 +42,12 @@ class auth_lib extends Library {
 
     public function get_user_details() {
         $oidc = $this->construct_oidc();
-        if (!$this->is_authenticated()) {
+        if (!$oidc->getIdToken()) {
             return false;
         }
 
+        $details = $oidc->requestUserInfo();
+        if (isset($details->error)) $oidc->refreshTokens();
         return $oidc->requestUserInfo();
     }
 }
