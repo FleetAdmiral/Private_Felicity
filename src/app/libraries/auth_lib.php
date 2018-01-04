@@ -17,7 +17,11 @@ class auth_lib extends Library {
     }
 
     public function force_authentication() {
+        if ($this->is_authenticated()) return;
+        $this->load_library("session_lib");
+        $this->session_lib->flash_set("auth_next_page", base_url() . $_SERVER['REQUEST_URI']);
         $oidc = $this->construct_oidc();
+        $oidc->setRedirectURL(base_url() . 'oidc/callback');
         $oidc->authenticate();
     }
 

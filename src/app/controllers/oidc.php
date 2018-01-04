@@ -27,6 +27,14 @@ class oidc extends Controller {
         $this->http->redirect($next_page);
     }
 
+    public function callback() {
+        $next_page = $this->session_lib->flash_get("auth_next_page");
+        if (empty($next_page)) {
+            $next_page = locale_base_url();
+        }
+        $this->http->redirect($next_page);
+    }
+
     function logout() {
         $this->auth_lib->logout();
     }
