@@ -67,7 +67,7 @@ p {
 html {}
 
 a {
-    color: #E46950;
+    color: #406170;
 }
 
 #menu-toggle {
@@ -463,7 +463,7 @@ li .event:hover {
 }
 
 button:hover {
-    background-color: rgba(127, 58, 93, 1);
+    background-color: rgba(193, 99, 87, 1);
     color: white;
 }
 
@@ -472,7 +472,7 @@ button:hover {
 }
 
 .links a:hover {
-    background-color: #E46950;
+    background-color: #406170;
     color: white;
 }
 
@@ -495,7 +495,7 @@ button:hover {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 16px;
     border-radius: 16px;
-    background: rgba(204, 92, 149, 1);
+    background: #406170;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -540,7 +540,7 @@ blockquote p {
 }
 
 .links .selected {
-  background-color: rgba(228, 105, 80, 0.2);
+  background-color: rgba(64, 97, 112, 0.2);
 }
 
 #plane{
