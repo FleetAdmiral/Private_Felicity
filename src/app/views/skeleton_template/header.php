@@ -81,7 +81,7 @@ if (empty($is_ajax)):
 
       <section id="about" class="about">
             <div class="cell">
-                <div style="padding-bottom:0; height: 75vh; width: 80%; margin-top: -5%;" class="cables center accelerate">
+                <div style="padding-bottom:0; height: 75vh; width: 80%; margin-top: 5%;" class="cables center accelerate">
                     <!-- <div class="linkholder">
                         <div class="links">
                             <li><a onclick="showPage('about')">About US</a></li>
