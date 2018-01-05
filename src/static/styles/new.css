@@ -544,9 +544,8 @@ blockquote p {
 }
 
 #plane{
-  top: 15%;
+top: 15%;
 position:absolute;
-z-index: 10000;
 -webkit-animation:linear infinite alternate;
 -webkit-animation-name: run;
 -webkit-animation-duration: 5s;
