@@ -75,13 +75,13 @@ if (empty($is_ajax)):
     margin: 0 auto; width: 30%">
           <p class="text-landing" style="font-size: 175%">Global Weekend</p>
           <br><br>
-          <p class="text-landing" style="font-size: 100%">January 27 - 29, 2018</p>
+          <p class="text-landing" style="font-size: 100%">January 26 - 28, 2018</p>
                 </div>
         </div>
 
       <section id="about" class="about">
             <div class="cell">
-                <div style="padding-bottom:0; height: 75vh; width: 80%; margin-top: -5%;" class="cables center accelerate">
+                <div style="padding-bottom:0; height: 75vh; width: 80%; margin-top: 5%;" class="cables center accelerate">
                     <!-- <div class="linkholder">
                         <div class="links">
                             <li><a onclick="showPage('about')">About US</a></li>
