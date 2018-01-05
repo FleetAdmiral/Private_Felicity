@@ -551,8 +551,8 @@ blockquote p {
 
 .planeWait{
   left: 25% !important;
-  -webkit-animation:cubic-bezier(0.05, 0.35, 0.6) infinite alternate;
-  -webkit-animation-name: enter;
+  -webkit-animation:ease-in-out infinite alternate;
+  -webkit-animation-name: fuckAroundY;
   -webkit-animation-duration: 2s;
 }
 
@@ -586,10 +586,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
     100%{ left : -100%;}
 }
 
-@-webkit-keyframes fuckAround {
-    0% { left: 23%; top: 0%}
-    20% { left: 27%; top: 5%}
-    40% { left: 27%; top: 0%}
-    60% { left: 23%; top: 5%}
-    100% { left: 23%; top: 0%}
+@-webkit-keyframes fuckAroundY {
+    0% { top: 0%}
+    20% {top: 5% }
+    40% {top: 0% }
+    60% {top: 5% }
+    100% {top: 0% }
+}
+
+@-webkit-keyframes fuckAroundX {
+    0% { left: 23%}
+    20% { left: 27%}
+    40% { left: 27%}
+    60% { left: 23%}
+    100% { left: 23%}
 }
