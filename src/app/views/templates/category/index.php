@@ -61,5 +61,6 @@ usort($events_to_display, function ($e1, $e2) {
         $('#toggle').removeClass('i');
         $('.btn-box').css('display', 'none');
     })();
+    
 </script>
 <?php endif; ?>

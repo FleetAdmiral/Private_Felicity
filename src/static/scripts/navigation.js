@@ -20,6 +20,7 @@ function showDetails() {
 }
 
 function hideDetails() {
+    planeExit();
     document.querySelector('#panelcontainer').style.backgroundImage = "url(" + baseUrl + "static/images/bg.jpg)";
     $about.addClass('hide');
     $toggle.css('display', 'none');
@@ -67,5 +68,23 @@ function showPage(type) {
     var newUrl = urlHelper.getPageUrl(type);
     loadContent(newUrl, $(".content-holder"));
     history.pushState(newUrl, null, newUrl);
+    planeEnter();
     slideout.close();
+}
+
+function planeEnter() {
+  $('#plane').addClass('planeEnter');
+  setTimeout(function(){
+    console.log("Done");
+    $('#plane').removeClass('planeEnter');
+    $('#plane').addClass('planeWait');
+  }, 2001);
+}
+
+function planeExit() {
+  $('#plane').removeClass('planeWait');
+  $('#plane').addClass('planeExit');
+  setTimeout(function(){
+    $('#plane').removeClass('planeExit');
+  }, 1001);
 }

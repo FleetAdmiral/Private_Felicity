@@ -544,11 +544,28 @@ blockquote p {
 }
 
 #plane{
-top: 15%;
-position:absolute;
--webkit-animation:linear infinite alternate;
--webkit-animation-name: run;
--webkit-animation-duration: 5s;
+  top: 0;
+  left:100%;
+  position:absolute;
+}
+
+.planeWait{
+  left: 25% !important;
+  -webkit-animation:ease-in-out infinite alternate;
+  -webkit-animation-name: fuckAroundY;
+  -webkit-animation-duration: 2s;
+}
+
+.planeEnter{
+  -webkit-animation:cubic-bezier(0.05, 0.35, 0.6) infinite alternate;
+  -webkit-animation-name: enter;
+  -webkit-animation-duration: 2s;
+}
+
+.planeExit{
+  -webkit-animation:cubic-bezier(0.1, 0.9)  infinite alternate;
+  -webkit-animation-name: exit;
+  -webkit-animation-duration: 1.5s;
 }
 
 .newcsscozwell {
@@ -559,8 +576,28 @@ background: linear-gradient(135deg, rgba(226,245,254,0.6) 56%,rgba(150,219,248,0
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', endColorstr='#96dbf8',GradientType=1 );
 }
 
-@-webkit-keyframes run {
-    0% { left: 0;}
-    50%{ left : 100%;}
-    100%{ left: 0;}
+@-webkit-keyframes enter {
+    0% { left: 100%;}
+    100%{ left : 25%;}
+}
+
+@-webkit-keyframes exit {
+    0% { left: 25%;}
+    100%{ left : -100%;}
+}
+
+@-webkit-keyframes fuckAroundY {
+    0% { top: 0%}
+    20% {top: 5% }
+    40% {top: 0% }
+    60% {top: 5% }
+    100% {top: 0% }
+}
+
+@-webkit-keyframes fuckAroundX {
+    0% { left: 23%}
+    20% { left: 27%}
+    40% { left: 27%}
+    60% { left: 23%}
+    100% { left: 23%}
 }
