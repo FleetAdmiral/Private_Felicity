@@ -50,8 +50,8 @@ if (empty($is_ajax)):
 ?>
 
 <body  style="overflow: hidden;">
-  <div id = "plane" style="z-index: 2000;">
-  <img src = "static/images/plane_png.png" width = "400em" height ="400em">
+  <div id = "plane" style="z-index: 2000;height: 100%;">
+  <img src = "static/images/plane_final_crop.png" width = "auto" height ="70%;">
   </div>
   <?php if (isset($is_authenticated)): ?>
     <div class="auth-quick-links">
@@ -83,7 +83,7 @@ if (empty($is_ajax)):
 
       <section id="about" class="about">
             <div class="cell">
-                <div style="padding-bottom:0; height: 75vh; width: 80%; margin-top: 5%;" class="cables center accelerate">
+                <div style="padding-bottom:0; height: 75vh; width: 80%; margin-top: 5%;" class="cables center accelerate newcsscozwell">
                     <!-- <div class="linkholder">
                         <div class="links">
                             <li><a onclick="showPage('about')">About US</a></li>
