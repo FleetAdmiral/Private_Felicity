@@ -50,7 +50,9 @@ if (empty($is_ajax)):
 ?>
 
 <body  style="overflow: hidden;">
-
+  <div id = "plane"></div>
+  <img src = "https://i.stack.imgur.com/qgNyF.png?s=328&g=1" width = "100px" height ="100px">
+  </div>
   <?php if (isset($is_authenticated)): ?>
     <div class="auth-quick-links">
         <?php if ($is_authenticated): ?>

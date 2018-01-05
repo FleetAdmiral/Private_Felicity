@@ -542,3 +542,18 @@ blockquote p {
 .links .selected {
   background-color: rgba(255, 0, 0, 0.2);
 }
+
+#plane{
+  top: 15%;
+position:absolute;
+z-index: 10000;
+-webkit-animation:linear infinite alternate;
+-webkit-animation-name: run;
+-webkit-animation-duration: 5s;
+}
+
+@-webkit-keyframes run {
+    0% { left: 0;}
+    50%{ left : 100%;}
+    100%{ left: 0;}
+}
