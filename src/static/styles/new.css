@@ -552,11 +552,11 @@ position:absolute;
 }
 
 .newcsscozwell {
-    background: rgb(231,242,255);
-    background: -moz-linear-gradient(-45deg, rgba(231,242,255,0.6) 0%, rgba(193,222,255,0.6) 47%, rgba(154,201,254,0.6) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(231,242,255,0.6) 0%,rgba(193,222,255,0.6) 47%,rgba(154,201,254,0.6) 100%);
-    background: linear-gradient(135deg, rgba(231,242,255,0.6) 0%,rgba(193,222,255,0.6) 47%,rgba(154,201,254,0.6) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7f2ff', endColorstr='#9ac9fe',GradientType=1 );
+background: rgb(226,245,254);
+background: -moz-linear-gradient(-45deg, rgba(226,245,254,0.6) 56%, rgba(150,219,248,0.8) 91%);
+background: -webkit-linear-gradient(-45deg, rgba(226,245,254,0.6) 56%,rgba(150,219,248,0.8) 91%);
+background: linear-gradient(135deg, rgba(226,245,254,0.6) 56%,rgba(150,219,248,0.8) 91%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', endColorstr='#96dbf8',GradientType=1 );
 }
 
 @-webkit-keyframes run {
