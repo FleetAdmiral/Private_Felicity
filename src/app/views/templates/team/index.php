@@ -303,7 +303,7 @@ function img($img_name, $name=null) {
     <!-- </div> -->
 <!-- </div> -->
 <div style="padding-bottom: 1em;">
-    <a href="felicity.iiit.ac.in/sap"><h2 class="text-center">Join Our Team Here</h2></a>
+    <a href="https://felicity.iiit.ac.in/sap"><h2 class="text-center">Join Our Team Here</h2></a>
 </div>
 </article>
 <?php $this->load_fragment('skeleton_template/footer'); ?>
