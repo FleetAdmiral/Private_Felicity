@@ -67,7 +67,7 @@ p {
 html {}
 
 a {
-    color: #d92400;
+    color: #E46950;
 }
 
 #menu-toggle {
@@ -268,11 +268,11 @@ li .event {
 }
 
 li .event.active{
-    background-color: #d92400;
+    background-color: #E46950;
 }
 
 li .event:hover {
-    background-color: #d92400;
+    background-color: rgba(228, 105, 80, 1);
 }
 .categories {
         display: flex;
@@ -472,7 +472,7 @@ button:hover {
 }
 
 .links a:hover {
-    background-color: #d92400;
+    background-color: #E46950;
     color: white;
 }
 
@@ -540,7 +540,7 @@ blockquote p {
 }
 
 .links .selected {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(228, 105, 80, 0.2);
 }
 
 #plane{
