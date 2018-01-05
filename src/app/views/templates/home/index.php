@@ -5,4 +5,5 @@ $this->load_fragment('skeleton_template/footer');
 <script>
     $('#about').css('display', 'none');
     $('#toggle').css('display', 'none');
+    $('.content-center').css('display', 'block');
 </script>

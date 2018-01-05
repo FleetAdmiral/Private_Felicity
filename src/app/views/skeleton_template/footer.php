@@ -72,5 +72,8 @@ if (empty($is_ajax)):
     <?php $this->load_fragment('menu'); ?>
 <?php $this->load_fragment('google_analytics'); ?>
     </body>
+    <script>
+        $('.content-center').css('display', 'none');
+    </script>
 </html>
 <?php endif;
