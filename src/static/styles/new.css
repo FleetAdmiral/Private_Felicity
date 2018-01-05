@@ -543,3 +543,181 @@ blockquote p {
 .links .selected {
   background-color: rgba(255, 0, 0, 0.2);
 }
+
+/*----------------------------------------
+GALLERY
+----------------------------------------*/
+
+.slideshow {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+/*----------------------------------------
+Slider 1
+----------------------------------------*/
+.slider {
+  height: 100%;
+  overflow: hidden;
+}
+.slider .item {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.slider .item img {
+  width: auto;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(1.4);
+          transform: translateX(-50%) scale(1.4);
+  opacity: .4;
+  -webkit-filter: blur(50px) saturate(3);
+          filter: blur(50px) saturate(3);
+}
+
+/*----------------------------------------
+Slider 2
+----------------------------------------*/
+.slider-2 {
+  position: absolute !important;
+  z-index: 11;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 0%;
+  padding-bottom: 35%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+.slider-2:before {
+  content: '';
+  position: absolute;
+  left: -1%;
+  bottom: -1%;
+  width: 102%;
+  height: 50%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none;
+}
+.slider-2 .item {
+  height: 0;
+  padding-bottom: 16%;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background: #333;
+}
+.slider-2 .item.slick-active {
+  z-index: 10;
+}
+.slider-2 .item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  height: 100%;
+  width: auto;
+  opacity: 1;
+  -webkit-filter: none;
+          filter: none;
+}
+.slider-2 .slick-dots {
+  bottom: 15px;
+  z-index: 1;
+  text-align: center;
+  position: absolute;
+  padding: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.slider-2 .slick-dots li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.slider-2 .slick-dots li button {
+  border: none;
+  background: none;
+  text-indent: -9999px;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.slider-2 .slick-dots li button:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: .7;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+.slider-2 .slick-dots li.slick-active button:before {
+  -webkit-transform: translate(-50%, -50%) scale(1.4);
+          transform: translate(-50%, -50%) scale(1.4);
+  opacity: 1;
+}
+
+/*----------------------------------------
+Arrows
+----------------------------------------*/
+.slick-arrow {
+  position: absolute;
+  z-index: 10;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0;
+  outline: none;
+  width: 40px;
+  height: 40px;
+}
+.slick-arrow:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  /*-webkit-mask-image: url(https://image.flaticon.com/icons/svg/60/60758.svg);*/
+          /*mask-image: url(https://image.flaticon.com/icons/svg/60/60758.svg);*/
+  display: block;
+  opacity: .5;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+.slick-arrow.slick-next {
+  left: auto;
+  right: 10px;
+}
+.slick-arrow.slick-next:before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.slick-arrow:hover:before {
+  opacity: 1;
+}
+
+
