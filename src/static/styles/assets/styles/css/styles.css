@@ -488,7 +488,7 @@ footer .twitter-share-button {
 	background-size: 399px 357px;
 }
 .about .panel:before {
-	border-left: 1px dashed rgba(29, 31, 39, 0.2);
+	/* border-left: 1px dashed rgba(29, 31, 39, 0.2); */
 	position: absolute;
 	display: block;
 	height: 100%;
