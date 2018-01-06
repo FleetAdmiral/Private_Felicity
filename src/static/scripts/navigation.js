@@ -70,7 +70,7 @@ function showPage(type) {
     loadContent(newUrl, $(".content-holder"));
     history.pushState(newUrl, null, newUrl);
     planeEnter();
-    flagEnter();
+    flagEnter(type);
     slideout.close();
 }
 
@@ -91,8 +91,8 @@ function planeExit() {
   }, 1001);
 }
 
-function flagEnter() {
-  $('#flag').addClass('flagEnter');
+function flagEnter(type) {
+  $('#flag').addClass('flagEnter ' + type);
   setTimeout(function(){
     console.log("Done");
     $('#flag').removeClass('flagEnter');
