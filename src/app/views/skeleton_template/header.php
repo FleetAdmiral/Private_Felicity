@@ -71,7 +71,7 @@ if (empty($is_ajax)):
     </div>
     <?php endif; ?>
     <div id="container" class="wrapper">
-     <div id="flag1" class='flag' style="z-index: 9000;"></div>
+     <div id="flag" class='flag' style="z-index: 9000;"></div>
      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
      <script  src="<?= base_url() ?>static/scripts/index.js"></script><!---->
      <button id="menu-toggle" class="toggle-button" >☰</button>

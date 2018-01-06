@@ -2,8 +2,8 @@ var flagW=300;
 var flagElementW=2;
 var len=flagW/flagElementW;
 var delay=10;
-window.onload=function(){
-	var flag=document.getElementById("flag1");
+window.addEventListener('load', function(){
+	var flag=document.getElementById("flag");
 	for(var i=0; i<len; i++){
 		var fe=document.createElement("div");
 		fe.className="flag-element";
@@ -12,4 +12,4 @@ window.onload=function(){
 		fe.style.animationDelay=i*delay+'ms';
 		flag.appendChild(fe);
 	}
-}
+})

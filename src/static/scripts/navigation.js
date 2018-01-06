@@ -21,6 +21,7 @@ function showDetails() {
 
 function hideDetails() {
     planeExit();
+    flagExit();
     document.querySelector('#panelcontainer').style.backgroundImage = "url(" + baseUrl + "static/images/bg.jpg)";
     $about.addClass('hide');
     $toggle.css('display', 'none');
@@ -69,6 +70,7 @@ function showPage(type) {
     loadContent(newUrl, $(".content-holder"));
     history.pushState(newUrl, null, newUrl);
     planeEnter();
+    flagEnter(type);
     slideout.close();
 }
 
@@ -86,5 +88,22 @@ function planeExit() {
   $('#plane').addClass('planeExit');
   setTimeout(function(){
     $('#plane').removeClass('planeExit');
+  }, 1001);
+}
+
+function flagEnter(type) {
+  $('#flag').addClass('flagEnter ' + type);
+  setTimeout(function(){
+    console.log("Done");
+    $('#flag').removeClass('flagEnter');
+    $('#flag').addClass('flagWait');
+  }, 2001);
+}
+
+function flagExit() {
+  $('#flag').removeClass('flagWait');
+  $('#flag').addClass('flagExit');
+  setTimeout(function(){
+    $('#flag').removeClass('flagExit');
   }, 1001);
 }
