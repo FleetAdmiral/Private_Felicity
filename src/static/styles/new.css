@@ -549,6 +549,12 @@ blockquote p {
   position:absolute;
 }
 
+#flag{
+  top: 0;
+  left: 110%;
+  position: absolute;
+}
+
 .planeWait{
   left: 25% !important;
   -webkit-animation:ease-in-out infinite alternate;
@@ -568,6 +574,25 @@ blockquote p {
   -webkit-animation-duration: 1.5s;
 }
 
+.flagWait{
+  left: 39.5% !important;/*14.5%*/
+  -webkit-animation:ease-in-out infinite alternate;
+  -webkit-animation-name: flagfuckAroundY;
+  -webkit-animation-duration: 2s;
+}
+
+.flagEnter{
+  -webkit-animation:cubic-bezier(0.05, 0.35, 0.6) infinite alternate;
+  -webkit-animation-name: flagenter;
+  -webkit-animation-duration: 2s;
+}
+
+.flagExit{
+  -webkit-animation:cubic-bezier(0.1, 0.9)  infinite alternate;
+  -webkit-animation-name: flagexit;
+  -webkit-animation-duration: 1.5s;
+}
+
 .newcsscozwell {
 background: rgb(226,245,254);
 background: -moz-linear-gradient(-45deg, rgba(226,245,254,0.6) 56%, rgba(150,219,248,0.8) 91%);
@@ -583,7 +608,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
 
 @-webkit-keyframes exit {
     0% { left: 25%;}
-    100%{ left : -100%;}
+    100%{ left : -130%;}
 }
 
 @-webkit-keyframes fuckAroundY {
@@ -600,4 +625,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
     40% { left: 27%}
     60% { left: 23%}
     100% { left: 23%}
+}
+
+@-webkit-keyframes flagenter {
+    0% { left: 114.5%;}
+    100%{ left : 39.5%;}
+}
+
+@-webkit-keyframes flagexit {
+    0% { left: 39.5%;}
+    100%{ left : -100%;}
+}
+
+@-webkit-keyframes flagfuckAroundY {
+    0% { top: 0%}
+    20% {top: 5% }
+    40% {top: 0% }
+    60% {top: 5% }
+    100% {top: 0% }
 }
