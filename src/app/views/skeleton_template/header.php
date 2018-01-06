@@ -56,6 +56,7 @@ if (empty($is_ajax)):
   <div id = "plane" style="z-index: 2000;height: 20%;">
   <img src = "<?= base_url() ?>static/images/plane_final_crop.png" width = "auto" height ="70%;">
   </div>
+  <img src= "<?= base_url() ?>static/images/world.png" class="globe" style="z-index:2; position:absolute; left:25vw; width: 50%; height: auto; bottom: -30vw">
   <?php if (isset($is_authenticated)): ?>
     <div class="auth-quick-links">
         <?php if ($is_authenticated): ?>
