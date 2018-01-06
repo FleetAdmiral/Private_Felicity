@@ -601,6 +601,20 @@ background: linear-gradient(135deg, rgba(226,245,254,0.6) 56%,rgba(150,219,248,0
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', endColorstr='#96dbf8',GradientType=1 );
 }
 
+.globe {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.globeSpinUp {
+    animation-name: spin;
+    animation-duration: 2.5s;
+    animation-timing-function: cubic-bezier(0.4, 0.2, 0.4);
+    animation-iteration-count: infinite;
+}
+
 @-webkit-keyframes enter {
     0% { left: 100%;}
     100%{ left : 25%;}
@@ -645,3 +659,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
     100% {top: 0% }
 }
 
+@-webkit-keyframes spin { 
+    0% {transform: rotate(0deg)}
+    100% { transform: rotate(360deg)}
+}

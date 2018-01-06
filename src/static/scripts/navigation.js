@@ -70,6 +70,7 @@ function showPage(type) {
     loadContent(newUrl, $(".content-holder"));
     history.pushState(newUrl, null, newUrl);
     planeEnter();
+    globeSpin();
     flagEnter(type);
     slideout.close();
 }
@@ -106,4 +107,11 @@ function flagExit() {
   setTimeout(function(){
     $('#flag').removeClass('flagExit');
   }, 1001);
+}
+
+function globeSpin() {
+    $('.globe').addClass('globeSpinUp');
+    setTimeout(function(){
+        $('.globe').removeClass('globeSpinUp');
+    }, 2500);
 }
