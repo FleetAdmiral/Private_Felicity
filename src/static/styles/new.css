@@ -139,7 +139,7 @@ button {
 .about {
     perspective: 1000px;
     color: #2C2C2C;
-    min-height: 460px;
+    min-height: 75px;
     position: absolute;
     overflow: hidden;
     display: table;
