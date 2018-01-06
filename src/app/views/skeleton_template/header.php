@@ -36,6 +36,9 @@ if (empty($is_ajax)):
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/styles/core.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/styles/new.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/styles/vendor/felicons.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">-->
+    <link rel="stylesheet" href="<?= base_url() ?>static/styles/style.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     <script src="<?= base_url() ?>static/scripts/vendor/jquery.min.js"></script>
     <script type="text/javascript">
@@ -49,7 +52,7 @@ if (empty($is_ajax)):
     }
 ?>
 
-<body style="overflow: hidden;">
+<body  style="overflow: hidden;">
   <div id = "plane" style="z-index: 2000;height: 20%;">
   <img src = "<?= base_url() ?>static/images/plane_final_crop.png" width = "auto" height ="70%;">
   </div>
@@ -66,8 +69,10 @@ if (empty($is_ajax)):
         <?php endif; ?>
     </div>
     <?php endif; ?>
-
     <div id="container" class="wrapper">
+     <div id="flag1" class='flag' style="z-index: 9000;"></div>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+     <script  src="<?= base_url() ?>static/scripts/index.js"></script><!---->
      <button id="menu-toggle" class="toggle-button" >☰</button>
       <div id="panelcontainer">
 
