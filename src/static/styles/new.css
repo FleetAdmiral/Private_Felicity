@@ -67,7 +67,7 @@ p {
 html {}
 
 a {
-    color: #d92400;
+    color: #406170;
 }
 
 #menu-toggle {
@@ -104,9 +104,8 @@ button {
 }
 
 .center {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     border-radius: 6px;
-    /* background: #f2f2f2 url(../images/panel.jpg) -7px 0; */
     background: rgba(255,255,255,0.6);
     background-size: 399px 357px;
     padding-bottom: 11px;
@@ -175,7 +174,7 @@ button {
 }
 
 .about .center:before {
-    border-left: 1px dashed rgba(29, 31, 39, 0.2);
+    /* border-left: 1px dashed rgba(29, 31, 39, 0.2); */
     position: absolute;
     display: block;
     height: 100%;
@@ -269,11 +268,11 @@ li .event {
 }
 
 li .event.active{
-    background-color: #d92400;
+    background-color: #E46950;
 }
 
 li .event:hover {
-    background-color: #d92400;
+    background-color: rgba(228, 105, 80, 1);
 }
 .categories {
         display: flex;
@@ -464,7 +463,7 @@ li .event:hover {
 }
 
 button:hover {
-    background-color: rgba(127, 58, 93, 1);
+    background-color: rgba(193, 99, 87, 1);
     color: white;
 }
 
@@ -473,7 +472,7 @@ button:hover {
 }
 
 .links a:hover {
-    background-color: #d92400;
+    background-color: #406170;
     color: white;
 }
 
@@ -496,7 +495,7 @@ button:hover {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 16px;
     border-radius: 16px;
-    background: rgba(204, 92, 149, 1);
+    background: #406170;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -541,6 +540,108 @@ blockquote p {
 }
 
 .links .selected {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(64, 97, 112, 0.2);
+}
+
+#plane{
+  top: 0;
+  left:100%;
+  position:absolute;
+}
+
+#flag{
+  top: 0;
+  left: 110%;
+  position: absolute;
+}
+
+.planeWait{
+  left: 25% !important;
+  -webkit-animation:ease-in-out infinite alternate;
+  -webkit-animation-name: fuckAroundY;
+  -webkit-animation-duration: 2s;
+}
+
+.planeEnter{
+  -webkit-animation:cubic-bezier(0.05, 0.35, 0.6) infinite alternate;
+  -webkit-animation-name: enter;
+  -webkit-animation-duration: 2s;
+}
+
+.planeExit{
+  -webkit-animation:cubic-bezier(0.1, 0.9)  infinite alternate;
+  -webkit-animation-name: exit;
+  -webkit-animation-duration: 1.5s;
+}
+
+.flagWait{
+  left: 39.5% !important;/*14.5%*/
+  -webkit-animation:ease-in-out infinite alternate;
+  -webkit-animation-name: flagfuckAroundY;
+  -webkit-animation-duration: 2s;
+}
+
+.flagEnter{
+  -webkit-animation:cubic-bezier(0.05, 0.35, 0.6) infinite alternate;
+  -webkit-animation-name: flagenter;
+  -webkit-animation-duration: 2s;
+}
+
+.flagExit{
+  -webkit-animation:cubic-bezier(0.1, 0.9)  infinite alternate;
+  -webkit-animation-name: flagexit;
+  -webkit-animation-duration: 1.5s;
+}
+
+.newcsscozwell {
+background: rgb(226,245,254);
+background: -moz-linear-gradient(-45deg, rgba(226,245,254,0.6) 56%, rgba(150,219,248,0.8) 91%);
+background: -webkit-linear-gradient(-45deg, rgba(226,245,254,0.6) 56%,rgba(150,219,248,0.8) 91%);
+background: linear-gradient(135deg, rgba(226,245,254,0.6) 56%,rgba(150,219,248,0.8) 91%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', endColorstr='#96dbf8',GradientType=1 );
+}
+
+@-webkit-keyframes enter {
+    0% { left: 100%;}
+    100%{ left : 25%;}
+}
+
+@-webkit-keyframes exit {
+    0% { left: 25%;}
+    100%{ left : -130%;}
+}
+
+@-webkit-keyframes fuckAroundY {
+    0% { top: 0%}
+    20% {top: 5% }
+    40% {top: 0% }
+    60% {top: 5% }
+    100% {top: 0% }
+}
+
+@-webkit-keyframes fuckAroundX {
+    0% { left: 23%}
+    20% { left: 27%}
+    40% { left: 27%}
+    60% { left: 23%}
+    100% { left: 23%}
+}
+
+@-webkit-keyframes flagenter {
+    0% { left: 114.5%;}
+    100%{ left : 39.5%;}
+}
+
+@-webkit-keyframes flagexit {
+    0% { left: 39.5%;}
+    100%{ left : -100%;}
+}
+
+@-webkit-keyframes flagfuckAroundY {
+    0% { top: 0%}
+    20% {top: 5% }
+    40% {top: 0% }
+    60% {top: 5% }
+    100% {top: 0% }
 }
 

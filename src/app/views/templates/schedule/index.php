@@ -43,12 +43,12 @@
     };
 ?>
 
-<article class="page schedule" style="height: 100%; overflow-y:scroll;">
+<article class="page schedule" style="height: 100%">
 <header>
     <h1>Eve<span class="tabheading">nts</span></h1>
 </header>
 
-<div class="container row">
+<div class="container">
 <div id = "categoriesnav" class="linkholder">
     <div class="categories">
         <?php
@@ -61,9 +61,11 @@
         <?php endforeach; ?>
     </div>
 </div>
+</div>
+<div class="container row" style="height: 90%">
     <div class="col6 event-calender">
         <span style="visibility:hidden">114097099104110097032097110100032109117107117108032102111114101118101114</span>
-        <div class="cal-month fixedcal">
+        <div class="cal-month">
             <table class="cal-table" data-month="Jan">
                 <thead>
                     <tr>
@@ -129,7 +131,7 @@
     <div class="col6 event-description-div" style="display:none">
         <p class="lead text-justify some-top-margin event-description"></p>
     </div>
-    <div class="col6 rightcol">
+    <div class="col6 rightcol" id="eventslistcontainer">
         <table class="eventslist">
             <tbody>
                 <?php
@@ -167,6 +169,10 @@
 </article>
 <script>
     (function() {
+        console.log($('#eventslistcontainer').css("float"))
+        if ($('#eventslistcontainer').css("float") != 'none') { // Not mobile
+            $('#eventslistcontainer').height($('.schedule .row').innerHeight())
+        }
         $( ".event-tab" ).click(function() {
             if ($(this).hasClass("active")) {
                 $(this).removeClass("active");

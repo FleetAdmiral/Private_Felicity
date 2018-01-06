@@ -1,0 +1,98 @@
+{
+  "_args": [
+    [
+      "translucent",
+      "/var/www/felicity18-website"
+    ]
+  ],
+  "_from": "translucent@*",
+  "_id": "translucent@1.0.9",
+  "_inCache": true,
+  "_location": "/translucent",
+  "_nodeVersion": "6.9.4",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/translucent-1.0.9.tgz_1487456531585_0.16048259194940329"
+  },
+  "_npmUser": {
+    "email": "info@byeolbit.com",
+    "name": "byeolbit"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "translucent",
+    "raw": "translucent",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/translucent/-/translucent-1.0.9.tgz",
+  "_shasum": "961bb443d54a1214b3ba64ed41a1e57e2c16c64c",
+  "_shrinkwrap": null,
+  "_spec": "translucent",
+  "_where": "/var/www/felicity18-website",
+  "author": {
+    "email": "sanggyeong.jo@gmil.com",
+    "name": "Sanggyeong Jo",
+    "url": "https://github.com/byeolbit"
+  },
+  "bugs": {
+    "url": "https://github.com/byeolbit/translucent/issues"
+  },
+  "dependencies": {
+    "jquery": ">=1.6"
+  },
+  "description": "Translucent plastic card theme.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "961bb443d54a1214b3ba64ed41a1e57e2c16c64c",
+    "tarball": "https://registry.npmjs.org/translucent/-/translucent-1.0.9.tgz"
+  },
+  "gitHead": "64d007b0920cab3bf9812b5e44656bd1cda5b9aa",
+  "homepage": "https://byeolbit.github.io/translucent",
+  "installable": true,
+  "keywords": [
+    "blur",
+    "card",
+    "ecosystem:jquery",
+    "effect",
+    "frosted",
+    "glass",
+    "jQuery",
+    "jquery-plugin",
+    "plastic",
+    "translucent",
+    "transparent"
+  ],
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/byeolbit/translucent/master/LICENSE"
+    }
+  ],
+  "main": "./dist/jquery.translucent.min.js",
+  "maintainers": [
+    {
+      "name": "byeolbit",
+      "email": "info@byeolbit.com"
+    }
+  ],
+  "name": "translucent",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byeolbit/translucent.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "title": "jQuery translucent",
+  "version": "1.0.9"
+}
