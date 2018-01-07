@@ -28,6 +28,10 @@ class auth_lib extends Library {
 
     public function logout() {
         $oidc = $this->construct_oidc();
+        // XXX: Hack to logout from kong, i.e. unset lua_resty_session cookies
+        setcookie('session',   '', time() - 3600, '/');
+        setcookie('session_2', '', time() - 3600, '/');
+        setcookie('session_3', '', time() - 3600, '/');
         $oidc->signOut($oidc->getAccessToken(), base_url());
     }
 
