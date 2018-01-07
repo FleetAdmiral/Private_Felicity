@@ -17,6 +17,18 @@
 	background-image:url('../images/AllWavingFlags/about.jpg');
 }
 
+.flag.events .flag-element {
+	background-image:url('../images/AllWavingFlags/events.jpg');
+}
+
+.flag.gallery .flag-element {
+	background-image:url('../images/AllWavingFlags/gallery.jpg');
+}
+
+.flag.sponsors .flag-element {
+	background-image:url('../images/AllWavingFlags/sponsors.jpg');
+}
+
 .flag.contact .flag-element {
 	background-image:url('../images/AllWavingFlags/contact.jpg');
 }

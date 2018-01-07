@@ -627,9 +627,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
 
 @-webkit-keyframes fuckAroundY {
     0% { top: 0%}
-    20% {top: 5% }
+    20% {top: 2% }
     40% {top: 0% }
-    60% {top: 5% }
+    60% {top: 2% }
     100% {top: 0% }
 }
 
@@ -653,9 +653,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
 
 @-webkit-keyframes flagfuckAroundY {
     0% { top: 0%}
-    20% {top: 5% }
+    20% {top: 2% }
     40% {top: 0% }
-    60% {top: 5% }
+    60% {top: 2% }
     100% {top: 0% }
 }
 

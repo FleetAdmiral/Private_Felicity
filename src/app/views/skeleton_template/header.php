@@ -9,7 +9,7 @@ if (empty($is_ajax)):
     <meta name="description" content="<?= __("Felicity is the annual technical and cultural fest of IIIT-H. Includes technical, cultural and literary events, Major nights, talks, workshops and performances. We, at IIIT-H, believe in giving back to the society and use Felicity as a medium to serve this motive and pickup various social initiatives.") ?>">
     <meta property="og:description" content="<?= __("Felicity is the annual technical and cultural fest of IIIT-H. Includes technical, cultural and literary events, Major nights, talks, workshops and performances. We, at IIIT-H, believe in giving back to the society and use Felicity as a medium to serve this motive and pickup various social initiatives.") ?>">
     <meta property="og:title" content="<?= isset($title) ? $title . ' · ' : '' ?><?= __('Felicity') ?> · <?= __('IIIT-H') ?>">
-    <meta property="og:image" content="<?= base_url() . (isset($og_image) ? $og_image : 'files/17/poster-17.jpg') ?>">
+    <meta property="og:image" content="<?= base_url() . (isset($og_image) ? $og_image : 'files/17/poster-17.jpg') ?>" style="z-index: 3">
 
     <?php
     global $cfg;
@@ -70,7 +70,7 @@ if (empty($is_ajax)):
         <?php endif; ?>
     </div>
     <?php endif; ?>
-    <div id="container" class="wrapper">
+    <div id="container" class="wrapper" style="z-index: 4;">
      <div id="flag" class='flag' style="z-index: 9000;"></div>
      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
      <script  src="<?= base_url() ?>static/scripts/index.js"></script><!---->
@@ -83,7 +83,7 @@ if (empty($is_ajax)):
     margin: 0 auto; width: 30%">
           <p class="text-landing" style="font-size: 175%">Global Weekend</p>
           <br><br>
-          <p class="text-landing" style="font-size: 100%">January 26 - 28, 2018</p>
+          <p class="text-landing" style="font-size: 100%;">January 26 - 28, 2018</p>
                 </div>
         </div>
 

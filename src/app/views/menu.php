@@ -1,4 +1,4 @@
-<div style="width: 100%" class="btn-box">
+<div style="width: 100%" class="btn-box" style="z-index: 4">
   <div style="text-align: center;">
          <a onclick="toggleDetails('about')" style="font-size: 150%; color: white;"><span>About</span></a>
          <a onclick="toggleDetails('events')" style="font-size: 150%; color: white; padding-left: 6%;"><span>Events</span></a>

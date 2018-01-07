@@ -15,7 +15,7 @@ if (empty($is_ajax)):
 
 <div id="menu">
   <h2>Menu</h2>
-  <ul class="links" style="list-style: none;padding-left: 0px">
+  <ul class="links" style="list-style: none;padding-left: 0px;">
       <li><a onclick="openPage('about')">About US</a></li>
       <li><a onclick="openPage('events')">Events</a></li>
       <li><a onclick="openPage('team')">Team</a></li>
