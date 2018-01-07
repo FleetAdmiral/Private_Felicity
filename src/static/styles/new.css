@@ -477,30 +477,30 @@ button:hover {
     color: white;
 }
 
-::-webkit-scrollbar {
+::scrollbar {
     width: 12px;
 }
 
 
 /* Track */
 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    -webkit-border-radius: 16px;
+::scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
     border-radius: 16px;
 }
 
 
 /* Handle */
 
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 16px;
+::scrollbar-thumb {
+    border-radius: 16px;
     border-radius: 16px;
     background: #406170;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-::-webkit-scrollbar-thumb:window-inactive {
+::scrollbar-thumb:window-inactive {
     background: rgba(255, 0, 0, 0.4);
 }
 
@@ -558,46 +558,46 @@ blockquote p {
 
 .planeWait{
   left: 25% !important;
-  -webkit-animation:ease-in-out infinite alternate;
-  -webkit-animation-name: fuckAroundY;
-  -webkit-animation-duration: 2s;
+  animation:ease-in-out infinite alternate;
+  animation-name: fuckAroundY;
+  animation-duration: 2s;
 }
 
 .planeEnter{
-  -webkit-animation:cubic-bezier(0.05, 0.35, 0.6) infinite alternate;
-  -webkit-animation-name: enter;
-  -webkit-animation-duration: 2s;
+  animation:cubic-bezier(0.05, 0.35, 0.6) infinite alternate;
+  animation-name: enter;
+  animation-duration: 2s;
 }
 
 .planeExit{
-  -webkit-animation:cubic-bezier(0.1, 0.9)  infinite alternate;
-  -webkit-animation-name: exit;
-  -webkit-animation-duration: 1.5s;
+  animation:cubic-bezier(0.1, 0.9)  infinite alternate;
+  animation-name: exit;
+  animation-duration: 1.5s;
 }
 
 .flagWait{
   left: 39.5% !important;/*14.5%*/
-  -webkit-animation:ease-in-out infinite alternate;
-  -webkit-animation-name: flagfuckAroundY;
-  -webkit-animation-duration: 2s;
+  animation:ease-in-out infinite alternate;
+  animation-name: flagfuckAroundY;
+  animation-duration: 2s;
 }
 
 .flagEnter{
-  -webkit-animation:cubic-bezier(0.05, 0.35, 0.6) infinite alternate;
-  -webkit-animation-name: flagenter;
-  -webkit-animation-duration: 2s;
+  animation:cubic-bezier(0.05, 0.35, 0.6) infinite alternate;
+  animation-name: flagenter;
+  animation-duration: 2s;
 }
 
 .flagExit{
-  -webkit-animation:cubic-bezier(0.1, 0.9)  infinite alternate;
-  -webkit-animation-name: flagexit;
-  -webkit-animation-duration: 1.5s;
+  animation:cubic-bezier(0.1, 0.9)  infinite alternate;
+  animation-name: flagexit;
+  animation-duration: 1.5s;
 }
 
 .newcsscozwell {
 background: rgb(226,245,254);
 background: -moz-linear-gradient(-45deg, rgba(226,245,254,0.6) 56%, rgba(150,219,248,0.8) 91%);
-background: -webkit-linear-gradient(-45deg, rgba(226,245,254,0.6) 56%,rgba(150,219,248,0.8) 91%);
+background: linear-gradient(-45deg, rgba(226,245,254,0.6) 56%,rgba(150,219,248,0.8) 91%);
 background: linear-gradient(135deg, rgba(226,245,254,0.6) 56%,rgba(150,219,248,0.8) 91%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', endColorstr='#96dbf8',GradientType=1 );
 }
@@ -616,17 +616,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
     animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes enter {
+@keyframes enter {
     0% { left: 100%;}
     100%{ left : 25%;}
 }
 
-@-webkit-keyframes exit {
+@keyframes exit {
     0% { left: 25%;}
     100%{ left : -130%;}
 }
 
-@-webkit-keyframes fuckAroundY {
+@keyframes fuckAroundY {
     0% { top: 0%}
     20% {top: 2% }
     40% {top: 0% }
@@ -634,7 +634,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
     100% {top: 0% }
 }
 
-@-webkit-keyframes fuckAroundX {
+@keyframes fuckAroundX {
     0% { left: 23%}
     20% { left: 27%}
     40% { left: 27%}
@@ -642,17 +642,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
     100% { left: 23%}
 }
 
-@-webkit-keyframes flagenter {
+@keyframes flagenter {
     0% { left: 114.5%;}
     100%{ left : 39.5%;}
 }
 
-@-webkit-keyframes flagexit {
+@keyframes flagexit {
     0% { left: 39.5%;}
     100%{ left : -100%;}
 }
 
-@-webkit-keyframes flagfuckAroundY {
+@keyframes flagfuckAroundY {
     0% { top: 0%}
     20% {top: 2% }
     40% {top: 0% }
@@ -660,7 +660,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
     100% {top: 0% }
 }
 
-@-webkit-keyframes spin {
+@keyframes spin {
     0% {transform: rotate(0deg)}
     80% {transform: rotate(300deg)}
     100% {transform: rotate(360deg)}

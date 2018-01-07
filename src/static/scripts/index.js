@@ -1,4 +1,4 @@
-var flagW=300;
+var flagW=window.innerWidth * 0.3;
 var flagElementW=2;
 var len=flagW/flagElementW;
 var delay=10;
