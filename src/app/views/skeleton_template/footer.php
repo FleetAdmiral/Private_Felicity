@@ -69,6 +69,7 @@ if (empty($is_ajax)):
         display: block;
       }
     </style>
+    <img src= "<?= base_url() ?>static/images/world.png" class="globe" style="z-index:2; position:absolute; left:25vw; width: 50%; height: auto; bottom: -30vw">
     <?php $this->load_fragment('menu'); ?>
 <?php $this->load_fragment('google_analytics'); ?>
     </body>

@@ -400,6 +400,7 @@ li .event:hover {
 }
 
 .btn-box {
+    z-index: 4;
     position: absolute;
     bottom: 12%;
     width: 100%;
