@@ -85,7 +85,7 @@ if (empty($is_ajax)):
           z-index:2;
           transform: translate(-50%, -50%);
           bottom:<?=28+ rand(-5,5) ?>vw;
-          width:9vw; height: auto;">
+          width:9vw; height: auto; opacity: 80%;">
         </div>
       </div>
       <?php
