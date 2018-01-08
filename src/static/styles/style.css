@@ -1,12 +1,10 @@
 .flag {
-	width: 30%;
-	height: 90%;
-	padding-top: 10%;
+	width: 300px;
+	height: 75px;
 	position:absolute;
 }
 .flag-element {
 	width:2px;
-	padding-top: 10%;
 	height:100%;
 	display:inline-block;
 	position:relative;
