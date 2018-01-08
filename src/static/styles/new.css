@@ -603,14 +603,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
 }
 
 .globe {
-    animation-name: spin;
+    animation-name: globeSpin;
     animation-duration: 35s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-
 .globeSpinUp {
-    animation-name: spin;
+    animation-name: globeSpin;
     animation-duration: 2.5s;
     animation-timing-function: cubic-bezier(0.25, 0.25, 0.25, 0.25);
     animation-iteration-count: infinite;
@@ -660,8 +659,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
     100% {top: 0% }
 }
 
-@keyframes spin {
-    0% {transform: rotate(0deg)}
-    80% {transform: rotate(300deg)}
-    100% {transform: rotate(360deg)}
+@keyframes globeSpin {
+    0% {transform: translate(-50%, -50%) rotate(-300deg)}
+    80% {transform: translate(-50%, -50%) rotate(0deg)}
+    100% {transform: translate(-50%, -50%) rotate(60deg)}
 }
