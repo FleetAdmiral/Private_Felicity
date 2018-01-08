@@ -258,11 +258,14 @@ function img($img_name, $name=null) {
                     <?= __('Aayush Tiwari') ?>,
                     <?= __('Sravan Mylavarapu') ?>,
                     <?= __('Sreya Mittal') ?>,
-                    <?= __('Sailaja Nimmagadda') ?>,
+                    <?= __('Sailaja Nimmagadda') ?>
+                </p>
+                <p class="names">
                     <?= __('Nakul Vaidya') ?>,
                     <?= __('Bhavya Lahiri') ?>,
                     <?= __('Prakrati Dangarh') ?>,
                     <?= __('Yash Goyal') ?>
+                </p>
                 </p>
             </div>
         </div>
@@ -289,6 +292,21 @@ function img($img_name, $name=null) {
                     <?= __('Aman Mehta') ?>,
                     <?= __('Marchala Sreevatsava') ?>,
                     <?= __('Anam Raihan') ?>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <h2 class="text-center"><?= __('Food Fest Team') ?></h2>
+    <div class="row">
+        <div class="col10 offset1">
+            <!-- <?php img('Cultural.jpg', false); ?> -->
+            <div class="container text-center">
+                <p class="names">
+                    <?= __('Vidit Jain') ?>,
+                    <?= __('Surya Soujanya Kodavalla') ?>,
+                    <?= __('Krishna Vinay') ?>
                 </p>
             </div>
         </div>
