@@ -78,11 +78,10 @@ if (empty($is_ajax)):
 
         <div class="content-center" style="position: relative;">
           <div style="top: 45%;z-index:4;">
-                    <img class="whitelogo" src="<?= base_url() ?>static/images/logo.png" style="display: block;
-    margin: 0 auto; width: 30%">
-          <p class="text-landing" style="font-size: 175%">Global Weekend</p>
+                    <img src="<?= base_url() ?>static/images/logo.png" style="display: block; margin: 0 auto; width: 30%;">
+          <p class="text-landing" style="font-size: 200%;text-shadow: 0 0 2px #000000;">Global Weekend</p>
           <br><br>
-          <p class="text-landing" style="font-size: 100%;">January 26 - 28, 2018</p>
+          <p class="text-landing" style="font-size: 150%;text-shadow: 0 0 2px #000000;">January 26 - 28, 2018</p>
                 </div>
         </div>
 
