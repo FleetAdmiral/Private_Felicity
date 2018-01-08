@@ -69,7 +69,7 @@ if (empty($is_ajax)):
         display: block;
       }
     </style>
-    <div class="cloud-parent" style="z-index:2;">
+    <div class="cloud-parent" style="position:absolute; top:100%;left:50%;z-index:2;">
       <?php
       for ($i = 1; $i <= 15; $i++) {
         ?>

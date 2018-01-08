@@ -54,7 +54,7 @@ if (empty($is_ajax)):
 
 <body  style="overflow: hidden;">
   <div id = "plane" style="z-index: 2000;height: 20%;">
-  <img src = "<?= base_url() ?>static/images/plane_final_crop.png" width = "auto" height ="70%;">
+  <img src = "<?= base_url() ?>static/images/plane_final_crop.png" width = "auto" height ="70%;"><div id="flag" class='flag' style="z-index: 9000;"></div>
   </div>
   <?php if (isset($is_authenticated)): ?>
     <div class="auth-quick-links">
@@ -70,7 +70,7 @@ if (empty($is_ajax)):
     </div>
     <?php endif; ?>
     <div id="container" class="wrapper" style="z-index: 4;">
-     <div id="flag" class='flag' style="z-index: 9000;"></div>
+     
      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
      <script  src="<?= base_url() ?>static/scripts/index.js"></script><!---->
      <button id="menu-toggle" class="toggle-button" >☰</button>

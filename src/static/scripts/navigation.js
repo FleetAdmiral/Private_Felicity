@@ -93,12 +93,7 @@ function planeExit() {
 }
 
 function flagEnter(type) {
-  $('#flag').addClass('flagEnter ' + type);
-  setTimeout(function(){
-    console.log("Done");
-    $('#flag').removeClass('flagEnter');
-    $('#flag').addClass('flagWait');
-  }, 2001);
+  $('#flag').addClass('flagEnter ' + type+"flag");
 }
 
 function flagExit() {

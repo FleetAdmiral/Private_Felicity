@@ -551,9 +551,6 @@ blockquote p {
 }
 
 #flag{
-  top: 0;
-  left: 110%;
-  position: absolute;
 }
 
 .planeWait{
@@ -575,25 +572,6 @@ blockquote p {
   animation-duration: 1.5s;
 }
 
-.flagWait{
-  left: 39.5% !important;/*14.5%*/
-  animation:ease-in-out infinite alternate;
-  animation-name: flagfuckAroundY;
-  animation-duration: 2s;
-}
-
-.flagEnter{
-  animation:cubic-bezier(0.05, 0.35, 0.6) infinite alternate;
-  animation-name: flagenter;
-  animation-duration: 2s;
-}
-
-.flagExit{
-  animation:cubic-bezier(0.1, 0.9)  infinite alternate;
-  animation-name: flagexit;
-  animation-duration: 1.5s;
-}
-
 .newcsscozwell {
 background: rgb(226,245,254);
 background: -moz-linear-gradient(-45deg, rgba(226,245,254,0.6) 56%, rgba(150,219,248,0.8) 91%);
@@ -611,8 +589,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2f5fe', end
 .globeSpinUp {
     animation-name: globeSpin;
     animation-duration: 2.5s;
-    animation-timing-function: cubic-bezier(0.25, 0.25, 0.25, 0.25);
-    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
 }
 
 @keyframes enter {
