@@ -84,6 +84,7 @@ if (empty($is_ajax)):
               </div>
 
 
+              <?php $this->load_fragment('globe'); ?>
               <?php $this->load_fragment('menu'); ?>
           </div>
       </div>
