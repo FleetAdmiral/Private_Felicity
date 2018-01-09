@@ -70,20 +70,23 @@ if (empty($is_ajax)):
     </div>
     <?php endif; ?>
     <div id="container" class="wrapper" style="z-index: 4;">
-     
      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
      <script  src="<?= base_url() ?>static/scripts/index.js"></script><!---->
      <button id="menu-toggle" class="toggle-button" >☰</button>
       <div id="panelcontainer">
 
-        <div class="content-center" style="position: relative;">
-          <div style="top: 45%;z-index:4;">
-                    <img src="<?= base_url() ?>static/images/logo.png" style="display: block; margin: 0 auto; width: 30%;">
-          <p class="text-landing" style="font-size: 200%;text-shadow: 0 0 2px #000000;">Global Weekend</p>
-          <br><br>
-          <p class="text-landing" style="font-size: 150%;text-shadow: 0 0 2px #000000;">January 26 - 28, 2018</p>
-                </div>
-        </div>
+          <div class="content-center" style="position: relative;">
+              <div id="felicity-branding" style="top: 45%;z-index:4;">
+                  <img src="<?= base_url() ?>static/images/logo.png" style="display: block; margin: 0 auto; width: 30%;">
+                  <p class="text-landing" style="font-size: 200%;text-shadow: 0 0 2px #000000;">Global Weekend</p>
+                  <br><br>
+                  <p class="text-landing" style="font-size: 150%;text-shadow: 0 0 2px #000000;">January 26 - 28, 2018</p>
+              </div>
+
+
+              <?php $this->load_fragment('menu'); ?>
+          </div>
+      </div>
 
       <section id="about" class="about" style="z-index: 4">
             <div class="cell">

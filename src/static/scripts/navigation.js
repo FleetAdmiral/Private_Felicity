@@ -16,7 +16,7 @@ function showDetails() {
     $('.btn-box').css('display', 'none');
     $about.css('display', 'table');
     slideout.close();
-    $('.content-center').css('display', 'none');
+    $('#felicity-branding').css('display', 'none');
 }
 
 function hideDetails() {
@@ -33,7 +33,7 @@ function hideDetails() {
         $('.btn-box').fadeIn().css('display', 'block');
     }, 200);
     history.pushState(localeBaseUrl, null, localeBaseUrl);
-    $('.content-center').fadeIn(1400).css('display', 'block');
+    $('#felicity-branding').fadeIn(1400).css('display', 'block');
     $('.cloud-parent').fadeIn(250).css('display', 'block');
     $('.globe').fadeIn(250).css('display', 'block');
 }

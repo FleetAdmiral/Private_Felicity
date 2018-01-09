@@ -1,7 +1,7 @@
 <?php
 if (empty($is_ajax)):
 ?>
-              <!-- </div> -->
+              </div>
             </div>
         </div>
     </div>
@@ -101,6 +101,7 @@ if (empty($is_ajax)):
     top:100%;
     transform: translate(-50%, -50%);">
     <?php $this->load_fragment('menu'); ?>
+
 <?php $this->load_fragment('google_analytics'); ?>
     </body>
     <script>

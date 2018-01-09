@@ -80,6 +80,12 @@ a {
     z-index: 1001;
 }
 
+#menu-buttons {
+    @media (max-width: 800px) {
+        display: none;
+    }
+}
+
 button {
     cursor: pointer;
     font-size: 1.33333em;

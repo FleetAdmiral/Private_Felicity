@@ -1,4 +1,4 @@
-<div style="width: 100%" class="btn-box" style="z-index: 4">
+<div style="width: 100%" id="menu-buttons" class="btn-box" style="z-index: 4">
   <div style="text-align: center;">
          <a onclick="toggleDetails('about')" class="menutext" style=""><span>About</span></a>
          <a onclick="toggleDetails('events')" class="menutext" style=" padding-left: 6%;"><span>Events</span></a>
