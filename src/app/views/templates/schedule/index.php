@@ -189,7 +189,6 @@
                 $(this).addClass("active");
                 $('.timeline').hide();
                 $('.' + id).show();
-                $(".event-description").load(" .event-desc");
                 $.ajax({url: localeBaseUrl + "/api/" + id + "/", success: function(result){
                     document.querySelector('#panelcontainer').style.backgroundImage = "url(" + baseUrl + (result.page_data.background || 'static/images/bg.jpg') + ")";
                     // document.querySelector('.center').style.backgroundImage = "url(" + baseUrl + (result.page_data.background || 'static/images/panel.jpg') + ")";
