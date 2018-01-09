@@ -89,6 +89,7 @@ function planeEnter() {
 
 function planeExit() {
   $('#plane').removeClass('planeWait');
+  if (!$about.is(':visible')) return
   $('#plane').addClass('planeExit');
   setTimeout(function(){
     $('#plane').removeClass('planeExit');
