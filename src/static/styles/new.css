@@ -84,6 +84,11 @@ a {
     @media (max-width: 800px) {
         display: none;
     }
+    div {
+        background-color: rgba(30, 30, 30, 0.5);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 button {
@@ -408,7 +413,7 @@ li .event:hover {
 .btn-box {
     z-index: 4;
     position: absolute;
-    bottom: 12%;
+    bottom: 10%;
     width: 100%;
 }
 
