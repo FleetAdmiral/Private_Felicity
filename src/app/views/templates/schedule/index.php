@@ -190,6 +190,8 @@
                 $('.timeline').hide();
                 $('.' + id).show();
                 $.ajax({url: localeBaseUrl + "/api/" + id + "/", success: function(result){
+                    $('.cloud-parent').hide()
+                    $('.globe').hide()
                     document.querySelector('#panelcontainer').style.backgroundImage = "url(" + baseUrl + (result.page_data.background || 'static/images/bg.jpg') + ")";
                     // document.querySelector('.center').style.backgroundImage = "url(" + baseUrl + (result.page_data.background || 'static/images/panel.jpg') + ")";
                     $(".event-description").html(result.page_data.long_description);
