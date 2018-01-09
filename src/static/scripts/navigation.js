@@ -101,6 +101,7 @@ function flagExit() {
   $('#flag').addClass('flagExit');
   setTimeout(function(){
     $('#flag').removeClass('flagExit');
+    $('#flag').removeClass('aboutflag eventsflag galleryflag sponsorsflag contactflag')
   }, 1001);
 }
 
