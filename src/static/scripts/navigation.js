@@ -34,6 +34,8 @@ function hideDetails() {
     }, 200);
     history.pushState(localeBaseUrl, null, localeBaseUrl);
     $('.content-center').fadeIn(1400).css('display', 'block');
+    $('.cloud-parent').fadeIn(250).css('display', 'block');
+    $('.globe').fadeIn(250).css('display', 'block');
 }
 
 function toggleDetails(type) {
@@ -70,7 +72,7 @@ function showPage(type) {
     loadContent(newUrl, $(".content-holder"));
     history.pushState(newUrl, null, newUrl);
     planeEnter();
-    globeSpin();
+    globeSpin(type);
     flagEnter(type);
     slideout.close();
 }
@@ -80,6 +82,7 @@ function planeEnter() {
   setTimeout(function(){
     console.log("Done");
     $('#plane').removeClass('planeEnter');
+    if (!$about.is(':visible')) return
     $('#plane').addClass('planeWait');
   }, 2001);
 }
@@ -105,9 +108,14 @@ function flagExit() {
   }, 1001);
 }
 
-function globeSpin() {
+function globeSpin(type) {
     $('.globe').addClass('globeSpinUp');
     setTimeout(function(){
         $('.globe').removeClass('globeSpinUp');
+        if (!$about.is(':visible')) return
+        if (type == 'events') {
+            $('.cloud-parent').fadeOut(500);
+            $('.globe').fadeOut(500);
+        }
     }, 2500);
 }
