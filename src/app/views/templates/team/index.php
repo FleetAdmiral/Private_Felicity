@@ -124,7 +124,8 @@ function img($img_name, $name=null) {
                     <?= __('Jyotish') ?>,
                     <?= __('Anubhab Sen') ?>,
                     <?= __('Pranav Nair') ?>,
-                    <?= __('Somu Bhargava') ?>
+                    <?= __('Somu Bhargava') ?>,
+                    <?= __('Dheeraj Reddy Pailla') ?>
                 </p>
             </div>
         </div>
@@ -306,7 +307,8 @@ function img($img_name, $name=null) {
                 <p class="names">
                     <?= __('Vidit Jain') ?>,
                     <?= __('Surya Soujanya Kodavalla') ?>,
-                    <?= __('Krishna Vinay') ?>
+                    <?= __('Krishna Vinay') ?>,
+                    <?= __('Sri Pravallika') ?>
                 </p>
             </div>
         </div>
