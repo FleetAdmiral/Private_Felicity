@@ -98,12 +98,12 @@ a {
 .row {
     @extend %clearfix;
 
-    [class*=col] {
+    [class^=col] {
         float: left;
     }
 
-    &.padded > [class*=col],
-    [class*=col].padded {
+    &.padded > [class^=col],
+    [class^=col].padded {
         padding: 5px 10px;
     }
 
@@ -126,7 +126,7 @@ a {
     }
 
     @media (max-width: 44rem) {
-        [class*=col] {
+        [class^=col] {
             float: none;
             margin-top: 1em;
             width: 100%;
