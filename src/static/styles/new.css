@@ -555,6 +555,12 @@ blockquote p {
   background-color: rgba(64, 97, 112, 0.2);
 }
 
+@media screen and (max-width: 600px) {
+    .planeWait{
+      display: none;
+    }
+}
+
 #plane{
   top: 0;
   left:100%;
