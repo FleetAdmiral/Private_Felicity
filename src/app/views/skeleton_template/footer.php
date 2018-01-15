@@ -6,7 +6,7 @@ if (empty($is_ajax)):
         </div>
     </div>
 </section>
-<button id="toggle" href="/" onclick="location.reload()" class="toggle i" style="display: block; left: 90%; top: 17%; z-index: 4;">
+<button id="toggle" onclick="location.assign('/')" class="toggle i" style="display: block; left: 90%; top: 17%; z-index: 4;">
     <div class="cross">
         <div class="x"></div>
         <div class="y"></div>
