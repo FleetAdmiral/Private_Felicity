@@ -9,9 +9,7 @@
 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/styles/vendor/slick.css" />
 <link rel="stylesheet" type="text/css" href="<?= base_url() ?>static/styles/gallery.css" />
   <script src="<?= base_url() ?>static/scripts/vendor/modernizr.min.js"></script>
-  <script src="<?= base_url() ?>static/scripts/vendor/slick.min.js"></script>
   <script src="<?= base_url() ?>static/scripts/vendor/classie.js"></script>
-  <script src="<?= base_url() ?>static/scripts/vendor/photostack.js"></script>
   <script src="<?= base_url() ?>static/scripts/vendor/jquery.min.js"></script>
   <script src="<?= base_url() ?>static/scripts/vendor/jquery.easing.min.js"></script>
   <script src="<?= base_url() ?>static/scripts/vendor/slick.min.js"></script>
@@ -45,7 +43,7 @@
     function slideshow() {
       // clone
       $('.slider-1').clone().removeClass('slider-1').addClass('slider-2').insertAfter($('.slider'));
-    
+
       // set first
       $('.slider-1').slick({
         draggable: false,
@@ -57,7 +55,7 @@
         speed: 1000,
         fade: true
       });
-    
+
       // set second
       $('.slider-2').slick({
         dots: true,
@@ -74,7 +72,7 @@
       setTimeout(function() {
         $('.slider-1 .slick-next').click();
         play();
-      }, 5000);    	
+      }, 5000);
     }
 
     $(function() {
