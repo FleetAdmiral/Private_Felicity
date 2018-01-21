@@ -36,10 +36,26 @@ function img($img_name, $name=null) {
     </div>
 </div>
 <div>
+    <h2 class="text-center"><?= __('Core Team') ?></h2>
+    <div class="row">
+        <div class="col10 offset1">
+            <?php img('CoreTeam.jpg', false); ?>
+            <div class="container text-center">
+                <!-- <p class="names">
+                    <?= __('Vidit Jain') ?>,
+                    <?= __('Surya Soujanya Kodavalla') ?>,
+                    <?= __('Krishna Vinay') ?>,
+                    <?= __('Sri Pravallika') ?>
+                </p> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div>
     <div class="row">
         <div class="col6">
-            <h2 class="text-center"><?= __('Core Team') ?></h2>
-             <?php img('CoreTeam.jpg'); ?>
+            <h2 class="text-center"><?= __('Web and Server Team') ?></h2>
+             <?php img('WebAndServer.jpg'); ?>
             <div class="container">
                 <!-- <p class="names">
                      <strong><?= __('First row') ?></strong>:<br>
@@ -116,21 +132,6 @@ function img($img_name, $name=null) {
 <div>
     <div class="row">
         <div class="col6">
-            <h2 class="text-center"><?= __('Web and Server Team') ?></h2>
-            <?php img('WebAndServer.jpg', false); ?>
-            <div class="container">
-              <!--  <p class="names">
-                    <?= __('Megh Parikh') ?>,
-                    <?= __('Kartikey Pant') ?>,
-                    <?= __('Jyotish') ?>,
-                    <?= __('Anubhab Sen') ?>,
-                    <?= __('Pranav Nair') ?>,
-                    <?= __('Somu Bhargava') ?>,
-                    <?= __('Dheeraj Reddy Pailla') ?>
-                </p>-->
-            </div>
-        </div>
-        <div class="col6">
             <h2 class="text-center"><?= __('The Pulsation Team') ?></h2>
             <?php img('Pulsation.jpg', false); ?>
             <div class="container">
@@ -143,6 +144,21 @@ function img($img_name, $name=null) {
                     <?= __('Akanksha Baranwal') ?>,
                     <?= __('Pooja Guhan') ?>
                 </p> -->
+            </div>
+        </div>
+        <div class="col6">
+            <h2 class="text-center"><?= __('Creative and Content Team') ?></h2>
+            <?php img('CC.jpg', false); ?>
+            <div class="container">
+              <!--  <p class="names">
+                    <?= __('Megh Parikh') ?>,
+                    <?= __('Kartikey Pant') ?>,
+                    <?= __('Jyotish') ?>,
+                    <?= __('Anubhab Sen') ?>,
+                    <?= __('Pranav Nair') ?>,
+                    <?= __('Somu Bhargava') ?>,
+                    <?= __('Dheeraj Reddy Pailla') ?>
+                </p>-->
             </div>
         </div>
     </div>
@@ -300,23 +316,18 @@ function img($img_name, $name=null) {
     </div>
 </div>
 <div>
-    <h2 class="text-center"><?= __('Food Fest Team') ?></h2>
     <div class="row">
-        <div class="col10 offset1">
-            <?php img('Cultural.jpg', false); ?>
+        <div class="col6">
+            <h2 class="text-center"><?= __('Food Fest Team') ?></h2>
+            <?php img('Food Fest.jpg', false); ?>
             <div class="container text-center">
                 <!-- <p class="names">
-                    <?= __('Vidit Jain') ?>,
-                    <?= __('Surya Soujanya Kodavalla') ?>,
-                    <?= __('Krishna Vinay') ?>,
-                    <?= __('Sri Pravallika') ?>
+                    <?= __('Aman Mehta') ?>,
+                    <?= __('Marchala Sreevatsava') ?>,
+                    <?= __('Anam Raihan') ?>
                 </p> -->
             </div>
         </div>
-    </div>
-</div>
-<div>
-    <div class="row">
         <div class="col6">
             <h2 class="text-center"><?= __('Battle of Bands') ?></h2>
             <?php img('BoB.jpg', false); ?>
@@ -325,17 +336,6 @@ function img($img_name, $name=null) {
                     <?= __('Aditya Bharti') ?>,
                     <?= __('Alok Debnath') ?>,
                     <?= __('Tanmai Khanna') ?>
-                </p> -->
-            </div>
-        </div>
-        <div class="col6">
-            <h2 class="text-center"><?= __('Creative and Content Team') ?></h2>
-            <?php img('CC.jpg', false); ?>
-            <div class="container text-center">
-                <!-- <p class="names">
-                    <?= __('Aman Mehta') ?>,
-                    <?= __('Marchala Sreevatsava') ?>,
-                    <?= __('Anam Raihan') ?>
                 </p> -->
             </div>
         </div>
