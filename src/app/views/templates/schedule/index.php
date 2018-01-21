@@ -44,9 +44,9 @@
 ?>
 
 <article class="page schedule" style="height: 100%">
-<header>
+<!--<header>
     <h1>Eve<span class="tabheading">nts</span></h1>
-</header>
+</header>-->
 
 <div class="container">
 <div id = "categoriesnav" class="linkholder">

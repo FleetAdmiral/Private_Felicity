@@ -1,9 +1,9 @@
 <?php $this->load_fragment('skeleton_template/header', ['title' => __('Contact Us')]); ?>
 <article class="page contact">
     <div class="container">
-        <header>
+        <!--<header>
             <h1>Contact<span class="tabheading"> Us</span></h1>
-        </header>
+        </header>-->
         <p>
             <?= __('There are many ways of contacting us.') ?>
         </p>

@@ -41,9 +41,9 @@ $sponsors2014 = [
 ?>
 <article class="page sponsors">
     <div class="container">
-        <header>
+        <!--<header>
             <h1>Spon<span class="tabheading">sors</span></h1>
-        </header>
+        </header>-->
         <h2><?= __('Felicity 2017 Sponsors') ?></h2>
         <div class="row some-top-margin">
             <div class="col6 offset3">
