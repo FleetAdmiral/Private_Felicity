@@ -66,15 +66,19 @@ $sponsors2014 = [
           </div>
         </div>
       <div class="row some-top-margin">
-        <div class="col4 container">
+        <div class="col3 container">
             <p>CodeCraft Sponsor</p>
             <img src="<?= base_url() ?>static/images/sponsors/18/caTech.jpg" alt="CA Technologies"/>
         </div>
-        <div class="col4 container">
+        <div class="col3 container">
             <p>Human-like AI sponsor</p>
             <img src="<?= base_url() ?>static/images/sponsors/17/microsoft.jpg" alt="Microsoft"/>
         </div>
-        <div class="col4 container">
+        <div class="col3 container">
+            <p>Data-Science sponsor</p>
+            <img src="<?= base_url() ?>static/images/sponsors/18/av.png" alt="Analytics Vidhya"/>
+        </div>
+        <div class="col3 container">
             <p>Life Insurance Sponsor</p>
             <img src="<?= base_url() ?>static/images/sponsors/18/LIC.png" alt="LIC"/>
         </div>
