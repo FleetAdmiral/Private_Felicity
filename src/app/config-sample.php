@@ -13,24 +13,6 @@ $cfg = [
             'db_pass'   => 'password',
             'db_name'   => 'dbname',
         ],
-        'users' => [
-            'db_host'   => 'localhost',
-            'db_user'   => 'user',
-            'db_pass'   => 'password',
-            'db_name'   => 'dbname',
-        ],
-        'sap' => [
-            'db_host'   => 'localhost',
-            'db_user'   => 'user',
-            'db_pass'   => 'password',
-            'db_name'   => 'dbname',
-        ],
-        'contest' => [
-            'db_host'   => 'localhost',
-            'db_user'   => 'user',
-            'db_pass'   => 'password',
-            'db_name'   => 'dbname',
-        ],
     ],
 
     'i18n' => [
@@ -53,6 +35,7 @@ $cfg = [
 
 $admins = [
     // List of user ids of admins
+    'admin',
 ];
 
 $keycloak_cfg = [
@@ -60,44 +43,4 @@ $keycloak_cfg = [
     'server_ca_cert' => APPPATH . 'iiit.ac.in.pem', // Optional, Recommended.
     'client_id'      => 'mainwebsite',
     'client_secret'  => '<secret here>'
-];
-
-$SECRET_STRING = 'kuchbhi';
-
-$email_cfg = [
-    'server_host'   => 'email_server_host_ip',
-    'server_domain' => 'email.server.domain.name',
-    'server_port'   => 25,
-    'smtp_auth'     => true,
-    'smtp_secure'   => 'tls',
-    'accounts'      => [
-        'noreply'   => [
-            'username'  => 'email_user',
-            'password'  => 'email_user_pass',
-            'email'     => 'email_address',
-            'from_name' => 'Team Felicity'
-        ],
-        'noreply_threads'   => [
-            'username'      => 'email_user',
-            'password'      => 'email_user_pass',
-            'email'         => 'email_address',
-            'from_name'     => 'Team Felicity',
-            'reply_to'      => 'email_reply_to',
-            'reply_to_name' => 'Threads Team'
-        ]
-    ]
-];
-
-$payment_cfg = [
-    'webdev' => [
-        'url'   => '...',
-        'salt'  => 'some-very-random-string'
-    ],
-    'ttt' => [
-        'gateway_url'   => '...',
-        'salt'  => 'some-very-random-string',
-        'nick_field' => 'some-field',
-        'api_url' => '...',
-        'api_headers' => []
-    ]
 ];
